@@ -99,7 +99,12 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git branch:*)",
-      "Bash(git remote add:*)"
+      "Bash(git remote add:*)",
+      "Bash(git -C /Users/greymonroe/repos/monroelab-mirror/MonroeLab push --force origin main)",
+      "Bash(gh auth status:*)",
+      "Bash(pip3 install:*)",
+      "Bash(git -C:*)",
+      "Bash(git push:*)"
     ]
   }
 }
