@@ -16,7 +16,7 @@ publication_short: ""
 abstract: ""
 
 tags: []
-featured: false
+featured: true
 
 url_pdf: ""
 url_code: ""

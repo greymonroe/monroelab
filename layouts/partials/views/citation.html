@@ -42,8 +42,13 @@
 {{ $journal = index (split $journal ":") 0 }}
 {{ $journal = trim $journal " " }}
 
+{{ if $item.Params.featured }}
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem; border-left: 3px solid #e8a020; padding-left: 10px;">
+  <i class="fas fa-star pub-icon" aria-hidden="true" style="color: #e8a020;"></i>
+{{ else }}
 <div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+{{ end }}
 
   <span class="article-metadata li-cite-author">{{ $author_display }} <em>et al.</em></span>
   ({{- $item.Date.Format "2006" -}}).

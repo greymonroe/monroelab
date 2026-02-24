@@ -25,7 +25,7 @@ publication_short: ""
 abstract: ""
 
 tags: []
-featured: false
+featured: true
 co_first_authors: true
 
 url_pdf: ""
