@@ -37,10 +37,10 @@
 
 {{/* Extract journal name only — strip volume, issue, pages */}}
 {{ $pub := $item.Params.publication | default "" }}
-{{ $pub = $pub | replaceRE "\\*" "" | strings.TrimSpace }}
+{{ $pub = trim ($pub | replaceRE "\\*" "") " " }}
 {{ $journal := index (split $pub ",") 0 }}
 {{ $journal = index (split $journal ":") 0 }}
-{{ $journal = strings.TrimSpace $journal }}
+{{ $journal = trim $journal " " }}
 
 <div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
