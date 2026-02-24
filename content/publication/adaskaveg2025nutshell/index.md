@@ -26,6 +26,7 @@ abstract: ""
 
 tags: []
 featured: false
+co_first_authors: true
 
 url_pdf: ""
 url_code: ""

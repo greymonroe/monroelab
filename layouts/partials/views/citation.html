@@ -13,36 +13,48 @@
   {{ end }}
 {{ end }}
 
-{{/* Build plain text author list — resolve profile keys to display names */}}
-{{ $author_names := slice }}
-{{ range $item.Params.authors }}
-  {{ $name := . }}
-  {{ $profile := site.GetPage (printf "authors/%s" .) }}
-  {{ if $profile }}
-    {{ $name = $profile.Title }}
-  {{ end }}
-  {{ $author_names = $author_names | append $name }}
+{{/* Get display name for an author string (profile key or plain text) */}}
+{{ $authors := $item.Params.authors }}
+
+{{ $first_raw := index $authors 0 | default "" }}
+{{ $first_name := $first_raw }}
+{{ with site.GetPage (printf "authors/%s" $first_raw) }}
+  {{ $first_name = .Title }}
 {{ end }}
+{{ $first_last := index (last 1 (split $first_name " ")) 0 }}
+
+{{/* Build author display: normally just first last name; co-first gets two */}}
+{{ $author_display := $first_last }}
+{{ if $item.Params.co_first_authors }}
+  {{ $second_raw := index $authors 1 | default "" }}
+  {{ $second_name := $second_raw }}
+  {{ with site.GetPage (printf "authors/%s" $second_raw) }}
+    {{ $second_name = .Title }}
+  {{ end }}
+  {{ $second_last := index (last 1 (split $second_name " ")) 0 }}
+  {{ $author_display = printf "%s & %s" $first_last $second_last }}
+{{ end }}
+
+{{/* Extract journal name only — strip volume, issue, pages */}}
+{{ $pub := $item.Params.publication | default "" }}
+{{ $pub = $pub | replaceRE "\\*" "" | strings.TrimSpace }}
+{{ $journal := index (split $pub ",") 0 }}
+{{ $journal = index (split $journal ":") 0 }}
+{{ $journal = strings.TrimSpace $journal }}
 
 <div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
-  <span class="article-metadata li-cite-author">
-    {{- delimit $author_names ", " -}}
-  </span>
+  <span class="article-metadata li-cite-author">{{ $author_display }}</span>
   ({{- $item.Date.Format "2006" -}}).
   {{ if $title_external }}
     <a href="{{ $title_url }}" target="_blank" rel="noopener">{{ $item.Title }}</a>.
   {{ else }}
     <a href="{{ $title_url }}">{{ $item.Title }}</a>.
   {{ end }}
-  {{ if $item.Params.publication_short }}
-    {{- $item.Params.publication_short | markdownify -}}.
-  {{ else if $item.Params.publication }}
-    {{- $item.Params.publication | markdownify -}}.
-  {{ end }}
+  {{ with $journal }}<em>{{ . }}</em>.{{ end }}
 
-  {{/* PDF button only */}}
+  {{/* PDF button */}}
   {{ $pdf := "" }}
   {{ $resource := $item.Resources.GetMatch (printf "%s.pdf" $item.File.ContentBaseName) }}
   {{ with $resource }}
