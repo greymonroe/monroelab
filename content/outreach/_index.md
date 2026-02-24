@@ -10,7 +10,13 @@ sections:
       text: |
         ## EnvironMentors at UC Davis
 
-        Alice Pierce and Grey Monroe are involved in the [UC Davis EnvironMentors](https://environmentors.sf.ucdavis.edu/) program, which connects UC Davis researchers with local high school students interested in environmental sciences. The program provides mentorship, research experience, and support for students from underrepresented backgrounds.
+        Grey Monroe serves as co-director of the [UC Davis chapter of EnvironMentors](https://environmentors.sf.ucdavis.edu/), a high school mentorship program that provides long-term research experiences for high school students while offering meaningful mentorship training for UC Davis graduate student mentors. The program runs September through May.
+
+        Students gain hands-on research experience, one-on-one mentorship, and a sense of belonging in university settings. The program emphasizes crew development, experiential learning, and practical mentorship guidance for graduate student mentors. This work is supported by the National Science Foundation through Grey Monroe's NSF CAREER grant.
+
+        ## UC Davis Plant Sciences Graduate Symposium
+
+        Grey Monroe serves as faculty adviser to the graduate students who organize the annual UC Davis Plant Sciences Graduate Symposium, a student-led conference supported by Corteva and others. Graduate students gain hands-on experience with all aspects of organizing a scientific conference — logistics, speaker recruitment, and leadership development. It is a unique opportunity for students to build skills that go well beyond the lab.
 
         ## Public Communication
 
