@@ -1,0 +1,59 @@
+{{ $item := .item }}
+
+{{/* Resolve title link: prefer DOI, then url_source, then internal page */}}
+{{ $title_url := $item.RelPermalink }}
+{{ $title_external := false }}
+{{ with $item.Params.doi }}
+  {{ $title_url = printf "https://doi.org/%s" . }}
+  {{ $title_external = true }}
+{{ else }}
+  {{ with $item.Params.url_source }}
+    {{ $title_url = . }}
+    {{ $title_external = true }}
+  {{ end }}
+{{ end }}
+
+{{/* Build plain text author list — resolve profile keys to display names */}}
+{{ $author_names := slice }}
+{{ range $item.Params.authors }}
+  {{ $name := . }}
+  {{ $profile := site.GetPage (printf "authors/%s" .) }}
+  {{ if $profile }}
+    {{ $name = $profile.Title }}
+  {{ end }}
+  {{ $author_names = $author_names | append $name }}
+{{ end }}
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  <span class="article-metadata li-cite-author">
+    {{- delimit $author_names ", " -}}
+  </span>
+  ({{- $item.Date.Format "2006" -}}).
+  {{ if $title_external }}
+    <a href="{{ $title_url }}" target="_blank" rel="noopener">{{ $item.Title }}</a>.
+  {{ else }}
+    <a href="{{ $title_url }}">{{ $item.Title }}</a>.
+  {{ end }}
+  {{ if $item.Params.publication_short }}
+    {{- $item.Params.publication_short | markdownify -}}.
+  {{ else if $item.Params.publication }}
+    {{- $item.Params.publication | markdownify -}}.
+  {{ end }}
+
+  {{/* PDF button only */}}
+  {{ $pdf := "" }}
+  {{ $resource := $item.Resources.GetMatch (printf "%s.pdf" $item.File.ContentBaseName) }}
+  {{ with $resource }}
+    {{ $pdf = .RelPermalink }}
+  {{ else }}
+    {{ with $item.Params.url_pdf }}
+      {{ $pdf = . | relURL }}
+    {{ end }}
+  {{ end }}
+  {{ with $pdf }}
+  <p><a class="btn btn-outline-primary btn-sm" href="{{ . }}" target="_blank" rel="noopener">PDF</a></p>
+  {{ end }}
+
+</div>
