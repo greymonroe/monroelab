@@ -45,7 +45,7 @@
 <div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
 
-  <span class="article-metadata li-cite-author">{{ $author_display }}</span>
+  <span class="article-metadata li-cite-author">{{ $author_display }} <em>et al.</em></span>
   ({{- $item.Date.Format "2006" -}}).
   {{ if $title_external }}
     <a href="{{ $title_url }}" target="_blank" rel="noopener">{{ $item.Title }}</a>.
