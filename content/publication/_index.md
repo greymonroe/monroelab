@@ -1,8 +1,25 @@
 ---
 title: Publications
 date: 2024-01-01
+type: landing
+
+sections:
+  - block: markdown
+    content:
+      title: Publications
+      text: |
+        For a complete list of publications, see our [Google Scholar profile](https://scholar.google.com/citations?user=WcgLCEIAAAAJ&hl=en).
+    design:
+      columns: '1'
+
+  - block: collection
+    content:
+      title: ''
+      count: 0
+      filters:
+        folders:
+          - publication
+    design:
+      view: citation
+      columns: '1'
 ---
-
-For a complete and up-to-date list of publications from the Monroe Lab, please see our [Google Scholar profile](https://scholar.google.com/citations?user=WcgLCEIAAAAJ&hl=en).
-
-Below is a selection of recent key publications.
