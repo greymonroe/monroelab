@@ -17,9 +17,9 @@ sections:
     design:
       background:
         image:
-          filename: hero-tgca.png
+          filename: banner-people.png
           filters:
-            brightness: 0.55
+            brightness: 0.8
           size: cover
           position: center
         text_color_light: true
