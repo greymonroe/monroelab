@@ -1,7 +1,7 @@
 ---
 title: "Genome Dynamics and Structural Variation"
 summary: "We study how structural variants, inversions, and large-scale genomic rearrangements shape plant evolution, with projects in walnut, pistachio, and Arabidopsis."
-date: 2024-01-01
+weight: 20
 featured: false
 image:
   focal_point: ''

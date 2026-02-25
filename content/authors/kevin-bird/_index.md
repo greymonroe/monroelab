@@ -21,7 +21,7 @@ social:
     link: https://twitter.com/thebirdmaniac
 highlight_name: false
 user_groups:
-  - Postdoctoral Researchers
+  - Alumni
 ---
 
 Kevin is an NSF Plant Genome Postdoctoral Research Fellow co-mentored in the Monroe and Kliebenstein labs at UC Davis. He completed his PhD at Michigan State University in the labs of Patrick Edger and Robert VanBuren. His research focuses on gene regulatory network evolution.

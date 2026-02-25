@@ -1,7 +1,7 @@
 ---
 title: "Chromatin Regulation and DNA Repair"
 summary: "We investigate how chromatin marks — particularly H3K4 methylation — recruit DNA repair machinery to functionally important regions of the genome."
-date: 2024-01-01
+weight: 30
 featured: false
 image:
   focal_point: ''

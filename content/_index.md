@@ -20,7 +20,7 @@ sections:
           filename: banner-people.png
           filters:
             brightness: 0.8
-          size: cover
+          size: contain
           position: center
         text_color_light: true
 
@@ -44,7 +44,7 @@ sections:
       title: About the Lab
       subtitle: ''
       text: |
-        The Monroe Lab is based in the Department of Plant Sciences at UC Davis. We use emerging sequencing technologies to study how plants adapt to their environments, with a focus on mutation rate variation, epigenome-recruited DNA repair, and functional genomics of crops.
+        Based in the [Department of Plant Sciences](https://www.plantsciences.ucdavis.edu/) and [Genome Center](https://genomecenter.ucdavis.edu/) at UC Davis.
     design:
       columns: '2'
 ---
