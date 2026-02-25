@@ -20,7 +20,7 @@ sections:
           filename: banner-people.png
           filters:
             brightness: 0.8
-          size: contain
+          size: cover
           position: center
         text_color_light: true
 

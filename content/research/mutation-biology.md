@@ -2,6 +2,7 @@
 title: "Mutation Biology and Rate Variation"
 summary: "We study why mutation rates vary across the genome, among individuals, and across species — with implications for evolution, disease, and crop improvement."
 weight: 10
+show_date: false
 featured: false
 image:
   focal_point: ''

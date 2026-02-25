@@ -1,0 +1,11 @@
+// Fix hero section height to match banner image aspect ratio (2080×946 ≈ 45.5% height/width)
+// This prevents the image from being cropped by the default full-viewport min-height.
+.home-section.wg-hero {
+  min-height: 45.5vw !important;
+}
+
+@media screen and (max-width: 768px) {
+  .home-section.wg-hero {
+    min-height: 60vw !important;
+  }
+}

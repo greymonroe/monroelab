@@ -2,6 +2,7 @@
 title: "Applied Genomics and Crop Improvement"
 summary: "We apply genomic tools to understudied crops — including pistachio, walnut, celery, and cassava — to enable climate-smart breeding."
 weight: 40
+show_date: false
 featured: false
 image:
   focal_point: ''
