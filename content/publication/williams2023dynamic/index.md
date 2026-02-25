@@ -7,7 +7,7 @@ authors:
 - grey-monroe
 - Ben P Williams
 date: "2023-01-01T00:00:00Z"
-doi: ""
+doi: "10.1186/s13059-023-03059-9"
 
 publishDate: "2023-01-01T00:00:00Z"
 

@@ -12,7 +12,7 @@ authors:
 - Susan E Crow
 - Gavin McNicol
 date: "2020-01-01T00:00:00Z"
-doi: ""
+doi: "10.5194/essd-12-61-2020"
 
 publishDate: "2020-01-01T00:00:00Z"
 

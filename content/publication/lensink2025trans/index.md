@@ -5,7 +5,7 @@ authors:
 - grey-monroe
 - Daniel J Kliebenstein
 date: "2025-01-01T00:00:00Z"
-doi: ""
+doi: "10.1093/genetics/iyaf116"
 
 publishDate: "2025-01-01T00:00:00Z"
 

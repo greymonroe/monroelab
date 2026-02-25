@@ -9,7 +9,7 @@ authors:
 - Wilfried Haerty
 - Ksenia V Krasileva
 date: "2020-01-01T00:00:00Z"
-doi: ""
+doi: "10.1105/tpc.19.00903"
 
 publishDate: "2020-01-01T00:00:00Z"
 

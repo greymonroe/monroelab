@@ -8,7 +8,7 @@ authors:
 - Ian Korf
 - Lesilee S Rose
 date: "2025-01-01T00:00:00Z"
-doi: ""
+doi: "10.1038/s41598-025-99739-6"
 
 publishDate: "2025-01-01T00:00:00Z"
 

@@ -7,7 +7,7 @@ authors:
 - grey-monroe
 - Eric W Goolsby
 date: "2020-01-01T00:00:00Z"
-doi: ""
+doi: "10.1086/706238"
 
 publishDate: "2020-01-01T00:00:00Z"
 

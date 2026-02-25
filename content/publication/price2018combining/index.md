@@ -12,7 +12,7 @@ authors:
 - Jon Ågren
 - Daniel R Schrider
 date: "2018-01-01T00:00:00Z"
-doi: ""
+doi: "10.1073/pnas.1719998115"
 
 publishDate: "2018-01-01T00:00:00Z"
 

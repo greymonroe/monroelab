@@ -8,7 +8,7 @@ authors:
 - Douglas R Taylor
 - Daniel B Sloan
 date: "2016-01-01T00:00:00Z"
-doi: ""
+doi: "10.1534/genetics.116.192047"
 
 publishDate: "2016-01-01T00:00:00Z"
 

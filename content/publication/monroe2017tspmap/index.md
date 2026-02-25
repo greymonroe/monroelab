@@ -10,7 +10,7 @@ authors:
 - Darrell Whitley
 - John K McKay
 date: "2017-01-01T00:00:00Z"
-doi: ""
+doi: "10.1186/s13040-017-0158-0"
 
 publishDate: "2017-01-01T00:00:00Z"
 
