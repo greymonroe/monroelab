@@ -12,7 +12,7 @@ authors:
 - Yiduo Wei
 - Rolando Lopez
 date: "2025-01-01T00:00:00Z"
-doi: ""
+doi: "10.1093/jxb/eraf519"
 
 publishDate: "2025-01-01T00:00:00Z"
 

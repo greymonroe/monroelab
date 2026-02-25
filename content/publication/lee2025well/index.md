@@ -9,7 +9,7 @@ authors:
 - grey-monroe
 - Allen Van Deynze
 date: "2025-01-01T00:00:00Z"
-doi: ""
+doi: "10.1111/tpj.70251"
 
 publishDate: "2025-01-01T00:00:00Z"
 

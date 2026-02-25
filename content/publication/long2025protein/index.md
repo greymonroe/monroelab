@@ -4,14 +4,14 @@ authors:
 - Evan Long
 - grey-monroe
 date: "2025-01-01T00:00:00Z"
-doi: ""
+doi: "10.1186/s12864-026-12674-2"
 
 publishDate: "2025-01-01T00:00:00Z"
 
 publication_types:
 - "article-journal"
 
-publication: "**"
+publication: "*BMC Genomics*"
 publication_short: ""
 
 abstract: ""
