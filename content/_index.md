@@ -7,18 +7,21 @@ sections:
   - block: hero
     content:
       title: |
-        Monroe Lab
-      image:
-        filename: hero-lab.jpg
+        TGCA
       text: |
-        **Plant Genome Biology & Innovation**
+        **The Genomics of Change and Adaptation Lab**
 
-        We study genetic variation in plants at the intersection of molecular biology, evolutionary theory, and functional genomics.
+        Where does genetic variation come from? We study the biology of mutation — DNA damage, DNA repair, and the arrival of new variants during plant development. This is the variation that selection acts on. We work across all these dimensions to understand how new genetic variation arises, drives adaptation, and shapes the evolution of crops and wild plants.
 
         {{% cta cta_link="people" cta_text="Meet the Team →" %}}
     design:
       background:
-        color: black
+        image:
+          filename: hero-tgca.png
+          filters:
+            brightness: 0.55
+          size: cover
+          position: center
         text_color_light: true
 
   - block: markdown
