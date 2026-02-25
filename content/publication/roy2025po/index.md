@@ -7,7 +7,6 @@ authors:
 - grey-monroe
 - Prosanta Chakrabarty
 date: "2025-01-01T00:00:00Z"
-doi: ""
 
 publishDate: "2025-01-01T00:00:00Z"
 
@@ -28,7 +27,7 @@ url_dataset: ""
 url_poster: ""
 url_project: ""
 url_slides: ""
-url_source: "https://academic.oup.com/icb/article/65/1/22/7929016"
+doi: "10.1093/icb/icae156"
 url_video: ""
 
 projects: []

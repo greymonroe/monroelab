@@ -29,16 +29,13 @@ sections:
       title: Latest News
       subtitle: ''
       text: |
-        - **Jul 2025** — [Extreme somatic mutation variation through time and space in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv*
-        - **May 2025** — [Ancient structural variants control sex-specific flowering time in walnuts](https://doi.org/10.1126/science.ado5578) · *Science*
-        - **Mar 2025** — [Trans-regulatory loci shape natural variation of gene expression plasticity in Arabidopsis](https://doi.org/10.1093/genetics/iyaf116) · *Genetics*
-        - **Nov 2024** — [Monroe Lab launches UC Davis EnvironMentors chapter](https://environmentors.sf.ucdavis.edu/)
-        - **Oct 2024** — [Convergent evolution of epigenome-recruited DNA repair across the tree of life](https://www.biorxiv.org/content/10.1101/2024.10.15.618488) · *bioRxiv*
-        - **Oct 2024** — [Somatic mutations in Arabidopsis via duplex sequencing](https://academic.oup.com/gbe/article/16/10/evae213/7810955) · *Genome Biology and Evolution*
-        - **Mar 2024** — [H3K4me1 recruits DNA repair proteins in plants](https://academic.oup.com/plcell/article/36/6/2410/7635455) · *The Plant Cell*
-        - **Jul 2023** — [Re-evaluating adaptive mutation rate variation (reply)](https://www.nature.com/articles/s41586-023-06315-x) · *Nature*
-        - **May 2023** — [Causes of mutation rate variation in plant genomes](https://www.annualreviews.org/doi/10.1146/annurev-arplant-070522-054109) · *Annual Review of Plant Biology*
-        - **Jan 2022** — [Mutation bias reflects natural selection in *Arabidopsis thaliana*](https://www.nature.com/articles/s41586-021-04269-6) · *Nature*
+        - **Nov 2025** — [Monroe et al. — Delineating mutation bias and selection during plant development](https://doi.org/10.1101/2025.11.01.686053) · *bioRxiv*
+        - **Nov 2025** — [Ebrahimi et al. — Phylogenomics of the walnut family reveals black walnut as an ancient lineage](https://doi.org/10.1101/2025.11.25.690472) · *bioRxiv*
+        - **Oct 2025** — [Pierce et al. — Intron architecture predicts chromatin features in Arabidopsis](https://doi.org/10.1101/2025.10.15.682614) · *bioRxiv*
+        - **Jul 2025** — [Davis et al. — Extreme somatic mutation variation in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv*
+        - **May 2025** — [Groh et al. — Ancient structural variants control sex-specific flowering time in walnuts](https://doi.org/10.1126/science.ado5578) · *Science*
+
+        [See all news →](/news/)
     design:
       columns: '1'
 

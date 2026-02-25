@@ -12,7 +12,7 @@ main:
     url: publication
     weight: 40
   - name: News
-    url: post
+    url: news
     weight: 50
   - name: Teaching
     url: teaching
