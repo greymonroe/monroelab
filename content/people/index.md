@@ -11,26 +11,37 @@ sections:
     design:
       background:
         image:
-          filename: hero-tgca.png
+          filename: banner-group.png
           filters:
-            brightness: 0.6
+            brightness: 0.85
           size: cover
-          position: center
+          position: center top
         text_color_light: true
 
   - block: people
     content:
-      title: Meet the Team
+      title: ''
       user_groups:
         - Principal Investigator
         - Postdoctoral Researchers
         - Graduate Students
         - Junior Specialists & Undergraduates
-        - Alumni
       sort_by: Params.last_name
       sort_ascending: true
     design:
       show_interests: false
       show_role: true
       show_social: true
+
+  - block: people
+    content:
+      title: Alumni
+      user_groups:
+        - Alumni
+      sort_by: Params.last_name
+      sort_ascending: true
+    design:
+      show_interests: false
+      show_role: true
+      show_social: false
 ---

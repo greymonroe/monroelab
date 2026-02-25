@@ -9,3 +9,18 @@
     min-height: 60vw !important;
   }
 }
+
+// Homepage CTA "Meet the Team" button: white background, black text, slightly larger font.
+.home-section.wg-hero .cta-group .btn-primary {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: #1a1a1a !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+}
+
+.home-section.wg-hero .cta-group .btn-primary:hover {
+  background-color: #f0f0f0 !important;
+  border-color: #f0f0f0 !important;
+  color: #000000 !important;
+}
