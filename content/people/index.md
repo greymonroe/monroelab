@@ -4,6 +4,20 @@ date: 2024-01-01
 type: landing
 
 sections:
+  - block: hero
+    content:
+      title: Meet the Team
+      text: ''
+    design:
+      background:
+        image:
+          filename: banner-people.png
+          filters:
+            brightness: 0.8
+          size: cover
+          position: center
+        text_color_light: true
+
   - block: people
     content:
       title: Meet the Team
