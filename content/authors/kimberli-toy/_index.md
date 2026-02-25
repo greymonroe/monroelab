@@ -5,5 +5,5 @@ last_name: Toy
 role: Undergraduate Student
 highlight_name: false
 user_groups:
-  - Junior Specialists & Undergraduates
+  - Alumni
 ---

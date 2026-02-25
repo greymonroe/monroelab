@@ -12,7 +12,7 @@ interests:
   - Pistachio Genomics
 highlight_name: false
 user_groups:
-  - Junior Specialists & Undergraduates
+  - Alumni
 ---
 
 Megan is an undergraduate student in Biological Sciences at UC Davis. She is working on whole genome sequence data in *Pistacia vera* (pistachio).

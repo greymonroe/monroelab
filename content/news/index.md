@@ -10,6 +10,13 @@ sections:
       subtitle: ''
       text: |
 
+        ## 2026
+
+        **May**
+        - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.sf.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration is now open for the Science Fair and abstract submissions are being accepted.
+
+        ---
+
         ## 2025
 
         - [**Davis et al.** — Extreme somatic mutation variation through time and space in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv* — Whole-genome sequencing of walnut clones reveals unexpected heterogeneity in how somatic mutations accumulate across space and developmental time.
@@ -26,6 +33,13 @@ sections:
         - [**Klein et al.** — Climate adaptation in *Populus trichocarpa*: key adaptive loci for stomata and leaf traits](https://doi.org/10.1111/nph.70343) · *New Phytologist* — Identifies genomic loci controlling stomatal and leaf traits relevant to drought adaptation in cottonwood.
         - [**Pierce et al.** — Intron architecture predicts chromatin features in *Arabidopsis thaliana*](https://doi.org/10.1101/2025.10.15.682614) · *bioRxiv* — First intron length and composition predict chromatin state and gene expression levels genome-wide.
         - [**Ebrahimi et al.** — Phylogenomic analysis of the Juglandaceae reveals black walnut as an ancient lineage](https://doi.org/10.1101/2025.11.25.690472) · *bioRxiv* — Comprehensive comparative genomics of the walnut family places black walnut as an evolutionarily ancient and distinct lineage.
+        - [**Long et al.** — Protein structure and selection pressure in plants: using mutation to understand the functional importance of protein structure](https://doi.org/10.1186/s12864-026-12674-2) · *BMC Genomics* — Uses plant mutation data to reveal which protein structural features face the strongest purifying selection, connecting structural biology with evolutionary genomics.
+
+        **November**
+        - Welcome **Lili Imbler**, **Eric Spaulding**, and **Zi Ye**, three new undergraduate researchers joining the lab! They will be working on somatic mutation dynamics across diverse plant species.
+
+        **October**
+        - The [UC Davis EnvironMentors](https://environmentors.sf.ucdavis.edu/) high school mentorship program is now open for applications — students and mentors can sign up for the 2025–2026 cycle!
 
         ---
 

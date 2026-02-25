@@ -36,6 +36,12 @@ url_slides: ""
 url_source: ""
 url_video: ""
 
+links:
+  - name: "NPR Science Friday"
+    url: "https://www.sciencefriday.com/segments/plant-mutation/"
+    icon_pack: fas
+    icon: radio
+
 projects: []
 slides: ""
 ---
