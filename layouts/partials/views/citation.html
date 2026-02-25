@@ -1,15 +1,12 @@
 {{ $item := .item }}
 
-{{/* Resolve title link: prefer DOI, then url_source, then internal page */}}
-{{ $title_url := $item.RelPermalink }}
-{{ $title_external := false }}
+{{/* Resolve title link: prefer DOI, then url_source — no internal page fallback */}}
+{{ $title_url := "" }}
 {{ with $item.Params.doi }}
   {{ $title_url = printf "https://doi.org/%s" . }}
-  {{ $title_external = true }}
 {{ else }}
   {{ with $item.Params.url_source }}
     {{ $title_url = . }}
-    {{ $title_external = true }}
   {{ end }}
 {{ end }}
 
@@ -52,10 +49,10 @@
 
   <span class="article-metadata li-cite-author">{{ $author_display }} <em>et al.</em></span>
   ({{- $item.Date.Format "2006" -}}).
-  {{ if $title_external }}
+  {{ if $title_url }}
     <a href="{{ $title_url }}" target="_blank" rel="noopener">{{ $item.Title }}</a>.
   {{ else }}
-    <a href="{{ $title_url }}">{{ $item.Title }}</a>.
+    {{ $item.Title }}.
   {{ end }}
   {{ with $journal }}<em>{{ . }}</em>.{{ end }}
 

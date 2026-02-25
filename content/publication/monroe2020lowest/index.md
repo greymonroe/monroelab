@@ -10,7 +10,7 @@ authors:
 - D Torkamaneh
 - P Chavarriaga
 date: "2020-01-01T00:00:00Z"
-doi: ""
+doi: "10.1016/j.cpb.2020.100185"
 
 publishDate: "2020-01-01T00:00:00Z"
 

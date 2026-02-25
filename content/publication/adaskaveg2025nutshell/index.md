@@ -12,7 +12,7 @@ authors:
 - Giulia Marino
 - Louise Ferguson
 date: "2025-01-01T00:00:00Z"
-doi: ""
+doi: "10.1111/nph.70060"
 
 publishDate: "2025-01-01T00:00:00Z"
 

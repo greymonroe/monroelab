@@ -8,7 +8,7 @@ authors:
 - Paul Chavarriaga
 - grey-monroe
 date: "2025-01-01T00:00:00Z"
-doi: ""
+doi: "10.1111/nph.70918"
 
 publishDate: "2025-01-01T00:00:00Z"
 
