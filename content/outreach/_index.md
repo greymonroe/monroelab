@@ -10,7 +10,7 @@ sections:
       text: |
         ## EnvironMentors at UC Davis
 
-        Grey Monroe serves as co-director of the [UC Davis chapter of EnvironMentors](https://environmentors.sf.ucdavis.edu/), a high school mentorship program that provides long-term research experiences for high school students while offering meaningful mentorship training for UC Davis graduate student mentors. The program runs September through May.
+        Grey Monroe serves as co-director of the [UC Davis chapter of EnvironMentors](https://environmentors.ucdavis.edu/), a high school mentorship program that provides long-term research experiences for high school students while offering meaningful mentorship training for UC Davis graduate student mentors. The program runs September through May.
 
         Students gain hands-on research experience, one-on-one mentorship, and a sense of belonging in university settings. The program emphasizes crew development, experiential learning, and practical mentorship guidance for graduate student mentors. This work is supported by the National Science Foundation through Grey Monroe's NSF CAREER grant.
 

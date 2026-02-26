@@ -13,7 +13,7 @@ sections:
         ## 2026
 
         **May**
-        - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.sf.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration is now open for the Science Fair and abstract submissions are being accepted.
+        - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration is now open for the Science Fair and abstract submissions are being accepted.
 
         ---
 
@@ -39,14 +39,14 @@ sections:
         - Welcome **Lili Imbler**, **Eric Spaulding**, and **Zi Ye**, three new undergraduate researchers joining the lab! They will be working on somatic mutation dynamics across diverse plant species.
 
         **October**
-        - The [UC Davis EnvironMentors](https://environmentors.sf.ucdavis.edu/) high school mentorship program is now open for applications — students and mentors can sign up for the 2025–2026 cycle!
+        - The [UC Davis EnvironMentors](https://environmentors.ucdavis.edu/) high school mentorship program is now open for applications — students and mentors can sign up for the 2025–2026 cycle!
 
         ---
 
         ## 2024
 
         **November**
-        - Alice Pierce and Grey Monroe launch the [UC Davis EnvironMentors](https://environmentors.sf.ucdavis.edu/) high school mentorship program.
+        - Alice Pierce and Grey Monroe launch the [UC Davis EnvironMentors](https://environmentors.ucdavis.edu/) high school mentorship program.
 
         **October**
         - Matt Davis awarded best presentation at the Bay Area Population Genetics Conference (BAPG)!
