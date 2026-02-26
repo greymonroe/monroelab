@@ -24,6 +24,12 @@ sections:
         | Graduate Funding Opportunities | Compiled list of funding for graduate students | [Download](https://www.monroelab.org/_files/ugd/eef908_995ee8a85f374b308e24639dc458a622.xlsx) |
         | Postdoc Funding Opportunities | Compiled list of funding for postdoctoral researchers | [Download](https://www.monroelab.org/_files/ugd/eef908_895c6faa34c240578693090a40535537.xlsx) |
 
+        ## Pistachio Genomics
+
+        | Resource | Description | Link |
+        |----------|-------------|------|
+        | Pistachiomics | Genomic, proteomic, and transcriptomic resources for pistachio (*Pistacia vera*), produced by the Monroe Lab and supported by the California Pistachio Research Board | [pistachiomics.sf.ucdavis.edu](https://pistachiomics.sf.ucdavis.edu/) |
+
         ## Key Databases & External Tools
 
         | Resource | Description | Link |
