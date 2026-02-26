@@ -15,6 +15,14 @@ sections:
         **May**
         - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration is now open for the Science Fair and abstract submissions are being accepted.
 
+        **April**
+        - Grey Monroe is co-organizing [**Mutations in Time and Space**](https://coursesandconferences.wellcomeconnectingscience.org/event/mutations-in-time-and-space-20260413/) at the Wellcome Genome Campus, Cambridge, UK — **13–15 April 2026**. Registration is open!
+
+        **January**
+        - Grey Monroe organizing the Mutation Workshop at [**PAG 33**](https://www.intlpag.org/) (International Plant and Animal Genome Conference, San Diego, CA, January 9–14) — Friday January 9th at 10AM.
+        - **Kehan Zhao** presenting in the Functional Genomics session: *Loss of function burden testing for functional gene discovery in plants*.
+        - **Chaehee Lee** presenting in the Chromosome session: *Pistachio superpangenome knobs!*
+
         ---
 
         ## 2025
