@@ -28,7 +28,7 @@ sections:
 
         | Resource | Description | Link |
         |----------|-------------|------|
-        | Pistachiomics | Genomic, proteomic, and transcriptomic resources for pistachio (*Pistacia vera*), produced by the Monroe Lab and supported by the California Pistachio Research Board | [pistachiomics.sf.ucdavis.edu](https://pistachiomics.sf.ucdavis.edu/) |
+        | Pistachiomics | Genomic, proteomic, and transcriptomic resources for the genus *Pistacia*, produced by the Monroe Lab and supported by the California Pistachio Research Board | [pistachiomics.sf.ucdavis.edu](https://pistachiomics.sf.ucdavis.edu/) |
 
         ## Key Databases & External Tools
 
