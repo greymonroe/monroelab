@@ -1,0 +1,6 @@
+<details{{ if eq (.Get "open") "true" }} open{{ end }} class="news-year">
+  <summary class="news-year-summary">{{ .Get "title" }}</summary>
+  <div class="news-year-content">
+{{ .Inner }}
+  </div>
+</details>

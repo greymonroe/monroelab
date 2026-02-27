@@ -10,7 +10,7 @@ sections:
       subtitle: ''
       text: |
 
-        ## 2026
+        {{% newsyear title="2026" open="true" %}}
 
         **May**
         - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration is now open for the Science Fair and abstract submissions are being accepted.
@@ -23,9 +23,9 @@ sections:
         - **Kehan Zhao** presenting in the Functional Genomics session: *Loss of function burden testing for functional gene discovery in plants*.
         - **Chaehee Lee** presenting in the Chromosome session: *Pistachio superpangenome knobs!*
 
-        ---
+        {{% /newsyear %}}
 
-        ## 2025
+        {{% newsyear title="2025" open="true" %}}
 
         - [**Davis et al.** — Extreme somatic mutation variation through time and space in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv* — Whole-genome sequencing of walnut clones reveals unexpected heterogeneity in how somatic mutations accumulate across space and developmental time.
         - [**Monroe et al.** — Delineating mutation bias and selection during plant development](https://doi.org/10.1101/2025.11.01.686053) · *bioRxiv* — Separates the contributions of mutation bias and natural selection in shaping the heritable variant landscape during plant development.
@@ -49,9 +49,9 @@ sections:
         **October**
         - The [UC Davis EnvironMentors](https://environmentors.ucdavis.edu/) high school mentorship program is now open for applications — students and mentors can sign up for the 2025–2026 cycle!
 
-        ---
+        {{% /newsyear %}}
 
-        ## 2024
+        {{% newsyear title="2024" %}}
 
         **November**
         - Alice Pierce and Grey Monroe launch the [UC Davis EnvironMentors](https://environmentors.ucdavis.edu/) high school mentorship program.
@@ -88,9 +88,9 @@ sections:
         **January**
         - Grey, Matt Davis, Chaehee Lee, Evan Long, Kehan Zhao, and Kevin Bird presenting at the Plant and Animal Genome Conference in San Diego.
 
-        ---
+        {{% /newsyear %}}
 
-        ## 2023
+        {{% newsyear title="2023" %}}
 
         **November**
         - Welcome Vianney Ahn, undergraduate researcher, to the Monroe Lab!
@@ -130,9 +130,9 @@ sections:
         - Welcome Evan Long, Postdoctoral Researcher studying pan-genomics of climate adaptation in cassava landraces!
         - Matt Davis, Chaehee Lee, and Daniela Quiroz presenting at the Plant and Animal Genome (PAG) conference in San Diego. Grey co-organizes a Mutation workshop at PAG with Ksenia Krasileva.
 
-        ---
+        {{% /newsyear %}}
 
-        ## 2022
+        {{% newsyear title="2022" %}}
 
         **December**
         - Grey presenting at the Integrative Plant Epigenetics Cold Spring Harbor Asia conference in Awaji, Japan, and at the University of Tokyo Department of Biological Sciences.
@@ -171,9 +171,9 @@ sections:
         - [**Monroe et al.** — Mutation bias reflects natural selection in *Arabidopsis thaliana*](https://www.nature.com/articles/s41586-021-04269-6) · *Nature* — Landmark study showing mutation rates are systematically lower in functionally important genomic regions, mediated by the epigenome. Featured on NPR Science Friday, the Nature Podcast, and The Scientist.
         - Mariele Lensink presents at the Plant and Animal Genome (PAG) conference.
 
-        ---
+        {{% /newsyear %}}
 
-        ## 2021
+        {{% newsyear title="2021" %}}
 
         **November**
         - Welcome Daniela Quiroz, PhD candidate in Integrative Genetics and Genomics, to the Monroe Lab!
@@ -213,9 +213,9 @@ sections:
         - Welcome Elton Kane, rotating Plant Biology student developing robot-powered high-throughput genotyping methods!
         - Welcome Alissza Ali, undergraduate student studying phenotypic variation in natural populations across climate gradients!
 
-        ---
+        {{% /newsyear %}}
 
-        ## 2020
+        {{% newsyear title="2020" %}}
 
         **October**
         - Welcome Harrison Yu, undergraduate student working on computational approaches to studying mutation bias across the tree of life!
@@ -226,6 +226,8 @@ sections:
         - [**Baggs et al.** — Convergent loss of an EDS1/PAD4 signaling pathway reveals coevolved immunity and drought response](https://doi.org/10.1105/tpc.19.00903) · *The Plant Cell* — Multiple plant lineages independently lost a key immunity pathway, revealing a surprising evolutionary link between disease resistance and drought tolerance.
         - Monroe et al. preprint on mutation bias in *Arabidopsis thaliana* featured on [PreLights](https://prelights.biologists.com/highlights/mutation-bias-shapes-gene-evolution-in-arabidopsis-thaliana/) and [Plantae](https://plantae.org/mutation-bias-shapes-gene-evolution-in-arabidopsis-thaliana-biorxiv/).
         - **The Monroe Lab officially opens at UC Davis!** 🌱
+
+        {{% /newsyear %}}
 
     design:
       columns: '1'
