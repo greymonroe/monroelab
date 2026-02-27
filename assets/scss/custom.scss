@@ -25,6 +25,42 @@
   color: #000000 !important;
 }
 
+// Collapsible research topic sections
+details.research-topic {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 0.5rem;
+}
+
+details.research-topic > summary.research-topic-summary {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.4rem 0;
+  list-style: none;
+  user-select: none;
+  color: inherit;
+}
+
+details.research-topic > summary.research-topic-summary::-webkit-details-marker {
+  display: none;
+}
+
+details.research-topic > summary.research-topic-summary::before {
+  content: '▶  ';
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
+details.research-topic[open] > summary.research-topic-summary::before {
+  content: '▼  ';
+}
+
+details.research-topic > .research-topic-content {
+  padding-left: 0.5rem;
+  margin-top: 0.75rem;
+}
+
 // Collapsible news year sections
 details.news-year {
   margin-bottom: 1.5rem;

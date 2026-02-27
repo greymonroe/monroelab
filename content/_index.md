@@ -37,8 +37,17 @@ sections:
 
         **April**
         - Grey Monroe is co-organizing [**Mutations in Time and Space**](https://coursesandconferences.wellcomeconnectingscience.org/event/mutations-in-time-and-space-20260413/) at the Wellcome Genome Campus, Cambridge, UK — **13–15 April 2026**. Registration is open!
+        - **Matt Davis** presented on somatic mutation diseases in plants and **Mariele Lensink** presented on Bayesian methods to infer mutation rate heterogeneity in plant genomes at the conference.
+
+        **March**
+        - Pablo Luna Rodriguez returned to Peru to complete his undergraduate degree and will continue working with the lab as a remote visiting scholar. We're excited to continue collaborating!
+
+        **February**
+        - Congratulations to **Evan Long** on the acceptance of [his paper in *BMC Genomics*](https://link.springer.com/article/10.1186/s12864-026-12674-2) — *Protein structure and selection pressure in plants: using mutation to understand the functional importance of protein structure*. This work integrates protein structure prediction with population genetics to show that structurally impactful mutations face stronger purifying selection, improving predictions of functional mutation consequences across multiple plant species.
 
         **January**
+        - Grey delivered a two-day seminar series at NAIST in Japan on plant genomics and research from the Monroe Lab.
+        - Welcome **Pablo Luna Rodriguez**, who joined the Monroe Lab as a visiting scholar from the Universidad Nacional Agraria La Molina in Peru. Pablo is working on haplotype diversity and population genetic analysis in pistachio!
         - Grey Monroe organizing the Mutation Workshop at [**PAG 33**](https://www.intlpag.org/) (International Plant and Animal Genome Conference, San Diego, CA, January 9–14) — Friday January 9th at 10AM.
         - **Kehan Zhao** presenting in the Functional Genomics session: *Loss of function burden testing for functional gene discovery in plants*.
         - **Chaehee Lee** presenting in the Chromosome session: *Pistachio superpangenome knobs!*
@@ -61,13 +70,34 @@ sections:
         - [**Klein et al.** — Climate adaptation in *Populus trichocarpa*: key adaptive loci for stomata and leaf traits](https://doi.org/10.1111/nph.70343) · *New Phytologist* — Identifies genomic loci controlling stomatal and leaf traits relevant to drought adaptation in cottonwood.
         - [**Pierce et al.** — Intron architecture predicts chromatin features in *Arabidopsis thaliana*](https://doi.org/10.1101/2025.10.15.682614) · *bioRxiv* — First intron length and composition predict chromatin state and gene expression levels genome-wide.
         - [**Ebrahimi et al.** — Phylogenomic analysis of the Juglandaceae reveals black walnut as an ancient lineage](https://doi.org/10.1101/2025.11.25.690472) · *bioRxiv* — Comprehensive comparative genomics of the walnut family places black walnut as an evolutionarily ancient and distinct lineage.
-        - [**Long et al.** — Protein structure and selection pressure in plants: using mutation to understand the functional importance of protein structure](https://doi.org/10.1186/s12864-026-12674-2) · *BMC Genomics* — Uses plant mutation data to reveal which protein structural features face the strongest purifying selection, connecting structural biology with evolutionary genomics.
+
+        **December**
+        - Grey presented research at the University College London Department of Genetics, Evolution, and Environment.
 
         **November**
         - Welcome **Lili Imbler**, **Eric Spaulding**, and **Zi Ye**, three new undergraduate researchers joining the lab! They will be working on somatic mutation dynamics across diverse plant species.
 
         **October**
         - The [UC Davis EnvironMentors](https://environmentors.ucdavis.edu/) high school mentorship program is now open for applications — students and mentors can sign up for the 2025–2026 cycle!
+
+        **June**
+        - Congratulations to **Alice Pearce**, who earned a summer internship at [Calico](https://www.calicolabs.com/) and a [DEB Industry Research Fellowship](https://deb.ucdavis.edu/) through UC Davis!
+        - Two UC Davis EnvironMentors students advanced to the National Environmental Science Fair in Chicago. Congratulations to **Marissa**, who won second place nationally for her project on algae monitoring in the UC Davis Arboretum using single-cell fluorescence measurements!
+
+        **May**
+        - Grey presented hypotheses on evolutionary drivers of mutation bias at the Evol-Mut-Circle meeting.
+
+        **April**
+        - Grey co-organized [Mutations in Time and Space](https://www.mutationmeeting.com/) at the Broad Institute in Cambridge, Massachusetts. **Matt Davis** presented on somatic mutation accumulation in tissue-cultured walnuts and **Satoyo Oya** presented on mutation in chromatin-deficient lines in Arabidopsis.
+        - The Monroe Lab participated in the inaugural UC Davis Environmental Science Fair.
+
+        **January**
+        - Grey hosted the Mutation Workshop at PAG (Plant and Animal Genome Conference). Presentations included:
+          - **Matt Davis** — Somatic mutation in walnut embryos
+          - **Kehan Zhao** — Loss-of-function variation
+          - **Grey** — Chromatin-related mutation drivers in *Arabidopsis thaliana*
+          - **Grey** — Gene Loss as a Driver of Evolutionary Change and Adaptation (Analysis of Complex Genomes Workshop)
+          - **Chaehee Lee** — Celery genomes for disease resistance discovery and assembly
 
         {{% /newsyear %}}
 

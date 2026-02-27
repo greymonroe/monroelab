@@ -31,7 +31,7 @@ sections:
         ### Plant Sciences Departmental Seminar Series
         *Course coordinator*
 
-        Grey Monroe leads the UC Davis Plant Sciences departmental seminar series.
+        Grey Monroe leads the UC Davis Plant Sciences departmental seminar series. See the [Plant Sciences Seminar schedule](https://www.plantsciences.ucdavis.edu/events/plant-sciences-seminars) for upcoming speakers.
 
         ### Integrative Genetics and Genomics Seminar — Plant Genetics
         *Every other year*
@@ -53,7 +53,7 @@ sections:
 
         The Monroe Lab is committed to mentoring students and postdoctoral researchers at all levels. We welcome applicants from diverse backgrounds with interests in plant genomics, evolutionary biology, and computational biology.
 
-        For information on joining the lab, see our [opportunities page](/contact).
+        For information on joining the lab, see our [opportunities page](/opportunities).
     design:
       columns: '1'
 ---

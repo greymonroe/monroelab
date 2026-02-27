@@ -24,10 +24,6 @@ sections:
         - [NPR Science Friday](https://www.sciencefriday.com/)
         - [Nature Podcast](https://www.nature.com/nature/podcast)
         - [The Scientist](https://www.the-scientist.com/)
-
-        ## Diversity and Inclusion
-
-        The Monroe Lab is committed to building an inclusive research environment. We actively recruit students and postdocs from underrepresented groups in STEM.
     design:
       columns: '1'
 ---
