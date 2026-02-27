@@ -11,8 +11,6 @@ sections:
       text: |
         **The Genomics of Change and Adaptation Lab**
 
-        Where does genetic variation come from? We study the biology of mutation — DNA damage, DNA repair, and the arrival of new variants during plant development. This is the variation that selection acts on. We work across all these dimensions to understand how new genetic variation arises, drives adaptation, and shapes the evolution of crops and wild plants.
-
         {{% cta cta_link="people" cta_text="Meet the Team →" %}}
     design:
       background:
@@ -29,6 +27,8 @@ sections:
       title: News
       subtitle: ''
       text: |
+        Where does genetic variation come from? We study the biology of mutation — DNA damage, DNA repair, and the arrival of new variants during plant development. This is the variation that selection acts on. We work across all these dimensions to understand how new genetic variation arises, drives adaptation, and shapes the evolution of crops and wild plants.
+
 
         {{% newsyear title="2026" open="true" %}}
 
