@@ -56,42 +56,49 @@ sections:
 
         {{% newsyear title="2025" open="true" %}}
 
-        - [**Davis et al.** — Extreme somatic mutation variation through time and space in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv* — Whole-genome sequencing of walnut clones reveals unexpected heterogeneity in how somatic mutations accumulate across space and developmental time.
-        - [**Monroe et al.** — Delineating mutation bias and selection during plant development](https://doi.org/10.1101/2025.11.01.686053) · *bioRxiv* — Separates the contributions of mutation bias and natural selection in shaping the heritable variant landscape during plant development.
-        - [**Adaskaveg et al.** — In a nutshell: pistachio genome and kernel development](https://doi.org/10.1111/nph.70060) · *New Phytologist* — First high-quality pistachio genome, revealing the genetic basis of kernel development and nutritional quality.
-        - [**Lensink et al.** — Trans-regulatory loci shape natural variation of gene expression plasticity in Arabidopsis](https://doi.org/10.1093/genetics/iyaf116) · *Genetics* — Identifies trans-acting loci that control how plants adjust gene expression in response to environmental variation.
-        - [**Groh et al.** — Ancient structural variants control sex-specific flowering time morphs in walnuts and hickories](https://doi.org/10.1126/science.ado5578) · *Science* — Structural variants that arose millions of years ago continue to govern sex-specific reproductive timing across the walnut family.
-        - [**Roy et al.** — "The PO-Driven Model": A Basic Science Pipeline for the Bioeconomy](https://doi.org/10.1093/icb/icae156) · *Integrative and Comparative Biology* — A framework using convergent evolution to connect parallel research ideas for bioeconomy applications.
-        - [**Rose et al.** — Introns increase gene expression in *C. elegans* by a mechanism distinct from plants](https://doi.org/10.1038/s41598-025-99739-6) · *Scientific Reports* — Intron-mediated enhancement of gene expression operates through partially different mechanisms across kingdoms.
-        - [**Quiroz et al.** — Evolutionary trajectories of cohesin gatekeepers across the Tree of Life](https://doi.org/10.1101/2025.05.08.652912) · *bioRxiv* — Traces the deep evolutionary history of cohesin complex regulators from bacteria to plants.
-        - [**Lee et al.** — A well-annotated genome of celery (*Apium graveolens*) with resistance to Fusarium](https://doi.org/10.1111/tpj.70251) · *The Plant Journal* — High-quality annotated genome for a disease-resistant celery cultivar, a resource for breeding and functional genomics.
-        - [**Zhang et al.** — Cell layer-specific cell wall modification in pistachio hull splitting](https://doi.org/10.1093/jxb/eraf519) · *Journal of Experimental Botany* — Identifies the specific cell-wall changes that drive the natural hull-splitting phenomenon critical for pistachio harvest.
-        - [**Zhao et al.** — Unlocking genetic diversity in Colombian cassava landraces for accelerated breeding](https://doi.org/10.1101/2025.06.30.662420) · *bioRxiv* — Characterizes the remarkable genetic diversity among Colombian cassava landraces to accelerate crop improvement.
-        - [**Klein et al.** — Climate adaptation in *Populus trichocarpa*: key adaptive loci for stomata and leaf traits](https://doi.org/10.1111/nph.70343) · *New Phytologist* — Identifies genomic loci controlling stomatal and leaf traits relevant to drought adaptation in cottonwood.
-        - [**Pierce et al.** — Intron architecture predicts chromatin features in *Arabidopsis thaliana*](https://doi.org/10.1101/2025.10.15.682614) · *bioRxiv* — First intron length and composition predict chromatin state and gene expression levels genome-wide.
-        - [**Ebrahimi et al.** — Phylogenomic analysis of the Juglandaceae reveals black walnut as an ancient lineage](https://doi.org/10.1101/2025.11.25.690472) · *bioRxiv* — Comprehensive comparative genomics of the walnut family places black walnut as an evolutionarily ancient and distinct lineage.
-
         **December**
+        - [**Zhang et al.** — Cell layer-specific cell wall modification in pistachio hull splitting](https://doi.org/10.1093/jxb/eraf519) · *Journal of Experimental Botany* — Identifies the specific cell-wall changes that drive the natural hull-splitting phenomenon critical for pistachio harvest.
         - Grey presented research at the University College London Department of Genetics, Evolution, and Environment.
 
         **November**
+        - [**Ebrahimi et al.** — Phylogenomic analysis of the Juglandaceae reveals black walnut as an ancient lineage](https://doi.org/10.1101/2025.11.25.690472) · *bioRxiv* — Comprehensive comparative genomics of the walnut family places black walnut as an evolutionarily ancient and distinct lineage.
+        - [**Monroe et al.** — Delineating mutation bias and selection during plant development](https://doi.org/10.1101/2025.11.01.686053) · *bioRxiv* — Separates the contributions of mutation bias and natural selection in shaping the heritable variant landscape during plant development.
         - Welcome **Lili Imbler**, **Eric Spaulding**, and **Zi Ye**, three new undergraduate researchers joining the lab! They will be working on somatic mutation dynamics across diverse plant species.
 
         **October**
+        - [**Pierce et al.** — Intron architecture predicts chromatin features in *Arabidopsis thaliana*](https://doi.org/10.1101/2025.10.15.682614) · *bioRxiv* — First intron length and composition predict chromatin state and gene expression levels genome-wide.
         - The [UC Davis EnvironMentors](https://environmentors.ucdavis.edu/) high school mentorship program is now open for applications — students and mentors can sign up for the 2025–2026 cycle!
 
+        **September**
+        - [**Klein et al.** — Climate adaptation in *Populus trichocarpa*: key adaptive loci for stomata and leaf traits](https://doi.org/10.1111/nph.70343) · *New Phytologist* — Identifies genomic loci controlling stomatal and leaf traits relevant to drought adaptation in cottonwood.
+        - [**Rose et al.** — Introns increase gene expression in *C. elegans* by a mechanism distinct from plants](https://doi.org/10.1038/s41598-025-99739-6) · *Scientific Reports* — Intron-mediated enhancement of gene expression operates through partially different mechanisms across kingdoms.
+
+        **August**
+        - [**Lensink et al.** — Trans-regulatory loci shape natural variation of gene expression plasticity in Arabidopsis](https://doi.org/10.1093/genetics/iyaf116) · *Genetics* — Identifies trans-acting loci that control how plants adjust gene expression in response to environmental variation.
+
+        **July**
+        - [**Davis et al.** — Extreme somatic mutation variation through time and space in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv* — Whole-genome sequencing of walnut clones reveals unexpected heterogeneity in how somatic mutations accumulate across space and developmental time.
+        - [**Roy et al.** — "The PO-Driven Model": A Basic Science Pipeline for the Bioeconomy](https://doi.org/10.1093/icb/icae156) · *Integrative and Comparative Biology* — A framework using convergent evolution to connect parallel research ideas for bioeconomy applications.
+
         **June**
+        - [**Zhao et al.** — Unlocking genetic diversity in Colombian cassava landraces for accelerated breeding](https://doi.org/10.1101/2025.06.30.662420) · *bioRxiv* — Characterizes the remarkable genetic diversity among Colombian cassava landraces to accelerate crop improvement.
+        - [**Lee et al.** — A well-annotated genome of celery (*Apium graveolens*) with resistance to Fusarium](https://doi.org/10.1111/tpj.70251) · *The Plant Journal* — High-quality annotated genome for a disease-resistant celery cultivar, a resource for breeding and functional genomics.
         - Congratulations to **Alice Pearce**, who earned a summer internship at [Calico](https://www.calicolabs.com/) and a [DEB Industry Research Fellowship](https://deb.ucdavis.edu/) through UC Davis!
         - Two UC Davis EnvironMentors students advanced to the National Environmental Science Fair in Chicago. Congratulations to **Marissa**, who won second place nationally for her project on algae monitoring in the UC Davis Arboretum using single-cell fluorescence measurements!
 
         **May**
+        - [**Quiroz et al.** — Evolutionary trajectories of cohesin gatekeepers across the Tree of Life](https://doi.org/10.1101/2025.05.08.652912) · *bioRxiv* — Traces the deep evolutionary history of cohesin complex regulators from bacteria to plants.
         - Grey presented hypotheses on evolutionary drivers of mutation bias at the Evol-Mut-Circle meeting.
 
         **April**
         - Grey co-organized [Mutations in Time and Space](https://www.mutationmeeting.com/) at the Broad Institute in Cambridge, Massachusetts. **Matt Davis** presented on somatic mutation accumulation in tissue-cultured walnuts and **Satoyo Oya** presented on mutation in chromatin-deficient lines in Arabidopsis.
         - The Monroe Lab participated in the inaugural UC Davis Environmental Science Fair.
 
+        **March**
+        - [**Adaskaveg et al.** — In a nutshell: pistachio genome and kernel development](https://doi.org/10.1111/nph.70060) · *New Phytologist* — First high-quality pistachio genome, revealing the genetic basis of kernel development and nutritional quality.
+
         **January**
+        - [**Groh et al.** — Ancient structural variants control sex-specific flowering time morphs in walnuts and hickories](https://doi.org/10.1126/science.ado5578) · *Science* — Structural variants that arose millions of years ago continue to govern sex-specific reproductive timing across the walnut family.
         - Grey hosted the Mutation Workshop at PAG (Plant and Animal Genome Conference). Presentations included:
           - **Matt Davis** — Somatic mutation in walnut embryos
           - **Kehan Zhao** — Loss-of-function variation

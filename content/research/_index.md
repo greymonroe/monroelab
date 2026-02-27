@@ -9,7 +9,13 @@ sections:
       title: Research
       subtitle: ''
       text: |
-        Where does genetic variation come from? We study the biology of mutation — DNA damage, DNA repair, and the arrival of new variants during plant development. This is the variation that selection acts on. We work across these dimensions to understand how new genetic variation arises, drives adaptation, and shapes the evolution of crops and wild plants.
+        The Monroe Lab is driven by questions, not by any single organism. We are motivated by emerging biological discoveries now made possible by modern genomics — unexpected phenomena like dramatic variation in mutation rates, unusual chromosome biology, massive repetitive sequences, segregation distortion, and other genomic oddities that we finally have the tools to explain.
+
+        We began our work using *Arabidopsis thaliana* as a model system for understanding DNA repair biology and mutation. Modern sequencing now lets us scale these questions across a growing diversity of plant systems. We have active projects in:
+
+        *Arabidopsis thaliana* · cassava (*Manihot esculenta*) · pistachio (*Pistacia vera*) · walnut (*Juglans regia*) · diploid wheat (*Triticum monococcum*) · rice (*Oryza sativa*) · celery (*Apium graveolens*) · alfalfa (*Medicago sativa*) · almonds (*Prunus dulcis*) · black cottonwood (*Populus trichocarpa*)
+
+        We are entering an era where genomics can answer genuinely surprising questions about genome evolution and variation. We follow the science wherever it leads — including into some unexpected corners of genome biology.
 
         ---
 
@@ -19,8 +25,8 @@ sections:
 
         Current projects include:
         - Epigenome-recruited DNA repair and mutation rate reduction in plants
-        - Somatic mutation dynamics in clonal plants (walnut)
-        - Mutation bias and natural selection in Arabidopsis
+        - Somatic mutation dynamics and deleterious variation in clonal walnut and pistachio cultivars
+        - Mutation bias and natural selection in *Arabidopsis thaliana*
         - Mechanisms of mutation rate variation across the plant kingdom
 
         {{% /researchtopic %}}
@@ -38,24 +44,39 @@ sections:
 
         {{% researchtopic title="Genome Dynamics and Structural Variation" %}}
 
-        Plants harbor extraordinary structural variation — inversions, transposable elements, copy number variants, and pan-genome loci present in some individuals but absent in others. We use long-read sequencing and comparative genomics to characterize this variation and understand how it contributes to phenotypic diversity and local adaptation across plant populations and species.
+        Plants harbor extraordinary structural variation — inversions, transposable elements, copy number variants, and pan-genome loci present in some individuals but absent in others. We use long-read sequencing and comparative genomics to characterize this variation and understand how it contributes to phenotypic diversity, reproductive biology, and local adaptation across plant populations and species.
 
         Current projects include:
         - Pistachio pan-genome and multi-genome reference
-        - Structural variants controlling sex-specific flowering time in the walnut family (Juglandaceae)
-        - Comparative genomics of understudied crop species
+        - Comparative genomics of repeat-rich and structurally complex plant genomes
+        - Segregation distortion and unusual chromosome biology in alfalfa and other polyploids
+
+        {{% /researchtopic %}}
+
+        {{% researchtopic title="Functional GWAS and Loss-of-Function Burden Testing" %}}
+
+        We leverage natural loss-of-function alleles to infer gene function at population scale — an approach we call functional GWAS or loss-of-function burden testing. By identifying which genes, when disrupted, produce detectable phenotypic effects across individuals, we can discover gene functions systematically and without prior functional annotation. This scales to any species with population-level genomic data and provides direct targets for breeding, gene editing, and understanding evolution.
+
+        This work builds on our foundational studies of adaptive loss-of-function in plants and extends them into crop systems where understanding which genes matter — and how — has direct practical value.
+
+        Current projects include:
+        - Loss-of-function burden testing in cassava (*Manihot esculenta*) landraces
+        - Loss-of-function variation in diploid wheat (*Triticum monococcum*)
+        - Scalable frameworks for functional gene discovery across crop species
 
         {{% /researchtopic %}}
 
         {{% researchtopic title="Applied Genomics and Crop Improvement" %}}
 
-        Many of the world's crops remain genomically understudied. We build genomic resources for these crops — including pistachio, walnut, celery, and cassava — and use them to understand the genetic basis of traits relevant to climate adaptation, disease resistance, and sustainable agriculture. This work combines reference genome assembly, population genomics, and functional annotation with the goal of enabling climate-smart breeding.
+        Many of the world's crop species remain genomically understudied. We build genomic resources — reference genomes, pan-genomes, population-scale sequencing datasets — for these species and use them to study the genetic basis of agriculturally important traits, climate adaptation, and fundamental questions about genome evolution.
+
+        Species we have worked with include pistachio (*Pistacia vera*), walnut (*Juglans regia*), cassava (*Manihot esculenta*), celery (*Apium graveolens*), diploid wheat (*Triticum monococcum*), rice (*Oryza sativa*), alfalfa (*Medicago sativa*), almonds (*Prunus dulcis*), and black cottonwood (*Populus trichocarpa*). Projects range from understanding mutation histories of clonal cultivars to assembling reference genomes for breeding and fundamental science.
 
         Current projects include:
-        - Pistachio genome, pan-genome, and kernel development
-        - Walnut somatic mutation and clonal propagation
-        - Cassava genetic diversity in Colombian landraces
-        - Climate adaptation in forest trees (Populus, whitebark pine)
+        - Pistachio pan-genome, reference genome, and kernel development
+        - Cassava population genomics and climate adaptation in Colombian landraces
+        - Climate adaptation and somatic mutation in *Populus trichocarpa*
+        - Genome assembly and annotation for celery, wheat, and other crop species
 
         {{% /researchtopic %}}
 
