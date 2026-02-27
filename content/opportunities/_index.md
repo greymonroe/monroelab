@@ -49,7 +49,7 @@ sections:
 
         The Monroe Lab provides research opportunities for undergraduate students interested in gaining hands-on molecular genetics experience. Students typically begin with research-for-credit (199 course) and, following successful participation, may become eligible for paid research positions, including summer internships.
 
-        [Learn more about undergraduate research in the Monroe Lab](/opportunities/undergraduate-research)
+        [Learn more about undergraduate research in the Monroe Lab](/undergraduate-research)
 
         ---
 
