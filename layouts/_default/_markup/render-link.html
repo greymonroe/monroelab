@@ -1,0 +1,6 @@
+{{- /* Render hook: open external links in new tabs; fix internal absolute links via relURL so they work
+       regardless of whether the site is served from the root or a subpath (e.g. GitHub Pages). */ -}}
+{{- $dest := .Destination | safeURL -}}
+{{- if and (not (strings.HasPrefix $dest "http")) (not (strings.HasPrefix $dest "mailto")) (strings.HasPrefix $dest "/") -}}
+  {{- $dest = relURL $dest -}}
+{{- end -}}<a href="{{ $dest }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
