@@ -1,6 +1,6 @@
 ---
-title: Eric Spaulding
-first_name: Eric
+title: Erik Spaulding
+first_name: Erik
 last_name: Spaulding
 role: Undergraduate Researcher
 highlight_name: false

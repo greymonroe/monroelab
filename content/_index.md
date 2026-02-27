@@ -63,7 +63,7 @@ sections:
         **November**
         - [**Ebrahimi et al.** — Phylogenomic analysis of the Juglandaceae reveals black walnut as an ancient lineage](https://doi.org/10.1101/2025.11.25.690472) · *bioRxiv* — Comprehensive comparative genomics of the walnut family places black walnut as an evolutionarily ancient and distinct lineage.
         - [**Monroe et al.** — Delineating mutation bias and selection during plant development](https://doi.org/10.1101/2025.11.01.686053) · *bioRxiv* — Separates the contributions of mutation bias and natural selection in shaping the heritable variant landscape during plant development.
-        - Welcome **Lili Imbler**, **Eric Spaulding**, and **Zi Ye**, three new undergraduate researchers joining the lab! They will be working on somatic mutation dynamics across diverse plant species.
+        - Welcome **Lili Imbler**, **Erik Spaulding**, and **Zi Ye**, three new undergraduate researchers joining the lab! They will be working on somatic mutation dynamics across diverse plant species.
 
         **October**
         - [**Pierce et al.** — Intron architecture predicts chromatin features in *Arabidopsis thaliana*](https://doi.org/10.1101/2025.10.15.682614) · *bioRxiv* — First intron length and composition predict chromatin state and gene expression levels genome-wide.
