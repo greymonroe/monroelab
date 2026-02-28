@@ -42,8 +42,6 @@ sections:
         **March**
         - Grey Monroe was promoted to Associate Professor.
 
-        {{< video src="news-march-2026.mp4" controls="true" >}}
-
         - Pablo Luna Rodriguez returned to Peru to complete his undergraduate degree and will continue working with the lab as a remote visiting scholar. We're excited to continue collaborating!
 
         **February**
