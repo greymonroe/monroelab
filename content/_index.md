@@ -7,10 +7,12 @@ sections:
   - block: hero
     content:
       title: |
-        TGCA
+        The
+        Genome
+        Change and
+        Adaptation
+        Lab
       text: |
-        **The Genomics of Change and Adaptation Lab**
-
         {{% cta cta_link="people" cta_text="Meet the Team →" %}}
     design:
       background:

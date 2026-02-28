@@ -45,7 +45,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Monroe Lab, UC Davis'
+    notice: '© {year} TGCA Lab, UC Davis'
     license:
       enable: true
       allow_derivatives: false
