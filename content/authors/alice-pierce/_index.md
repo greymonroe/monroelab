@@ -15,6 +15,10 @@ education:
   courses:
     - course: BS Biotechnology/Plants & Computational Biology minor
       institution: UC Davis
+social:
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0009-0008-4003-9694
 highlight_name: false
 user_groups:
   - Graduate Students

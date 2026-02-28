@@ -15,6 +15,10 @@ education:
   courses:
     - course: BS Biology/Biotechnology
       institution: University of Florida (2020)
+social:
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?hl=en&user=NVSRY8kAAAAJ
 highlight_name: false
 user_groups:
   - Graduate Students

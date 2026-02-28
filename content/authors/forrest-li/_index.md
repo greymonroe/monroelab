@@ -6,6 +6,10 @@ role: Rotation Student
 organizations:
   - name: Integrated Genetics and Genomics
     url: ""
+social:
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?hl=en&user=HSmh38QAAAAJ
 highlight_name: false
 user_groups:
   - Alumni

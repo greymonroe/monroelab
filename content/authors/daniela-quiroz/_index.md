@@ -19,6 +19,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: mailto:dpquiroz@ucdavis.edu
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0009-0004-3957-2342
 highlight_name: false
 user_groups:
   - Graduate Students

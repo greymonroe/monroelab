@@ -22,7 +22,10 @@ social:
     link: mailto:oya@ucdavis.edu
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=6gsStTkAAAAJ&hl=en
+    link: https://scholar.google.com/citations?hl=en&user=_IDJLusAAAAJ
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0009-0006-5965-4359
 highlight_name: false
 user_groups:
   - Postdoctoral Researchers

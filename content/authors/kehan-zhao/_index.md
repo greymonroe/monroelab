@@ -19,6 +19,12 @@ social:
   - icon: envelope
     icon_pack: fas
     link: mailto:kehzhao@ucdavis.edu
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?hl=en&user=12uYKgEAAAAJ
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-1305-2535
 highlight_name: false
 user_groups:
   - Graduate Students

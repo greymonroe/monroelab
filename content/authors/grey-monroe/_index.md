@@ -51,7 +51,10 @@ social:
     link: https://twitter.com/Grey_Monroe
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=WcgLCEIAAAAJ&hl=en
+    link: https://scholar.google.com/citations?hl=en&user=WcgLCEIAAAAJ
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-4025-5572
   - icon: building
     icon_pack: fas
     link: https://www.plantsciences.ucdavis.edu/

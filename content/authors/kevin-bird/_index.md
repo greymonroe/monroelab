@@ -19,6 +19,9 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/thebirdmaniac
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?hl=en&user=uoW8LwwAAAAJ
 highlight_name: false
 user_groups:
   - Alumni

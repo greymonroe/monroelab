@@ -21,7 +21,10 @@ social:
     link: mailto:chaeheelee@ucdavis.edu
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?hl=en&user=8FfsFykAAAAJ
+    link: https://scholar.google.com/citations?hl=en&user=K1m1doMAAAAJ
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0003-3214-2997
 highlight_name: false
 user_groups:
   - Postdoctoral Researchers
