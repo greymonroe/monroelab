@@ -14,3 +14,8 @@ A key discovery from the lab is that histone H3K4 methylation marks recruit DNA 
 - H3K4me-associated hypomutation in plants (with Satoyo Oya)
 - Convergent evolution of epigenome-recruited DNA repair across the Tree of Life
 - Chromatin features predicting intron architecture and mutation rates
+
+**Notable papers:**
+- [Pierce et al. (2025) — Intron architecture predicts chromatin features in *Arabidopsis thaliana* · *bioRxiv*](https://doi.org/10.1101/2025.10.15.682614)
+- [Lensink et al. (2025) — Trans-regulatory loci shape natural variation of gene expression plasticity in Arabidopsis · *Genetics*](https://doi.org/10.1093/genetics/iyaf116)
+- [Rose et al. (2025) — Introns increase gene expression in *C. elegans* by a mechanism distinct from plants · *Scientific Reports*](https://doi.org/10.1038/s41598-025-99739-6)

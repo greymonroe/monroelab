@@ -33,11 +33,11 @@ sections:
         {{% newsyear title="2026" open="true" %}}
 
         **May**
-        - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration is now open for the Science Fair and abstract submissions are being accepted.
+        - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration and abstract submissions are now open for the Symposium.
 
         **April**
         - Grey Monroe is co-organizing [**Mutations in Time and Space**](https://coursesandconferences.wellcomeconnectingscience.org/event/mutations-in-time-and-space-20260413/) at the Wellcome Genome Campus, Cambridge, UK — **13–15 April 2026**. Registration is open!
-        - **Matt Davis** presented on somatic mutation diseases in plants and **Mariele Lensink** presented on Bayesian methods to infer mutation rate heterogeneity in plant genomes at the conference.
+        - **Matt Davis** presenting on somatic mutation diseases in plants and **Mariele Lensink** presenting on Bayesian methods to infer mutation rate heterogeneity in plant genomes at the conference.
 
         **March**
         - Pablo Luna Rodriguez returned to Peru to complete his undergraduate degree and will continue working with the lab as a remote visiting scholar. We're excited to continue collaborating!

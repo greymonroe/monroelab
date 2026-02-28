@@ -42,6 +42,16 @@ sections:
 
         ---
 
+        ### Cassava Pan-genome VCF
+
+        A large-scale VCF compiled from all whole-genome sequencing data available to date in cassava — over 1,000 genotypes. Published alongside our cassava landrace paper in *New Phytologist*. Ready-to-use variant calls for population genetic, GWAS, and diversity analyses in cassava.
+
+        | Dataset | Link |
+        |---------|------|
+        | Zhao et al. 2026 — CassavaBase data repository | [cassavabase.org](https://cassavabase.org/ftp/manuscripts/Zhao_et_al_2026/) |
+
+        ---
+
         ### Pistachio "In a Nutshell" Genome Project
 
         Data associated with our pistachio reference genome paper in *New Phytologist*. These data were used to generate and annotate the Kerman reference genome and include:

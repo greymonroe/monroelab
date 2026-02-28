@@ -15,3 +15,9 @@ Many of the world's crops remain understudied at the genomic level. We work to b
 - Walnut somatic mutation and clonal propagation
 - Cassava genetic diversity in Colombian landraces
 - Climate adaptation in forest trees (Populus, White Bark Pine)
+
+**Notable papers:**
+- [Zhang et al. (2025) — Cell layer-specific cell wall modification in pistachio hull splitting · *Journal of Experimental Botany*](https://doi.org/10.1093/jxb/eraf519)
+- [Zhao et al. (2025) — Unlocking genetic diversity in Colombian cassava landraces for accelerated breeding · *bioRxiv*](https://doi.org/10.1101/2025.06.30.662420)
+- [Lee et al. (2025) — A well-annotated genome of celery (*Apium graveolens*) with resistance to Fusarium · *The Plant Journal*](https://doi.org/10.1111/tpj.70251)
+- [Klein et al. (2025) — Climate adaptation in *Populus trichocarpa*: key adaptive loci for stomata and leaf traits · *New Phytologist*](https://doi.org/10.1111/nph.70343)
