@@ -55,6 +55,9 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0002-4025-5572
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/j-grey-monroe-2913aa77/
   - icon: building
     icon_pack: fas
     link: https://www.plantsciences.ucdavis.edu/

@@ -14,6 +14,8 @@ sections:
         | Resource | Description | Link |
         |----------|-------------|------|
         | Monroe Lab GitHub | Code and analysis pipelines from lab publications | [GitHub](https://github.com/greymonroe) |
+        | kolibri | Kernel-Operations for Long-read Insertion, Breakpoint & Recombination Inspection. An R-based toolkit for inspecting long-read alignments (PacBio/ONT) to find, group, and visualize split reads indicating assembly errors, structural variation, transposition, recombination, or other complex genome events. | [GitHub](https://github.com/greymonroe/kolibri) |
+        | reCYCLing | Repeat Element Cyclical Evolutionary Simulations in Genomes. An R toolkit for simulating the evolution of tandem repeat arrays and analyzing the resulting arrays using diagnostics that mirror how we interrogate real repeat architectures (e.g., arrays identified with TRASH-like workflows). | [GitHub](https://github.com/greymonroe/reCYCLing) |
 
         ## Funding Opportunities
 

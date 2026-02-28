@@ -25,6 +25,24 @@
   color: #000000 !important;
 }
 
+// Slightly larger people cards on the team page
+.wg-people .people-person {
+  margin-bottom: 2rem;
+}
+
+.wg-people .avatar {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.wg-people .portrait-title h2 {
+  font-size: 1.15rem !important;
+}
+
+.wg-people .portrait-title h3 {
+  font-size: 0.95rem !important;
+}
+
 // Collapsible research topic sections
 details.research-topic {
   margin-bottom: 1.2rem;

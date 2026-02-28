@@ -6,7 +6,7 @@ type: landing
 sections:
   - block: hero
     content:
-      title: Meet the Team
+      title: ''
       text: ''
     design:
       background:
