@@ -11,5 +11,5 @@ organizations:
     url: ''
 superuser: false
 user_groups:
-  - Undergrads
+  - Junior Specialists & Undergraduates
 ---
