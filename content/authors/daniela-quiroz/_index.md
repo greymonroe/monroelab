@@ -24,7 +24,7 @@ social:
     link: https://orcid.org/0009-0004-3957-2342
 highlight_name: false
 user_groups:
-  - Graduate Students
+  - Alumni
 ---
 
 Daniela is an IGG PhD Candidate who completed her B.S. and M.S. at Universidad Nacional Andrés Bello in Chile. She previously worked at INIA Santiago. Her research investigates the molecular mechanisms underlying mutation bias in plants.

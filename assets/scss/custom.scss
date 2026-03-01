@@ -30,10 +30,13 @@
   margin-bottom: 2rem;
 }
 
-.wg-people .avatar {
+// Perfect circles: target img directly, override Bootstrap's max-width: 100%
+img.avatar-circle {
   width: 200px !important;
   height: 200px !important;
+  max-width: 200px !important;
   object-fit: cover !important;
+  border-radius: 50% !important;
 }
 
 .wg-people .portrait-title h2 {
