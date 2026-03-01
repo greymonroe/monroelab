@@ -1,12 +1,26 @@
-// Fix hero section height to match banner image aspect ratio (2080×946 ≈ 45.5% height/width)
-// This prevents the image from being cropped by the default full-viewport min-height.
+// Show full banner images without zooming in.
+// 100% width + auto height means no side cropping; top-aligned so top is always visible.
+.home-section-bg.bg-image {
+  background-size: 100% auto !important;
+  background-position: top center !important;
+}
+
+// Home page hero: min-height matches banner-people.png aspect ratio (2080×946 = 45.5%)
 .home-section.wg-hero {
   min-height: 45.5vw !important;
+}
+
+// People page hero: min-height matches banner-group.png aspect ratio (1818×874 = 48.1%)
+.people-page-hero.home-section.wg-hero {
+  min-height: 48.5vw !important;
 }
 
 @media screen and (max-width: 768px) {
   .home-section.wg-hero {
     min-height: 60vw !important;
+  }
+  .people-page-hero.home-section.wg-hero {
+    min-height: 65vw !important;
   }
 }
 

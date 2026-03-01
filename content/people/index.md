@@ -9,6 +9,7 @@ sections:
       title: ''
       text: ''
     design:
+      css_class: people-page-hero
       background:
         image:
           filename: banner-group.png
