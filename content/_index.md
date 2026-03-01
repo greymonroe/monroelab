@@ -50,8 +50,8 @@ sections:
         - Congratulations to **Evan Long** on the acceptance of [his paper in *BMC Genomics*](https://link.springer.com/article/10.1186/s12864-026-12674-2) — *Protein structure and selection pressure in plants: using mutation to understand the functional importance of protein structure*. This work integrates protein structure prediction with population genetics to show that structurally impactful mutations face stronger purifying selection, improving predictions of functional mutation consequences across multiple plant species.
 
         **January**
-        - <img src="/media/kolibri-logo.png" style="height:45px;vertical-align:middle;margin-right:8px;"> [**kolibri**](https://github.com/greymonroe/kolibri) R package beta version released.
-        - <img src="/media/recycling-logo.png" style="height:32px;vertical-align:middle;margin-right:8px;"> [**reCYCLing**](https://github.com/greymonroe/reCYCLing) R package beta version released.
+        - {{< newsimg src="media/kolibri-logo.png" height="45px" >}} [**kolibri**](https://github.com/greymonroe/kolibri) R package beta version released.
+        - {{< newsimg src="media/recycling-logo.png" height="32px" >}} [**reCYCLing**](https://github.com/greymonroe/reCYCLing) R package beta version released.
         - Grey delivered a two-day seminar series at NAIST in Japan on plant genomics and research from the Monroe Lab.
         - Welcome **Pablo Luna Rodriguez**, who joined the Monroe Lab as a visiting scholar from the Universidad Nacional Agraria La Molina in Peru. Pablo is working on haplotype diversity and population genetic analysis in pistachio!
         - Grey Monroe organizing the Mutation Workshop at [**PAG 33**](https://www.intlpag.org/) (International Plant and Animal Genome Conference, San Diego, CA, January 9–14) — Friday January 9th at 10AM.
