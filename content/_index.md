@@ -44,6 +44,8 @@ sections:
         **March**
         - Congratulations to **Kaia Broomell** and **Alice Pierce**, who received a 2026 ROOT & SHOOT Travel Award to attend the American Society of Plant Biologists conference in Ottawa, Canada!
 
+        - The full VCF dataset from [**Zhao et al.**](https://cassavabase.org/ftp/manuscripts/Zhao_et_al_2026/) is now publicly available via [CassavaBase](https://cassavabase.org/ftp/manuscripts/Zhao_et_al_2026/) — nearly 1,000 cassava whole-genome sequences representing the most comprehensive centralized compilation of cassava genomic diversity currently available.
+
         - Grey Monroe was promoted to Associate Professor.
 
         - Pablo Luna Rodriguez returned to Peru to complete his undergraduate degree and will continue working with the lab as a remote visiting scholar. We're excited to continue collaborating!
