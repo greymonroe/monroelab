@@ -19,7 +19,7 @@ sections:
 
         An introduction to plant genetic concepts from Mendel to molecular genomics, with an emphasis on foundations of plant genetics and applications in breeding. Students develop practical experience with how plant genetics is done in research and industry, build core vocabulary for working in the field, and explore career development pathways. Grades are based primarily on team project activities, with hands-on experiences throughout the course.
 
-        ### PLS 206 — Applied Multivariate Statistical Modeling for Agriculture and Environmental Sciences
+        ### [PLS 206 — Applied Multivariate Statistical Modeling for Agriculture and Environmental Sciences](https://greymonroe.github.io/PLS_206/)
         *Graduate course*
 
         A hands-on multivariate modeling course taught in R. Students gain experience with everything from basic statistical tests through advanced statistical modeling for hypothesis testing, prediction, and data exploration. Emphasis is placed on practical coding skills — making publication-quality plots, writing custom functions, and developing as an independent programmer.

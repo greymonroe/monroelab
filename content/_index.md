@@ -42,6 +42,8 @@ sections:
         - **Matt Davis** presenting on somatic mutation diseases in plants and **Mariele Lensink** presenting on Bayesian methods to infer mutation rate heterogeneity in plant genomes at the conference.
 
         **March**
+        - Congratulations to **Kaia Broomell** and **Alice Pierce**, who received a 2026 ROOT & SHOOT Travel Award to attend the American Society of Plant Biologists conference in Ottawa, Canada!
+
         - Grey Monroe was promoted to Associate Professor.
 
         - Pablo Luna Rodriguez returned to Peru to complete his undergraduate degree and will continue working with the lab as a remote visiting scholar. We're excited to continue collaborating!
