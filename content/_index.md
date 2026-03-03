@@ -34,6 +34,9 @@ sections:
 
         {{% newsyear title="2026" open="true" %}}
 
+        **June**
+        - **Mariele Lensink** presenting a poster at the [Population, Evolutionary, and Quantitative Genetics (PEQG)](https://genetics-gsa.org/peqg/) conference.
+
         **May**
         - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration and abstract submissions are now open for the Symposium.
 
