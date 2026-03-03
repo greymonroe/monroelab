@@ -55,6 +55,19 @@ sections:
 
         ---
 
+        ### Walnut Genome Assembly and Somatic Mutation in Tissue Culture
+
+        Data associated with [**Davis et al. 2025**](https://www.biorxiv.org/content/10.1101/2025.07.24.664184v1.full) — *Extreme somatic mutation variation through time and space in walnut clones* · *bioRxiv*. Includes raw sequencing data, the primary genome assembly and annotation of *Juglans regia* cv. 'Chandler', and both haplotype-resolved assemblies.
+
+        | Dataset | Link |
+        |---------|------|
+        | Raw sequencing data — NCBI BioProject PRJNA1271128 | [View on NCBI](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1271128) |
+        | Primary genome assembly (*J. regia* 'Chandler') — NCBI BioProject PRJNA1289367 | [View on NCBI](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1289367) |
+        | Haplotype A (hap1) assembly — NCBI BioProject PRJNA1289368 | [View on NCBI](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1289368) |
+        | Haplotype B (hap2) assembly — NCBI BioProject PRJNA1289370 | [View on NCBI](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1289370) |
+
+        ---
+
         ### Pistachio "In a Nutshell" Genome Project
 
         Data associated with our pistachio reference genome paper in *New Phytologist*. These data were used to generate and annotate the Kerman reference genome and include:
