@@ -87,7 +87,7 @@ sections:
         - [**Lensink et al.** — Trans-regulatory loci shape natural variation of gene expression plasticity in Arabidopsis](https://doi.org/10.1093/genetics/iyaf116) · *Genetics* — Identifies trans-acting loci that control how plants adjust gene expression in response to environmental variation.
 
         **July**
-        - [**Davis et al.** — Extreme somatic mutation variation through time and space in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv* — Whole-genome sequencing of walnut clones reveals unexpected heterogeneity in how somatic mutations accumulate across space and developmental time.
+        - [**Davis et al.** — Extreme somatic mutation variation through time and space in walnut clones](https://doi.org/10.1101/2025.07.24.664184) · *bioRxiv* — Whole-genome sequencing of walnut clones reveals unexpected heterogeneity in how somatic mutations accumulate across space and developmental time. This work is accompanied by a new haplotype-resolved reference genome for *Juglans regia* cv. 'Chandler' — the most complete walnut genome assembly to date. Raw data and assemblies are publicly available via [NCBI BioProject PRJNA1271128](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1271128).
         - [**Roy et al.** — "The PO-Driven Model": A Basic Science Pipeline for the Bioeconomy](https://doi.org/10.1093/icb/icae156) · *Integrative and Comparative Biology* — A framework using convergent evolution to connect parallel research ideas for bioeconomy applications.
 
         **June**
