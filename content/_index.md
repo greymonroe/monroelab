@@ -45,7 +45,6 @@ sections:
         - **Matt Davis** presenting on somatic mutation diseases in plants and **Mariele Lensink** presenting on Bayesian methods to infer mutation rate heterogeneity in plant genomes at the conference.
 
         **March**
-        - Congratulations to **Alice Pierce**, who earned a summer internship at Calico and a DEB Industry Research Fellowship through UC Davis!
         - Congratulations to **Kaia Broomell** and **Alice Pierce**, who received a 2026 ROOT & SHOOT Travel Award to attend the American Society of Plant Biologists conference in Ottawa, Canada!
 
         - The full VCF dataset from [**Zhao et al.**](https://doi.org/10.1111/nph.70918) is now publicly available via [CassavaBase](https://cassavabase.org/ftp/manuscripts/Zhao_et_al_2026/) — 1,152 cassava whole-genome sequences representing the most comprehensive centralized compilation of cassava genomic diversity currently available.
@@ -98,8 +97,8 @@ sections:
         **June**
         - [**Zhao et al.** — Unlocking genetic diversity in Colombian cassava landraces for accelerated breeding](https://doi.org/10.1101/2025.06.30.662420) · *bioRxiv* — Characterizes the remarkable genetic diversity among Colombian cassava landraces to accelerate crop improvement.
         - [**Lee et al.** — A well-annotated genome of celery (*Apium graveolens*) with resistance to Fusarium](https://doi.org/10.1111/tpj.70251) · *The Plant Journal* — High-quality annotated genome for a disease-resistant celery cultivar, a resource for breeding and functional genomics.
-        - Congratulations to **Alice Pearce**, who earned a summer internship at [Calico](https://www.calicolabs.com/) and a [DEB Industry Research Fellowship](https://deb.ucdavis.edu/) through UC Davis!
-        - Two UC Davis EnvironMentors students advanced to the National Environmental Science Fair in Chicago. Congratulations to **Marissa**, who won second place nationally for her project on algae monitoring in the UC Davis Arboretum using single-cell fluorescence measurements!
+        - Congratulations to **Alice Pierce**, who earned a summer internship at [Calico](https://www.calicolabs.com/) and a [DEB Industry Research Fellowship](https://deb.ucdavis.edu/) through UC Davis!
+        - Two UC Davis EnvironMentors students advanced to the [GCSE 2025 International Science Fair](https://www.gcseglobal.org/event/gcse-2025-international-science-fair), held June 16–19 in Chicago alongside the [Sustainability Research and Innovation Congress (SRI2025)](https://sricongress.org/sri2025-wrap-up-a-transformative-week-of-action-insight-and-global-community/). Congratulations to **Marissa**, who won second place nationally for her project on algae monitoring in the UC Davis Arboretum using single-cell fluorescence measurements!
 
         **May**
         - [**Quiroz et al.** — Evolutionary trajectories of cohesin gatekeepers across the Tree of Life](https://doi.org/10.1101/2025.05.08.652912) · *bioRxiv* — Traces the deep evolutionary history of cohesin complex regulators from bacteria to plants.
