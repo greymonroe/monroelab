@@ -45,6 +45,7 @@ sections:
         - **Matt Davis** presenting on somatic mutation diseases in plants and **Mariele Lensink** presenting on Bayesian methods to infer mutation rate heterogeneity in plant genomes at the conference.
 
         **March**
+        - Congratulations to **Alice Pierce**, who earned a summer internship at Calico and a DEB Industry Research Fellowship through UC Davis!
         - Congratulations to **Kaia Broomell** and **Alice Pierce**, who received a 2026 ROOT & SHOOT Travel Award to attend the American Society of Plant Biologists conference in Ottawa, Canada!
 
         - The full VCF dataset from [**Zhao et al.**](https://doi.org/10.1111/nph.70918) is now publicly available via [CassavaBase](https://cassavabase.org/ftp/manuscripts/Zhao_et_al_2026/) — 1,152 cassava whole-genome sequences representing the most comprehensive centralized compilation of cassava genomic diversity currently available.
