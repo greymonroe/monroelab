@@ -57,6 +57,7 @@ sections:
         - Congratulations to **Evan Long** on the acceptance of [his paper in *BMC Genomics*](https://link.springer.com/article/10.1186/s12864-026-12674-2) — *Protein structure and selection pressure in plants: using mutation to understand the functional importance of protein structure*. This work integrates protein structure prediction with population genetics to show that structurally impactful mutations face stronger purifying selection, improving predictions of functional mutation consequences across multiple plant species.
 
         **January**
+        - The lab hosted **Frank Johannes** (TU Munich) for the UC Davis Plant Sciences Seminar Series — his talk covered somatic mutation in trees.
         - {{< newsimg src="media/kolibri-logo.png" height="90px" >}} [**kolibri**](https://github.com/greymonroe/kolibri) R package beta version released.
         - {{< newsimg src="media/recycling-logo.png" height="55px" >}} [**reCYCLing**](https://github.com/greymonroe/reCYCLing) R package beta version released.
         - Grey delivered a two-day seminar series at NAIST in Japan on plant genomics and research from the Monroe Lab.
