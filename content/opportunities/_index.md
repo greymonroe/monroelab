@@ -71,6 +71,24 @@ sections:
 
         ---
 
+        ## EnvironMentors — High School Student Mentoring
+
+        The lab participates in [UC Davis EnvironMentors](https://environmentors.ucdavis.edu/), a program that pairs graduate student and postdoctoral mentors with high school students to carry out original environmental science research projects. Students compete in a national science fair at the end of the year.
+
+        We are always looking for enthusiastic mentors — graduate students, postdocs, and other lab members who are interested in guiding a high school student through a research project. It is a rewarding experience and a great way to develop mentoring skills.
+
+        If you are a **high school student** interested in doing science research with our lab through EnvironMentors, or a **graduate student or postdoc** interested in serving as a mentor, please reach out to Grey at [gmonroe@ucdavis.edu](mailto:gmonroe@ucdavis.edu).
+
+        ---
+
+        ## UC Davis Plant Sciences Symposium — Student Organizers
+
+        Grey co-organizes the annual [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) together with graduate students. This is a great opportunity to develop event organization experience, build connections across the plant science community, and shape a flagship annual event for the department.
+
+        Graduate students interested in joining the organizing committee are welcome to reach out.
+
+        ---
+
         *To get in touch, email [gmonroe@ucdavis.edu](mailto:gmonroe@ucdavis.edu).*
 
     design:
