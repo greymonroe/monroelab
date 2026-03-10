@@ -25,6 +25,12 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0002-1305-2535
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/KehanZhao
+  - icon: globe
+    icon_pack: fas
+    link: https://kehanzhao.github.io
 highlight_name: false
 user_groups:
   - Graduate Students

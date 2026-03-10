@@ -26,6 +26,9 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0009-0006-5965-4359
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/Satoyo08
 highlight_name: false
 user_groups:
   - Postdoctoral Researchers

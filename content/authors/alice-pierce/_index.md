@@ -19,6 +19,12 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0009-0008-4003-9694
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/AlicePierce
+  - icon: globe
+    icon_pack: fas
+    link: https://alicepierce.github.io
 highlight_name: false
 user_groups:
   - Graduate Students

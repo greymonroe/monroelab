@@ -26,6 +26,9 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0002-5057-9618
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/mariele-lensink
 highlight_name: false
 user_groups:
   - Graduate Students

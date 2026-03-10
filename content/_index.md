@@ -95,6 +95,7 @@ sections:
         - [**Roy et al.** — "The PO-Driven Model": A Basic Science Pipeline for the Bioeconomy](https://doi.org/10.1093/icb/icae156) · *Integrative and Comparative Biology* — A framework using convergent evolution to connect parallel research ideas for bioeconomy applications.
 
         **June**
+        - Congratulations to **Daniela Quiroz**, who successfully defended her Ph.D.! Daniela's dissertation investigated the role of histone modifications in DNA repair. Her work has been published in *The Plant Cell*, *Current Plant Biology*, and more to come. Congratulations, Dr. Quiroz!
         - [**Zhao et al.** — Unlocking genetic diversity in Colombian cassava landraces for accelerated breeding](https://doi.org/10.1101/2025.06.30.662420) · *bioRxiv* — Characterizes the remarkable genetic diversity among Colombian cassava landraces to accelerate crop improvement.
         - [**Lee et al.** — A well-annotated genome of celery (*Apium graveolens*) with resistance to Fusarium](https://doi.org/10.1111/tpj.70251) · *The Plant Journal* — High-quality annotated genome for a disease-resistant celery cultivar, a resource for breeding and functional genomics.
         - Congratulations to **Alice Pierce**, who earned a summer internship at [Calico](https://www.calicolabs.com/) and a [DEB Industry Research Fellowship](https://deb.ucdavis.edu/) through UC Davis!

@@ -58,6 +58,9 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/j-grey-monroe-2913aa77/
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/greymonroe
   - icon: building
     icon_pack: fas
     link: https://www.plantsciences.ucdavis.edu/

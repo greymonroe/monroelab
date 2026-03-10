@@ -17,6 +17,9 @@ sections:
         | polymorphology2 | A general R toolkit for handling genomic data. Focuses on analyzing polymorphisms in the context of genome features such as gene bodies, epigenome features, and SBS mutation profiles. | [GitHub](https://github.com/greymonroe/polymorphology2) |
         | kolibri | Kernel-Operations for Long-read Insertion, Breakpoint & Recombination Inspection. An R-based toolkit for inspecting long-read alignments (PacBio/ONT) to find, group, and visualize split reads indicating assembly errors, structural variation, transposition, recombination, or other complex genome events. | [GitHub](https://github.com/greymonroe/kolibri) |
         | reCYCLing | Repeat Element Cyclical Evolutionary Simulations in Genomes. An R toolkit for simulating the evolution of tandem repeat arrays and analyzing the resulting arrays using diagnostics that mirror how we interrogate real repeat architectures (e.g., arrays identified with TRASH-like workflows). | [GitHub](https://github.com/greymonroe/reCYCLing) |
+        | ggenomics | An R package for visualizing genomic features using ggplot2. Developed in the Monroe Lab for flexible, publication-quality plots of genome-wide data. | [GitHub](https://github.com/greymonroe/ggenomics) |
+        | ggideo | An R package for creating genomic feature visualizations using ggplot2. Developed by Matt Davis for intuitive visualization of genomic intervals and features. | [GitHub](https://github.com/matthewwdavis/ggideo) |
+        | intronology | An R package for intron architecture analysis, developed by Alice Pierce in the context of intron-mediated enhancement and gene body mutation rate research. | [GitHub](https://github.com/AlicePierce/intronology) |
 
         ## Funding Opportunities
 

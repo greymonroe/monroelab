@@ -19,6 +19,9 @@ social:
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?hl=en&user=NVSRY8kAAAAJ
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/matthewwdavis
 highlight_name: false
 user_groups:
   - Graduate Students
