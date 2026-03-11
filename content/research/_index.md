@@ -23,6 +23,9 @@ sections:
 
         Mutations are the ultimate source of all genetic variation, yet mutation rates vary orders of magnitude across the genome, among cell types, and across species. We use ultra-accurate sequencing technologies — including Duplex Sequencing — to characterize mutation rates and spectra at unprecedented resolution. A central question is why mutation rates are systematically lower in functionally important regions of the genome, and what molecular mechanisms underlie this pattern.
 
+        <img src="/media/research/monroe2022-fig2-3.png" style="width:100%;max-width:720px;margin:1.2em 0;border-radius:4px;" alt="Mutation rates around gene bodies and in essential genes — Monroe et al. 2022 Nature">
+        <small style="color:#666;">Mutation probability, observed *de novo* mutations, polymorphisms, and Tajima's *D* around transcription start and termination sites, and lower mutation rates in essential genes. From <a href="https://doi.org/10.1038/s41586-021-04269-6" target="_blank">Monroe et al. 2022 <em>Nature</em></a>.</small>
+
         Current projects include:
         - Epigenome-recruited DNA repair and mutation rate reduction in plants
         - Somatic mutation dynamics and deleterious variation in clonal walnut and pistachio cultivars
@@ -35,6 +38,9 @@ sections:
 
         A key discovery from the lab is that the histone mark H3K4me1 directly recruits DNA repair proteins in plants, providing a mechanistic explanation for why mutation rates are lower in gene-rich, H3K4me-enriched regions of the genome. We are extending this work to understand how chromatin-targeted DNA repair has evolved independently across the tree of life and how these mechanisms shape the landscape of genetic variation within and among species.
 
+        <img src="/media/research/monroe2024-fig2-msh6-tree.png" style="width:100%;max-width:720px;margin:1.2em 0;border-radius:4px;" alt="Convergent evolution of MSH6 histone reader domains across eukaryotes — Monroe et al. 2024">
+        <small style="color:#666;">Taxonomic distribution of MSH6 histone reader domains (Tudor in orange, PWWP in green) across eukaryotes, showing convergent evolution of epigenome-recruited DNA repair. From <a href="https://doi.org/10.1101/2024.10.15.618488" target="_blank">Monroe et al. 2024 <em>bioRxiv</em></a>.</small>
+
         Current projects include:
         - H3K4me-associated hypomutation in plants
         - Convergent evolution of epigenome-recruited DNA repair across the tree of life
@@ -45,6 +51,9 @@ sections:
         {{% researchtopic title="Genome Dynamics and Structural Variation" %}}
 
         Plants harbor extraordinary structural variation — inversions, transposable elements, copy number variants, and pan-genome loci present in some individuals but absent in others. We use long-read sequencing and comparative genomics to characterize this variation and understand how it contributes to phenotypic diversity, reproductive biology, and local adaptation across plant populations and species.
+
+        <img src="/media/research/davis2025-fig2-genomic-instability.png" style="width:100%;max-width:720px;margin:1.2em 0;border-radius:4px;" alt="Genomic instability in walnut somatic embryo clones — Davis et al. 2025">
+        <small style="color:#666;">Chromosomal instability in clonal walnut somatic embryos — whole chromosome duplications, partial deletions, somatic recombination events, and their effects on gene expression. From <a href="https://doi.org/10.1101/2025.07.24.664184" target="_blank">Davis et al. 2025 <em>bioRxiv</em></a>.</small>
 
         Current projects include:
         - Pistachio pan-genome and multi-genome reference
@@ -59,6 +68,9 @@ sections:
 
         This work builds on our foundational studies of adaptive loss-of-function in plants and extends them into crop systems where understanding which genes matter — and how — has direct practical value.
 
+        <img src="/media/research/zhao2025-fig1-lof-roc.png" style="width:100%;max-width:720px;margin:1.2em 0;border-radius:4px;" alt="Random forest model predicting gene dispensability from LoF and epigenomic features — Zhao et al. 2025">
+        <small style="color:#666;">Random forest prediction of pan-genome gene dispensability using loss-of-function frequency and epigenomic features (AUC = 0.854), with H3K4me1 and LoF frequency among the top predictors. From <a href="https://doi.org/10.1101/2025.04.30.651390" target="_blank">Zhao et al. 2025 <em>bioRxiv</em></a>.</small>
+
         Current projects include:
         - Loss-of-function burden testing in cassava (*Manihot esculenta*) landraces
         - Loss-of-function variation in diploid wheat (*Triticum monococcum*)
@@ -71,6 +83,9 @@ sections:
         Many of the world's crop species remain genomically understudied. We build genomic resources — reference genomes, pan-genomes, population-scale sequencing datasets — for these species and use them to study the genetic basis of agriculturally important traits, climate adaptation, and fundamental questions about genome evolution.
 
         Species we have worked with include pistachio (*Pistacia vera*), walnut (*Juglans regia*), cassava (*Manihot esculenta*), celery (*Apium graveolens*), diploid wheat (*Triticum monococcum*), rice (*Oryza sativa*), alfalfa (*Medicago sativa*), almonds (*Prunus dulcis*), and black cottonwood (*Populus trichocarpa*). Projects range from understanding mutation histories of clonal cultivars to assembling reference genomes for breeding and fundamental science.
+
+        <img src="/media/research/adaskaveg2025-fig1-pistachio.png" style="width:100%;max-width:720px;margin:1.2em 0;border-radius:4px;" alt="Pistachio nut development across four stages — Adaskaveg et al. 2025">
+        <small style="color:#666;">Pistachio (*Pistacia vera* cv. 'Kerman') nut and kernel development across four phenological stages, with growth, color, firmness, and fat content measured across growing degree days. From <a href="https://doi.org/10.1111/nph.70060" target="_blank">Adaskaveg et al. 2025 <em>New Phytologist</em></a>.</small>
 
         Current projects include:
         - Pistachio pan-genome, reference genome, and kernel development
