@@ -1,0 +1,4 @@
+<figure style="margin:1.2em 0;">
+  <img src="{{ (.Get "src") | relURL }}" style="width:100%;max-width:720px;border-radius:4px;" alt="{{ .Get "alt" }}">
+  <figcaption style="font-size:0.82em;color:#666;margin-top:0.4em;">{{ .Get "caption" | markdownify }} From <a href="{{ .Get "link" }}" target="_blank">{{ .Get "ref" | markdownify }}</a>.</figcaption>
+</figure>
