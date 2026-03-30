@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UC Davis EnvironMentors - Support the Next Generation</title>
+<meta name="description" content="UC Davis EnvironMentors empowers Aggies to lead, mentor, and transform lives through environmental science research. Support our program.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --ucd-gold: #DAAA00;
+    --ucd-blue: #002855;
+    --warm-cream: #faf8f4;
+    --soft-gray: #f0ede8;
+    --text-dark: #1a1a1a;
+    --text-muted: #555;
+    --accent-green: #2d6a4f;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
+  body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text-dark); background: var(--warm-cream); line-height: 1.6; }
+
+  .slide {
+    min-height: 100vh; scroll-snap-align: start;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 60px 80px; position: relative; overflow: hidden;
+  }
+  .slide-number { position: absolute; bottom: 30px; right: 40px; font-size: 13px; color: rgba(255,255,255,0.4); font-weight: 300; z-index: 10; }
+  .slide-number.dark { color: #ccc; }
+
+  .bg-image { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-position: center; z-index: 0; }
+  .bg-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; }
+  .slide-content { position: relative; z-index: 2; }
+
+  .section-label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 3px; color: var(--ucd-gold); font-weight: 600; margin-bottom: 16px; }
+  .highlight { color: var(--accent-green); font-weight: 600; }
+  .centered { text-align: center; max-width: 900px; margin: 0 auto; }
+  .spacer { height: 30px; }
+  .gold-bar { width: 80px; height: 3px; background: var(--ucd-gold); margin: 30px auto; }
+
+  /* Title */
+  .slide-title { text-align: center; padding: 80px; }
+  .slide-title .bg-overlay { background: linear-gradient(135deg, rgba(0,40,85,0.90) 0%, rgba(0,40,85,0.78) 100%); }
+  .slide-title h1 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 3.4em; font-weight: 700; letter-spacing: 2px; color: var(--ucd-gold); margin-bottom: 16px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+  .slide-title .subtitle { font-size: 1.35em; font-weight: 300; color: rgba(255,255,255,0.9); margin-bottom: 12px; font-style: italic; }
+  .slide-title .byline { font-size: 1em; color: rgba(255,255,255,0.65); line-height: 1.8; }
+
+  /* Hero */
+  .slide-hero { text-align: center; padding: 80px; }
+  .slide-hero .bg-overlay { background: linear-gradient(180deg, rgba(0,40,85,0.87) 0%, rgba(45,106,79,0.82) 100%); }
+  .slide-hero h2 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 2.1em; color: white; line-height: 1.4; max-width: 850px; margin: 0 auto 30px; }
+  .slide-hero p { font-size: 1.15em; color: rgba(255,255,255,0.85); max-width: 750px; margin: 0 auto 16px; line-height: 1.8; }
+
+  /* Story */
+  .slide-story { background: var(--warm-cream); }
+  .slide-story .inner { max-width: 900px; margin: 0 auto; }
+  .slide-story h2 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; font-weight: 700; color: var(--ucd-blue); margin-bottom: 30px; line-height: 1.3; }
+  .slide-story p { font-size: 1.15em; line-height: 1.8; color: var(--text-dark); margin-bottom: 20px; }
+
+  /* Split */
+  .split-slide { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; scroll-snap-align: start; }
+  .split-text { display: flex; flex-direction: column; justify-content: center; padding: 60px; }
+  .split-image { background-size: cover; background-position: center; position: relative; }
+  .split-image-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+
+  /* Stats */
+  .slide-stats { background: white; text-align: center; }
+  .slide-stats h2 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 50px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 900px; margin: 0 auto; }
+  .stat-card { padding: 20px; }
+  .stat-number { font-size: 3em; font-weight: 700; color: var(--ucd-gold); line-height: 1; margin-bottom: 8px; }
+  .stat-label { font-size: 0.95em; color: var(--text-muted); line-height: 1.4; }
+
+  /* Quote */
+  .slide-quote { text-align: center; padding: 80px 100px; }
+  .slide-quote .bg-overlay { background: rgba(0,40,85,0.88); }
+  .slide-quote blockquote { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.6em; font-style: italic; line-height: 1.6; max-width: 800px; margin: 0 auto 30px; color: rgba(255,255,255,0.95); }
+  .slide-quote .attribution { font-family: 'Inter', sans-serif; font-size: 0.9em; color: var(--ucd-gold); font-style: normal; font-weight: 500; }
+
+  /* Green */
+  .slide-green { background: var(--accent-green); color: white; }
+  .slide-green h2 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: white; margin-bottom: 30px; }
+  .slide-green p { font-size: 1.15em; line-height: 1.8; color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1000px; margin: 40px auto 0; }
+  .pillar { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 30px 24px; }
+  .pillar h3 { font-size: 1.1em; margin-bottom: 12px; color: var(--ucd-gold); }
+  .pillar p { font-size: 0.95em; line-height: 1.6; color: rgba(255,255,255,0.85); margin-bottom: 0; }
+
+  /* Two-col */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; max-width: 1000px; margin: 0 auto; }
+  .two-col blockquote { font-family: 'Libre Baskerville', Georgia, serif; font-style: italic; font-size: 1.05em; line-height: 1.7; color: var(--text-dark); border-left: 3px solid var(--ucd-gold); padding-left: 20px; margin-bottom: 12px; }
+  .two-col .attribution { font-size: 0.85em; color: var(--text-muted); font-weight: 500; padding-left: 23px; }
+
+  /* Tables */
+  .clean-table { width: 100%; max-width: 800px; margin: 30px auto; border-collapse: collapse; }
+  .clean-table th { text-align: left; padding: 12px 16px; font-weight: 600; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); border-bottom: 2px solid var(--ucd-gold); }
+  .clean-table td { padding: 12px 16px; font-size: 0.95em; border-bottom: 1px solid #e8e5e0; }
+  .clean-table .emphasis { font-weight: 600; color: var(--ucd-blue); }
+
+  /* Sponsor cards */
+  .sponsor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 30px auto; }
+  .sponsor-card { background: var(--soft-gray); border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #e0ddd6; }
+  .sponsor-card.featured { background: var(--ucd-blue); color: white; border: none; grid-column: span 3; display: grid; grid-template-columns: auto 1fr; gap: 30px; text-align: left; align-items: center; padding: 32px 40px; }
+  .sponsor-amount { font-size: 1.8em; font-weight: 700; color: var(--ucd-gold); margin-bottom: 6px; }
+  .sponsor-card.featured .sponsor-amount { font-size: 2.4em; margin-bottom: 0; }
+  .sponsor-desc { font-size: 0.9em; color: var(--text-muted); line-height: 1.5; }
+  .sponsor-card.featured .sponsor-desc { color: rgba(255,255,255,0.8); font-size: 1em; }
+  .sponsor-label { font-size: 0.7em; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-bottom: 4px; color: var(--text-muted); }
+  .sponsor-card.featured .sponsor-label { color: rgba(255,255,255,0.5); }
+
+  /* Photo strip */
+  .photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin: 30px 0; border-radius: 8px; overflow: hidden; }
+  .photo-strip-item { height: 180px; background-size: cover; background-position: center; }
+
+  /* Contact */
+  .slide-contact { background: var(--ucd-blue); color: white; text-align: center; }
+  .slide-contact h2 { font-family: 'Libre Baskerville', Georgia, serif; color: var(--ucd-gold); font-size: 2em; margin-bottom: 40px; }
+  .contact-info { font-size: 1.1em; line-height: 2; color: rgba(255,255,255,0.85); }
+  .contact-info a { color: var(--ucd-gold); text-decoration: none; }
+  .contact-info strong { color: white; }
+
+  /* Callout box */
+  .callout { background: var(--soft-gray); border-left: 4px solid var(--ucd-gold); padding: 24px 28px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+  .callout-dark { background: rgba(255,255,255,0.06); border-left: 4px solid var(--ucd-gold); padding: 24px 28px; border-radius: 0 8px 8px 0; margin: 24px auto; max-width: 700px; }
+
+  /* Share bar */
+  .share-bar { background: var(--soft-gray); padding: 20px 30px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 24px; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .share-bar span { font-size: 0.9em; color: var(--text-muted); font-weight: 500; }
+  .share-btn { display: inline-block; padding: 8px 18px; border-radius: 6px; font-size: 0.85em; font-weight: 600; text-decoration: none; transition: all 0.15s; cursor: pointer; border: none; }
+  .share-btn.copy { background: var(--ucd-blue); color: white; }
+  .share-btn.copy:hover { background: #003a75; }
+  .share-btn.email { background: var(--ucd-gold); color: var(--ucd-blue); }
+  .share-btn.email:hover { opacity: 0.9; }
+
+  /* Nav dots */
+  .nav-dots { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 100; display: flex; flex-direction: column; gap: 8px; }
+  .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(0,0,0,0.2); cursor: pointer; transition: all 0.2s; border: none; }
+  .nav-dot:hover { background: var(--ucd-gold); transform: scale(1.3); }
+
+  @media print { .slide { page-break-after: always; } .nav-dots, .share-bar { display: none; } }
+  @media (max-width: 768px) {
+    .slide { padding: 40px 24px; }
+    .split-slide { grid-template-columns: 1fr; }
+    .split-image { min-height: 300px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .pillars { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .sponsor-grid { grid-template-columns: 1fr; }
+    .sponsor-card.featured { grid-column: span 1; grid-template-columns: 1fr; text-align: center; }
+    .photo-strip { grid-template-columns: repeat(2, 1fr); }
+    .nav-dots { display: none; }
+    .slide-title h1 { font-size: 2.2em; }
+    .slide-hero h2 { font-size: 1.5em; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="nav-dots">
+  <button class="nav-dot" onclick="document.getElementById('s1').scrollIntoView()" aria-label="Slide 1"></button>
+  <button class="nav-dot" onclick="document.getElementById('s2').scrollIntoView()" aria-label="Slide 2"></button>
+  <button class="nav-dot" onclick="document.getElementById('s3').scrollIntoView()" aria-label="Slide 3"></button>
+  <button class="nav-dot" onclick="document.getElementById('s4').scrollIntoView()" aria-label="Slide 4"></button>
+  <button class="nav-dot" onclick="document.getElementById('s5').scrollIntoView()" aria-label="Slide 5"></button>
+  <button class="nav-dot" onclick="document.getElementById('s6').scrollIntoView()" aria-label="Slide 6"></button>
+  <button class="nav-dot" onclick="document.getElementById('s7').scrollIntoView()" aria-label="Slide 7"></button>
+  <button class="nav-dot" onclick="document.getElementById('s8').scrollIntoView()" aria-label="Slide 8"></button>
+  <button class="nav-dot" onclick="document.getElementById('s9').scrollIntoView()" aria-label="Slide 9"></button>
+  <button class="nav-dot" onclick="document.getElementById('s10').scrollIntoView()" aria-label="Slide 10"></button>
+  <button class="nav-dot" onclick="document.getElementById('s11').scrollIntoView()" aria-label="Slide 11"></button>
+  <button class="nav-dot" onclick="document.getElementById('s12').scrollIntoView()" aria-label="Slide 12"></button>
+  <button class="nav-dot" onclick="document.getElementById('s13').scrollIntoView()" aria-label="Slide 13"></button>
+  <button class="nav-dot" onclick="document.getElementById('s14').scrollIntoView()" aria-label="Slide 14"></button>
+  <button class="nav-dot" onclick="document.getElementById('s15').scrollIntoView()" aria-label="Slide 15"></button>
+  <button class="nav-dot" onclick="document.getElementById('s16').scrollIntoView()" aria-label="Slide 16"></button>
+  <button class="nav-dot" onclick="document.getElementById('s17').scrollIntoView()" aria-label="Slide 17"></button>
+</div>
+
+
+<!-- ===== SLIDE 1: TITLE ===== -->
+<section class="slide slide-title" id="s1">
+  <div class="bg-image" style="background-image: url('images/image3.jpg');"></div>
+  <div class="bg-overlay"></div>
+  <div class="slide-content">
+    <h1>UC DAVIS ENVIRONMENTORS</h1>
+    <div class="subtitle">Empowering Aggies to Lead, Mentor, and Transform Lives Through Science</div>
+    <div style="font-size: 0.95em; color: rgba(255,255,255,0.55); margin-bottom: 8px;">The UC Davis Chapter of the National EnvironMentors Program</div>
+    <div class="gold-bar"></div>
+    <div class="byline">
+      Grey Monroe & Erwan Monier, Co-Directors<br>
+      Alice Pierce, Program Coordinator<br>
+      UC Davis College of Agricultural & Environmental Sciences<br><br>
+      Part of the GCSE National EnvironMentors Network &bull; 2,500+ Alumni Since 1992
+    </div>
+  </div>
+  <div class="slide-number">1</div>
+</section>
+
+
+<!-- ===== SLIDE 2: THE UC DAVIS OPPORTUNITY ===== -->
+<section class="slide slide-hero" id="s2">
+  <div class="bg-image" style="background-image: url('images/image5.jpg');"></div>
+  <div class="bg-overlay"></div>
+  <div class="slide-content">
+    <div class="section-label" style="color: rgba(255,255,255,0.5);">The Opportunity</div>
+    <h2>UC Davis is ranked #1 in the nation and #2 in the world for Agriculture and Forestry. We should be #1 at bridging research with impact in our community.</h2>
+    <p>
+      UC Davis EnvironMentors, the UC Davis chapter of the national EnvironMentors program, puts Aggies at the center of that mission. UC Davis graduate and undergraduate students become research mentors to high school students from underserved communities. They don't just leave Davis with an education. They leave with <strong style="color: var(--ucd-gold);">leadership experience, teaching skills, and the knowledge that they transformed a young person's life through science</strong>.
+    </p>
+    <p>
+      It is one of the most meaningful things a UC Davis student can do while on campus.
+    </p>
+  </div>
+  <div class="slide-number">2</div>
+</section>
+
+
+<!-- ===== SLIDE 3: THE STORY ===== -->
+<div class="split-slide" id="s3" style="scroll-snap-align: start;">
+  <div class="split-text" style="background: var(--warm-cream);">
+    <div class="section-label">The Story</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.8em; color: var(--ucd-blue); margin-bottom: 24px; line-height: 1.3;">Last year, UC Davis mentors brought a high school student to our Arboretum and changed her life.</h2>
+    <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 16px;">
+      UC Davis student mentors <span class="highlight">Connor Tumelty, Dario Falcone, and Daniela Quiroz</span> took Marissa Bautista, a high school student from Woodland who had never worked in a research lab, into their world.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8;">
+      They taught her to use a <span class="highlight">DeNovix cell drop counter</span>, a research instrument that uses photosynthetic fluorescence to detect individual algal cells in water. Together, they walked to the UC Davis Arboretum waterway, collected samples from three sites, and asked: <em>what controls the algae in our water?</em>
+    </p>
+  </div>
+  <div class="split-image" style="background-image: url('images/image23.jpg');">
+    <div class="split-image-overlay" style="background: linear-gradient(90deg, var(--warm-cream) 0%, transparent 8%);"></div>
+    <div style="position: absolute; bottom: 20px; right: 20px; font-size: 11px; color: rgba(255,255,255,0.6);">UC Davis Arboretum waterway</div>
+  </div>
+</div>
+
+
+<!-- ===== SLIDE 4: THE DISCOVERY ===== -->
+<div class="split-slide" id="s4" style="scroll-snap-align: start;">
+  <div class="split-image" style="background-image: url('images/image1.jpg');">
+    <div class="split-image-overlay" style="background: linear-gradient(270deg, var(--warm-cream) 0%, transparent 8%);"></div>
+    <div style="position: absolute; bottom: 20px; left: 20px; font-size: 11px; color: rgba(255,255,255,0.7);">2025 GCSE International Science Fair, Chicago</div>
+  </div>
+  <div class="split-text" style="background: var(--warm-cream);">
+    <div class="section-label">The Discovery</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.8em; color: var(--ucd-blue); margin-bottom: 24px; line-height: 1.3;">What she found matters to everyone who loves this campus.</h2>
+    <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 16px;">
+      Over four weeks, Marissa measured algal population size, cell diameter, and species composition. She discovered that <span class="highlight">algal density was driven by rainfall and water flow</span>, with stagnant sites showing dramatically higher concentrations after storms.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 16px;">
+      She presented this research at the UC Davis Science Fair, then traveled to the <span class="highlight">GCSE International Science Fair in Chicago, where she won a significant scholarship</span>.
+    </p>
+    <p style="font-size: 0.95em; color: var(--text-muted); font-style: italic;">
+      Her poster: "Assessing changes in algal population size and composition in the UC Davis Arboretum waterway"
+    </p>
+  </div>
+</div>
+
+
+<!-- ===== SLIDE 5: NOT ALONE ===== -->
+<section class="slide" id="s5" style="background: var(--soft-gray);">
+  <div class="slide-content centered">
+    <div class="section-label">The Bigger Picture</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 30px;">Marissa is one of many.</h2>
+    <p style="font-size: 1.15em; line-height: 1.8; margin-bottom: 16px;">
+      Last year, <strong>Anna Sophia Callens</strong> worked with UC Davis mentors to study how water availability affects tomato plant growth, research directly relevant to California's <strong>$2 billion</strong> tomato industry. This year, Anna is researching clean waterways, Marissa is studying how urban environments shape bird populations, and six other students are investigating everything from water quality to agriculture and ecosystems.
+    </p>
+    <div class="photo-strip">
+      <div class="photo-strip-item" style="background-image: url('images/image8.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image6.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image7.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image4.jpg');"></div>
+    </div>
+    <p style="font-size: 1.15em; line-height: 1.8; margin-bottom: 16px;">
+      Each project is guided by UC Davis student mentors from labs across campus. Since 2009, <span class="highlight">more than 140 high school students</span> have conducted original environmental research through UC Davis EnvironMentors, mentored by <span class="highlight">150+ Aggies</span>.
+    </p>
+    <div class="callout" style="text-align: left;">
+      <p style="font-size: 1em; margin-bottom: 0;"><strong style="color: var(--ucd-blue);">Johana Ramirez-Zapien</strong> was an EnvironMentors mentee. Today, she is the Outreach Director at UC Davis EAOP, a mentee turned leader. The program doesn't just change lives in the moment. It creates the next generation of mentors.</p>
+    </div>
+  </div>
+  <div class="slide-number dark">5</div>
+</section>
+
+
+<!-- ===== SLIDE 6: UC DAVIS STUDENT IMPACT ===== -->
+<section class="slide" id="s6" style="background: white; overflow: hidden;">
+  <div class="bg-image" style="background-image: url('images/image11.jpg'); opacity: 0.07;"></div>
+  <div class="slide-content centered">
+    <div class="section-label">For Aggies, By Aggies</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 20px;">This program transforms UC Davis students.</h2>
+    <p style="font-size: 1.1em; line-height: 1.8; color: var(--text-muted); margin-bottom: 10px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      UC Davis EnvironMentors empowers Aggies to become <strong style="color: var(--ucd-blue);">leaders in research, education, and community outreach</strong>. Mentors from Plant Sciences, Ecology, Soil Science, Atmospheric Science, Environmental Policy, Horticulture, and more gain real experience guiding scientific inquiry, teaching the next generation, and making an impact that goes beyond the classroom.
+    </p>
+    <p style="font-size: 1.1em; line-height: 1.8; color: var(--text-muted); margin-bottom: 35px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      It puts UC Davis students in the position they deserve: as <strong style="color: var(--ucd-blue);">leaders making a difference in the world through science in agriculture and environmental sciences</strong>, putting UC Davis at the heart of our community.
+    </p>
+    <div class="two-col">
+      <div>
+        <blockquote>"I joined EnvironMentors to bring my background in agricultural and soil science into a mentoring environment where students can see how the chemistry and biology concepts they learn in class translate into meaningful research."</blockquote>
+        <div class="attribution">Maya Shydlowski, UC Davis Mentor (2024-2026), Soil Science</div>
+      </div>
+      <div>
+        <blockquote>"When I was a student, I was an EnvironMentors mentor, and it was a completely transformative experience. I got to grow as a leader, and the student I mentored went on to win an award for his work. That experience is why I'm passionate about making this program a reality at UC Davis."</blockquote>
+        <div class="attribution">Grey Monroe, Co-Director, UC Davis EnvironMentors</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-number dark">6</div>
+</section>
+
+
+<!-- ===== SLIDE 7: HOW IT WORKS ===== -->
+<section class="slide slide-green" id="s7">
+  <div class="slide-content centered">
+    <div class="section-label" style="color: rgba(255,255,255,0.5);">The Model</div>
+    <h2>One-on-one research mentorship that changes trajectories, for everyone.</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <h3>1:1 Mentorship</h3>
+        <p>High school students from underserved communities are paired one-on-one with UC Davis student mentors for an entire academic year of guided research.</p>
+      </div>
+      <div class="pillar">
+        <h3>Original Research</h3>
+        <p>Students design and execute their own environmental research projects, from hypothesis to poster presentation, using real lab equipment and field sites.</p>
+      </div>
+      <div class="pillar">
+        <h3>National Network</h3>
+        <p>UC Davis EnvironMentors is the UC Davis chapter of the national GCSE EnvironMentors program with 2,500+ alumni since 1992. Students compete at the International Science Fair.</p>
+      </div>
+    </div>
+    <p style="margin-top: 40px; font-size: 1em; color: rgba(255,255,255,0.55);">
+      Fall: Recruitment & matching &bull; Winter: Workshops & research sessions &bull; Spring: Science fair & field trips &bull; Summer: International fair
+    </p>
+  </div>
+  <div class="slide-number" style="color: rgba(255,255,255,0.3);">7</div>
+</section>
+
+
+<!-- ===== SLIDE 8: PARENT QUOTE ===== -->
+<section class="slide slide-quote" id="s8">
+  <div class="bg-image" style="background-image: url('images/image14.jpg');"></div>
+  <div class="bg-overlay"></div>
+  <div class="slide-content">
+    <blockquote>"EnvironMentors has been an incredible opportunity for my children, especially as Black youth."</blockquote>
+    <div class="attribution">Janelle Mitchell, Parent of three EnvironMentors participants</div>
+  </div>
+  <div class="slide-number">8</div>
+</section>
+
+
+<!-- ===== SLIDE 9: IMPACT BY NUMBERS ===== -->
+<section class="slide slide-stats" id="s9">
+  <div class="slide-content">
+    <div class="section-label">Impact</div>
+    <h2>Since 2009, UC Davis EnvironMentors has served:</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">140+</div>
+        <div class="stat-label">High school mentees</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">150+</div>
+        <div class="stat-label">UC Davis student mentors</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$36M+</div>
+        <div class="stat-label">In funded research from<br>mentee-authored grants</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">93%</div>
+        <div class="stat-label">More first-generation<br>than UC Davis average</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">116%</div>
+        <div class="stat-label">More Hispanic<br>than UC Davis average</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">125%</div>
+        <div class="stat-label">More African American<br>than UC Davis average</div>
+      </div>
+    </div>
+    <div class="photo-strip" style="margin-top: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+      <div class="photo-strip-item" style="background-image: url('images/image12.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image19.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image20.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image9.jpg');"></div>
+    </div>
+  </div>
+  <div class="slide-number dark">9</div>
+</section>
+
+
+<!-- ===== SLIDE 10: VOICES ===== -->
+<section class="slide" id="s10" style="background: var(--warm-cream);">
+  <div class="slide-content centered">
+    <div class="section-label">In Their Own Words</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 40px;">Voices from the program</h2>
+    <div class="two-col">
+      <div>
+        <blockquote>"Thanks to the program and my mentor, I feel prepared with my speaking skills and am confident in my research and writing skills. I would like everyone to know that EnvironMentors is one of the best experiences I have had throughout high school."</blockquote>
+        <div class="attribution">Erin Murphy, Emerging Environmental Leader Award Winner, UC Davis EnvironMentors</div>
+        <div class="spacer"></div>
+        <blockquote>"EnvironMentors is the program where I feel heard and like I belong."</blockquote>
+        <div class="spacer"></div>
+        <blockquote>"Meeting the other chapters and competing against them was kind of an eye opener for me by allowing me to see that my mind could take me places and people would recognize my ability."</blockquote>
+      </div>
+      <div>
+        <blockquote>"In our first year, we were the youngest mentor-student pair. That year, my mentee's project led her to earn the Research in Environmental Toxicology award... I cannot wait until the day when I can give back to EnvironMentors."</blockquote>
+        <div class="attribution">Trent Ichiuji, UC Davis Mentor, Animal Science</div>
+        <div class="spacer"></div>
+        <blockquote>"A significant change is the increase in students' confidence. Going from just wanting somebody to tell them what to do, to being able to come up with ideas, was some of the biggest growth I saw."</blockquote>
+        <div class="spacer"></div>
+        <blockquote>"Seeing a former EnvironMentors high school mentee now thriving as a senior at MIT and co-founder of a successful start-up is incredibly rewarding."</blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="slide-number dark">10</div>
+</section>
+
+
+<!-- ===== SLIDE 11: ALUMNI ===== -->
+<section class="slide" id="s11" style="background: white;">
+  <div class="slide-content centered">
+    <div class="section-label">Alumni</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 30px;">Where our students are now</h2>
+    <table class="clean-table">
+      <thead><tr><th>Student</th><th>University</th><th>Field</th></tr></thead>
+      <tbody>
+        <tr><td class="emphasis">Princess Ochweri</td><td>Stanford</td><td>Biology Pre-Med</td></tr>
+        <tr><td class="emphasis">Victoria Sodeinde</td><td>Yale</td><td>Molecular Biology</td></tr>
+        <tr><td class="emphasis">Natalia Carrasco-Munoz</td><td>Notre Dame</td><td>Chemical Engineering</td></tr>
+        <tr><td class="emphasis">Larry Li</td><td>USC</td><td>Math and Physics</td></tr>
+        <tr><td class="emphasis">Johana Ramirez-Zapien</td><td>UC Davis EAOP</td><td>Outreach Director (mentee turned leader)</td></tr>
+        <tr><td class="emphasis">Former mentee (Ty)</td><td>MIT</td><td>Senior, co-founded a startup</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+      <blockquote style="font-family: 'Libre Baskerville', Georgia, serif; font-style: italic; font-size: 1em; line-height: 1.7; border-left: 3px solid var(--ucd-gold); padding-left: 20px;">
+        "EnvironMentors gave me insight into the reality of what goes into research and how to collaborate within a group."
+      </blockquote>
+      <div style="font-size: 0.85em; color: var(--text-muted); font-weight: 500; padding-left: 23px; margin-top: 8px;">Victoria Sodeinde, now at Yale</div>
+    </div>
+  </div>
+  <div class="slide-number dark">11</div>
+</section>
+
+
+<!-- ===== SLIDE 12: LEADERSHIP ===== -->
+<section class="slide" id="s12" style="background: var(--soft-gray); overflow: hidden;">
+  <div class="bg-image" style="background-image: url('images/image26.jpg'); opacity: 0.06;"></div>
+  <div class="slide-content centered">
+    <div class="section-label">Leadership</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 30px;">Our Team</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 900px; margin: 0 auto 40px;">
+      <div style="text-align: center; padding: 24px;">
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--ucd-blue); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; color: var(--ucd-gold); font-size: 1.5em; font-weight: 700;">GM</div>
+        <div style="font-weight: 600; color: var(--ucd-blue); font-size: 1.05em;">Grey Monroe</div>
+        <div style="font-size: 0.85em; color: var(--text-muted);">Co-Director<br>Associate Professor, Plant Sciences<br>UC Davis Genome Center</div>
+      </div>
+      <div style="text-align: center; padding: 24px;">
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--ucd-blue); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; color: var(--ucd-gold); font-size: 1.5em; font-weight: 700;">EM</div>
+        <div style="font-weight: 600; color: var(--ucd-blue); font-size: 1.05em;">Erwan Monier</div>
+        <div style="font-size: 0.85em; color: var(--text-muted);">Co-Director<br>Associate Professor, Climate Science</div>
+      </div>
+      <div style="text-align: center; padding: 24px;">
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--ucd-blue); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; color: var(--ucd-gold); font-size: 1.5em; font-weight: 700;">AP</div>
+        <div style="font-weight: 600; color: var(--ucd-blue); font-size: 1.05em;">Alice Pierce</div>
+        <div style="font-size: 0.85em; color: var(--text-muted);">Program Coordinator<br>PhD Student, Plant Biology</div>
+      </div>
+    </div>
+    <p style="font-size: 1.05em; line-height: 1.8; color: var(--text-muted); margin-bottom: 12px;">
+      <strong style="color: var(--ucd-blue);">12 mentors this year</strong> from undergraduates to graduate students across Plant Sciences, Ecology, Soil Science, Atmospheric Science, Environmental Policy, Horticulture, Agronomy, and Plant Genetics.
+    </p>
+    <p style="font-size: 1.05em; line-height: 1.8; color: var(--text-muted); margin-bottom: 12px;">
+      <strong style="color: var(--ucd-blue);">Key Partners:</strong> GCSE Global &bull; UC Davis EAOP &bull; Woodland Pioneer High School &bull; CAES Dean's Office &bull; Anne Borger, Assistant Program Coordinator
+    </p>
+    <p style="font-size: 0.95em; line-height: 1.8; color: var(--text-muted);">
+      EnvironMentors touches labs and departments across campus, making it one of the most broadly impactful outreach programs at UC Davis.
+    </p>
+  </div>
+  <div class="slide-number dark">12</div>
+</section>
+
+
+<!-- ===== SLIDE 13: WHY NOW ===== -->
+<section class="slide slide-quote" id="s13">
+  <div class="bg-image" style="background-image: url('images/image24.jpg');"></div>
+  <div class="bg-overlay" style="background: rgba(0,40,85,0.90);"></div>
+  <div class="slide-content centered">
+    <div class="section-label" style="color: rgba(255,255,255,0.4);">Why Now</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: white; margin-bottom: 30px; font-style: normal; line-height: 1.4;">This program has run on passion and volunteer effort for years. It's time to build something that lasts.</h2>
+    <p style="font-size: 1.1em; color: rgba(255,255,255,0.85); max-width: 700px; margin: 0 auto 20px; line-height: 1.8;">
+      Alice Pierce manages the entire program while finishing her PhD. Every year, the question is whether there will be enough funding to keep going. Students who could be doing transformative research are turned away because we don't have the capacity to support them.
+    </p>
+    <p style="font-size: 1.1em; color: rgba(255,255,255,0.85); max-width: 700px; margin: 0 auto 20px; line-height: 1.8;">
+      With your support, we can secure a dedicated coordinator, expand to serve more students, and make UC Davis EnvironMentors a permanent institution, not a program that depends on the heroic efforts of a few.
+    </p>
+    <div class="callout-dark">
+      <p style="font-size: 1em; color: rgba(255,255,255,0.8); margin: 0; text-align: center;">
+        <strong style="color: var(--ucd-gold);">Our goal:</strong> Find 20 donors to sponsor a mentor-mentee pair at $5,000 each, and establish permanent funding to sustain the program for generations.
+      </p>
+    </div>
+  </div>
+  <div class="slide-number">13</div>
+</section>
+
+
+<!-- ===== SLIDE 14: THIS YEAR ===== -->
+<section class="slide slide-green" id="s14">
+  <div class="slide-content centered">
+    <div class="section-label" style="color: rgba(255,255,255,0.5);">2025-2026</div>
+    <h2>This year at UC Davis EnvironMentors</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; text-align: left;">
+      <div>
+        <p><strong style="color: var(--ucd-gold);">8 mentees</strong> from Woodland Pioneer High School, studying water quality, bird populations, agriculture, and more</p>
+        <p><strong style="color: var(--ucd-gold);">12 UC Davis mentors</strong> from undergraduates to graduate students across multiple departments</p>
+        <p><strong style="color: var(--ucd-gold);">4 students</strong> accepted to the International Science Fair in Panama City (all on full scholarships)</p>
+      </div>
+      <div>
+        <p><strong style="color: var(--ucd-gold);">UC Davis Science Fair</strong> &mdash; May 1, 2026 at the Alumni Center</p>
+        <p><strong style="color: var(--ucd-gold);">EAOP Partnership</strong> &mdash; College prep panels, UC Davis application fee waivers</p>
+        <p><strong style="color: var(--ucd-gold);">CAES Press</strong> &mdash; Feature story in development for June publication</p>
+      </div>
+    </div>
+    <div class="photo-strip" style="margin-top: 40px;">
+      <div class="photo-strip-item" style="background-image: url('images/image24.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image25.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image27.jpg');"></div>
+      <div class="photo-strip-item" style="background-image: url('images/image28.jpg'); background-position: center bottom;"></div>
+    </div>
+    <p style="margin-top: 12px; font-size: 0.85em; color: rgba(255,255,255,0.45);">UC Davis Arboretum &bull; Field research &bull; Campus labs &bull; Panama City 2026</p>
+  </div>
+  <div class="slide-number" style="color: rgba(255,255,255,0.3);">14</div>
+</section>
+
+
+<!-- ===== SLIDE 15: SPONSOR A PAIR ===== -->
+<section class="slide" id="s15" style="background: white;">
+  <div class="slide-content centered">
+    <div class="section-label">Your Impact</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 12px;">What does it cost to sponsor a mentor-mentee pair?</h2>
+    <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.05em;">Every dollar directly supports the research mentorship experience.</p>
+
+    <div class="sponsor-grid">
+      <div class="sponsor-card">
+        <div class="sponsor-label">Research Session</div>
+        <div class="sponsor-amount">$50</div>
+        <div class="sponsor-desc">Pizza and supplies for one biweekly research night</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="sponsor-label">Student Project</div>
+        <div class="sponsor-amount">$100</div>
+        <div class="sponsor-desc">Lab equipment and materials for a student's research</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="sponsor-label">Full Experience</div>
+        <div class="sponsor-amount">$1,000</div>
+        <div class="sponsor-desc">Field trips, poster prep, science fair, and materials</div>
+      </div>
+      <div class="sponsor-card featured">
+        <div>
+          <div class="sponsor-label">Sponsor a Mentor-Mentee Pair</div>
+          <div class="sponsor-amount">$5,000</div>
+        </div>
+        <div class="sponsor-desc">A full year of mentorship: program coordination, lab access, transportation, field trips, science fair, poster printing, and research materials for one mentor-mentee pair. <strong style="color: var(--ucd-gold);">Help us find 20 sponsors to fund every pair.</strong></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 24px; padding: 24px; background: var(--soft-gray); border-radius: 12px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <p style="font-size: 0.95em; color: var(--text-muted); margin-bottom: 8px;">
+        <strong style="color: var(--ucd-blue);">Endowment Opportunities:</strong> Donors at the endowment level ($50,000-100,000+) can establish a named, permanent fund to sustain UC Davis EnvironMentors for generations. Contact us to discuss options with our UC Davis Development partners.
+      </p>
+      <p style="font-size: 0.95em; color: var(--text-muted); margin-bottom: 0;">
+        <strong style="color: var(--ucd-blue);">All donors recognized:</strong> Every supporter is listed in our annual and quarterly newsletters and on the UC Davis EnvironMentors website (unless you prefer to remain anonymous), with tiered recognition levels.
+      </p>
+    </div>
+  </div>
+  <div class="slide-number dark">15</div>
+</section>
+
+
+<!-- ===== SLIDE 16: HOW TO GIVE ===== -->
+<section class="slide slide-quote" id="s16">
+  <div class="bg-image" style="background-image: url('images/image1.jpg');"></div>
+  <div class="bg-overlay" style="background: rgba(0,40,85,0.92);"></div>
+  <div class="slide-content centered">
+    <div class="section-label" style="color: rgba(255,255,255,0.4);">How to Give</div>
+    <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2.2em; color: var(--ucd-gold); margin-bottom: 40px; font-style: normal;">Support UC Davis EnvironMentors</h2>
+    <div style="text-align: left; max-width: 600px; margin: 0 auto; font-size: 1.1em; line-height: 2.2; color: rgba(255,255,255,0.9);">
+      <p><strong style="color: var(--ucd-gold);">UC Davis Give Day</strong> &mdash; April 17-18, 2026</p>
+      <p><strong style="color: var(--ucd-gold);">Direct gifts</strong> through the UC Davis Foundation (tax-deductible)</p>
+      <p><strong style="color: var(--ucd-gold);">Corporate sponsorship</strong> &mdash; Contact Grey Monroe for partnership opportunities</p>
+    </div>
+    <p style="margin-top: 30px; color: rgba(255,255,255,0.45); font-size: 0.9em;">
+      Since 2017, over 52,000 donors have contributed $28.6M+ on UC Davis Give Day
+    </p>
+    <div class="share-bar" style="background: rgba(255,255,255,0.1); margin-top: 30px;">
+      <span style="color: rgba(255,255,255,0.7);">Share this presentation:</span>
+      <button class="share-btn copy" onclick="navigator.clipboard.writeText(window.location.href).then(()=>this.textContent='Copied!').catch(()=>{})">Copy Link</button>
+      <a class="share-btn email" href="mailto:?subject=UC%20Davis%20EnvironMentors&body=Check%20out%20UC%20Davis%20EnvironMentors%20and%20consider%20supporting%20the%20program%3A%20" onclick="this.href+=encodeURIComponent(window.location.href)">Email a Friend</a>
+    </div>
+  </div>
+  <div class="slide-number">16</div>
+</section>
+
+
+<!-- ===== SLIDE 17: CONTACT ===== -->
+<section class="slide slide-contact" id="s17">
+  <div class="slide-content">
+    <h2>Let's talk.</h2>
+    <div class="contact-info">
+      <strong>Grey Monroe</strong><br>
+      Associate Professor, Department of Plant Sciences<br>
+      UC Davis College of Agricultural & Environmental Sciences<br><br>
+      <a href="mailto:gmonroe@ucdavis.edu">gmonroe@ucdavis.edu</a> &nbsp;|&nbsp; 279-222-8881<br><br>
+      <a href="https://environmentors.sf.ucdavis.edu/">environmentors.sf.ucdavis.edu</a><br>
+      <a href="https://www.gcseglobal.org/environmentors">gcseglobal.org/environmentors</a><br>
+      <a href="https://calendly.com/greymonroe">Schedule a meeting</a>
+    </div>
+    <div class="gold-bar" style="margin-top: 40px;"></div>
+    <blockquote style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.1em; font-style: italic; margin-top: 30px; color: rgba(255,255,255,0.65); max-width: 600px; margin-left: auto; margin-right: auto;">
+      "EnvironMentors is the program where I feel heard and like I belong."
+    </blockquote>
+    <div class="share-bar" style="background: rgba(255,255,255,0.08); margin-top: 30px;">
+      <span style="color: rgba(255,255,255,0.6);">Know someone who should see this?</span>
+      <button class="share-btn copy" onclick="navigator.clipboard.writeText(window.location.href).then(()=>this.textContent='Copied!').catch(()=>{})">Copy Link</button>
+      <a class="share-btn email" href="mailto:?subject=UC%20Davis%20EnvironMentors&body=Check%20out%20UC%20Davis%20EnvironMentors%20and%20consider%20supporting%20the%20program%3A%20" onclick="this.href+=encodeURIComponent(window.location.href)">Email a Friend</a>
+    </div>
+  </div>
+  <div class="slide-number">17</div>
+</section>
+
+</body>
+</html>

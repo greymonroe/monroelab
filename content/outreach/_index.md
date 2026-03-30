@@ -14,6 +14,8 @@ sections:
 
         Students gain hands-on research experience, one-on-one mentorship, and a sense of belonging in university settings. The program emphasizes crew development, experiential learning, and practical mentorship guidance for graduate student mentors. This work is supported by the National Science Foundation through Grey Monroe's NSF CAREER grant.
 
+        **[Learn more about UC Davis EnvironMentors and how to support the program &rarr;](/environmentors/)**
+
         ## UC Davis Plant Sciences Graduate Symposium
 
         Grey Monroe serves as faculty adviser to the graduate students who organize the annual UC Davis Plant Sciences Graduate Symposium, a student-led conference supported by Corteva and others. Graduate students gain hands-on experience with all aspects of organizing a scientific conference — logistics, speaker recruitment, and leadership development. It is a unique opportunity for students to build skills that go well beyond the lab.
