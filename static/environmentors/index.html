@@ -139,20 +139,44 @@
   .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(0,0,0,0.2); cursor: pointer; transition: all 0.2s; border: none; }
   .nav-dot:hover { background: var(--ucd-gold); transform: scale(1.3); }
 
+  /* Prevent any element from overflowing viewport */
+  html, body { overflow-x: hidden; max-width: 100vw; }
+
   @media print { .slide { page-break-after: always; } .nav-dots, .share-bar { display: none; } }
   @media (max-width: 768px) {
-    .slide { padding: 40px 24px; }
+    .slide { padding: 30px 20px; }
+    .slide-title { padding: 40px 20px; }
+    .slide-title h1 { font-size: 1.8em; letter-spacing: 1px; }
+    .slide-title .subtitle { font-size: 1em; }
+    .slide-title .byline { font-size: 0.85em; }
+    .slide-hero { padding: 40px 20px; }
+    .slide-hero h2 { font-size: 1.3em; }
+    .slide-hero p { font-size: 1em; }
+    .slide-quote { padding: 40px 20px; }
+    .slide-quote blockquote { font-size: 1.15em; }
     .split-slide { grid-template-columns: 1fr; }
-    .split-image { min-height: 300px; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .split-text { padding: 30px 20px; }
+    .split-image { min-height: 250px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .stat-number { font-size: 2.2em; }
     .pillars { grid-template-columns: 1fr; }
-    .two-col { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; gap: 30px; }
     .sponsor-grid { grid-template-columns: 1fr; }
-    .sponsor-card.featured { grid-column: span 1; grid-template-columns: 1fr; text-align: center; }
+    .sponsor-card.featured { grid-column: span 1; grid-template-columns: 1fr; text-align: center; padding: 24px 20px; }
     .photo-strip { grid-template-columns: repeat(2, 1fr); }
+    .photo-strip-item { height: 140px; }
     .nav-dots { display: none; }
-    .slide-title h1 { font-size: 2.2em; }
-    .slide-hero h2 { font-size: 1.5em; }
+    .callout, .callout-dark { padding: 16px 18px; }
+    .share-bar { flex-direction: column; gap: 10px; padding: 16px; }
+    .contact-info { font-size: 0.95em; }
+    .slide-green h2 { font-size: 1.5em; }
+    .slide-stats h2 { font-size: 1.5em; margin-bottom: 30px; }
+    .centered { max-width: 100%; }
+    .slide-contact h2 { font-size: 1.5em; }
+    .team-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+    .year-grid { grid-template-columns: 1fr !important; }
+    .split-text h2 { font-size: 1.4em !important; }
+    .split-text p { font-size: 1em !important; }
   }
 </style>
 </head>
@@ -420,7 +444,7 @@
   <div class="slide-content centered">
     <div class="section-label">Leadership</div>
     <h2 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2em; color: var(--ucd-blue); margin-bottom: 30px;">Our Team</h2>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 900px; margin: 0 auto 40px;">
+    <div class="team-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 900px; margin: 0 auto 40px;">
       <div style="text-align: center; padding: 24px;">
         <img src="images/headshot_grey.jpg" alt="Grey Monroe" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 16px; display: block; border: 3px solid var(--ucd-gold);">
         <div style="font-weight: 600; color: var(--ucd-blue); font-size: 1.05em;">Grey Monroe</div>
@@ -479,7 +503,7 @@
   <div class="slide-content centered">
     <div class="section-label" style="color: rgba(255,255,255,0.5);">2025-2026</div>
     <h2>This year at UC Davis EnvironMentors</h2>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; text-align: left;">
+    <div class="year-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px; text-align: left;">
       <div>
         <p><strong style="color: var(--ucd-gold);">8 mentees</strong> from Woodland Pioneer High School, studying water quality, bird populations, agriculture, and more</p>
         <p><strong style="color: var(--ucd-gold);">12 UC Davis mentors</strong> from undergraduates to graduate students across multiple departments</p>
