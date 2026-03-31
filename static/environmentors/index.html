@@ -144,7 +144,8 @@
 
   @media print { .slide { page-break-after: always; } .nav-dots, .share-bar { display: none; } }
   @media (max-width: 768px) {
-    .slide { padding: 30px 20px; }
+    html { scroll-snap-type: none; }
+    .slide { padding: 30px 20px; min-height: auto; min-height: 100svh; scroll-snap-align: none; }
     .slide-title { padding: 40px 20px; }
     .slide-title h1 { font-size: 1.8em; letter-spacing: 1px; }
     .slide-title .subtitle { font-size: 1em; }
