@@ -1,0 +1,74 @@
+{{/* Monroe Lab: custom Build A hero with eyebrow, CTAs, and recent highlights ribbon */}}
+{{/* Falls back to the standard HugoBlox hero if no custom fields are set. */}}
+
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $c := $block.content }}
+
+<div class="lab-hero-inner">
+
+  {{ with $c.eyebrow }}
+    <div class="lab-hero-eyebrow">{{ . | markdownify | emojify }}</div>
+  {{ end }}
+
+  {{ with $c.title }}
+    <h1 class="lab-hero-title">{{ . | markdownify | emojify }}</h1>
+  {{ end }}
+
+  {{ with $c.subtitle }}
+    <div class="lab-hero-subtitle">{{ . | markdownify | emojify }}</div>
+  {{ end }}
+
+  {{ with $c.text }}
+    <div class="lab-hero-text">{{ . | $page.RenderString | emojify }}</div>
+  {{ end }}
+
+  {{ with $c.ctas }}
+    <div class="lab-hero-ctas">
+      {{ range . }}
+        {{ $link := .url }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = $link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        {{ $style := or .style "primary" }}
+        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} class="lab-cta lab-cta--{{ $style }}">{{ .label | markdownify | emojify | safeHTML }}</a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+</div>
+
+{{ with $c.highlights }}
+  <div class="lab-hero-highlights">
+    <div class="lab-hero-highlights__label">
+      <span class="k">Recent</span>
+      <span class="v">Highlights</span>
+    </div>
+    <div class="lab-hero-highlights__cards">
+      {{ range . }}
+        {{ $link := .url }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = $link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        <a class="lab-paper" href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
+          <div class="lab-paper__journal">
+            <span class="name">{{ .journal }}</span>
+            <span class="year">{{ .year }}</span>
+          </div>
+          <div class="lab-paper__title">
+            {{ with .authors }}<span class="authors">{{ . }}</span> — {{ end }}{{ .title | markdownify | safeHTML }}
+          </div>
+          <div class="lab-paper__arrow">Read paper →</div>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

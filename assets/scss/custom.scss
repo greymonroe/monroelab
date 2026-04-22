@@ -1,132 +1,548 @@
-// Show full banner images without zooming in.
-// 100% width + auto height means no side cropping; top-aligned so top is always visible.
-.home-section-bg.bg-image {
+// ============================================================
+// Monroe Lab — Build A design system
+// Dark hero with PNAS mutation signatures + navy/teal palette
+// Space Grotesk (display) + Inter (body) throughout
+// ============================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --lab-ink: #1a2030;
+  --lab-ink-soft: #2a3442;
+  --lab-ink-dim: #5d6b7a;
+  --lab-navy-0: #020713;
+  --lab-navy-1: #061124;
+  --lab-navy-2: #0a1c3a;
+  --lab-teal-dark: #0d6b78;
+  --lab-teal: #4dd0e1;
+  --lab-teal-soft: rgba(77, 208, 225, 0.16);
+  --lab-rule: #e5eaf0;
+  --lab-rule-dark: #1b2a42;
+  --lab-font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --lab-font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+// ============================================================
+// Global typography
+// ============================================================
+body {
+  font-family: var(--lab-font-body) !important;
+  color: var(--lab-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--lab-font-display) !important;
+  letter-spacing: -0.4px;
+  color: var(--lab-navy-2);
+}
+
+.navbar-brand,
+.navbar .nav-link {
+  font-family: var(--lab-font-body) !important;
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+  letter-spacing: 2.5px !important;
+  font-size: 0.92rem !important;
+  text-transform: uppercase;
+  color: var(--lab-navy-2) !important;
+}
+.navbar .nav-link {
+  font-size: 0.85rem !important;
+  letter-spacing: 0.4px;
+  font-weight: 500 !important;
+  color: var(--lab-ink-soft) !important;
+}
+.navbar .nav-link:hover {
+  color: var(--lab-teal-dark) !important;
+}
+
+// ============================================================
+// Background handling: non-hero sections keep original zoomed
+// 100% width top-aligned; hero uses cover + custom positioning.
+// ============================================================
+.home-section:not(.wg-hero) .home-section-bg.bg-image {
   background-size: 100% auto !important;
   background-position: top center !important;
 }
+.home-section.wg-hero .home-section-bg.bg-image {
+  background-size: cover !important;
+  background-position: center 38% !important;
+}
 
-// Home page hero: min-height matches banner-people.png aspect ratio (2080×946 = 45.5%)
+// ============================================================
+// Hero (Build A — dark navy with PNAS mutation signatures)
+// ============================================================
 .home-section.wg-hero {
-  min-height: 45.5vw !important;
+  min-height: 48vw !important;
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
+}
+@media screen and (max-width: 992px) {
+  .home-section.wg-hero { min-height: 720px !important; }
+}
+@media screen and (max-width: 600px) {
+  .home-section.wg-hero { min-height: 840px !important; }
 }
 
-// People page hero: min-height matches banner-group.png aspect ratio (1818×874 = 48.1%)
-.people-page-hero.home-section.wg-hero {
-  min-height: 48.5vw !important;
+// Tinted overlay on top of the bg image
+.home-section.wg-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 22% 38%, rgba(77, 208, 225, 0.22) 0%, transparent 55%),
+    linear-gradient(135deg, rgba(3, 10, 25, 0.86) 0%, rgba(6, 17, 36, 0.72) 48%, rgba(2, 7, 19, 0.95) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+// Subtle scanlines
+.home-section.wg-hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(77, 208, 225, 0.028) 1px, transparent 1px);
+  background-size: 100% 3px;
+  z-index: 2;
+  pointer-events: none; opacity: 0.5;
 }
 
-@media screen and (max-width: 768px) {
-  .home-section.wg-hero {
-    min-height: 60vw !important;
-  }
-  .people-page-hero.home-section.wg-hero {
-    min-height: 65vw !important;
-  }
+.home-section.wg-hero .container {
+  position: relative;
+  z-index: 5;
+  color: #fff;
 }
 
-// Homepage CTA "Meet the Team" button: white background, black text, slightly larger font.
-.home-section.wg-hero .cta-group .btn-primary {
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-  color: #1a1a1a !important;
-  font-size: 1.15rem !important;
+.lab-hero-inner {
+  padding-top: 7vw;
+  padding-bottom: 180px;
+  max-width: 900px;
+  color: #fff;
+}
+
+.lab-hero-eyebrow {
+  font-family: var(--lab-font-body);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--lab-teal);
+  font-weight: 600;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.lab-hero-eyebrow::after {
+  content: '';
+  display: inline-block;
+  width: 60px; height: 1px;
+  background: var(--lab-teal);
+  opacity: 0.55;
+}
+
+.lab-hero-title {
+  font-family: var(--lab-font-display) !important;
+  font-size: clamp(38px, 5.4vw, 78px) !important;
+  font-weight: 500 !important;
+  line-height: 0.98 !important;
+  letter-spacing: -2.4px !important;
+  color: #fff !important;
+  margin-bottom: 26px !important;
+}
+.lab-hero-title em,
+.lab-hero-title strong {
+  color: var(--lab-teal) !important;
+  font-style: normal;
   font-weight: 600 !important;
 }
 
-.home-section.wg-hero .cta-group .btn-primary:hover {
-  background-color: #f0f0f0 !important;
-  border-color: #f0f0f0 !important;
-  color: #000000 !important;
+.lab-hero-subtitle {
+  font-family: var(--lab-font-body);
+  font-size: clamp(15px, 1.25vw, 18px);
+  line-height: 1.5;
+  color: #cbd5e1;
+  max-width: 600px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.lab-hero-subtitle p { margin-bottom: 0; }
+
+.lab-hero-text { color: #cbd5e1; margin-bottom: 30px; }
+.lab-hero-text p { margin-bottom: 0.6em; }
+
+.lab-hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-// Slightly larger people cards on the team page
-.wg-people .people-person {
-  margin-bottom: 2rem;
+.lab-cta {
+  display: inline-block;
+  padding: 14px 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: var(--lab-font-body);
+  font-size: 12px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+  line-height: 1.2;
+}
+.lab-cta:hover {
+  background: var(--lab-teal);
+  border-color: var(--lab-teal);
+  color: var(--lab-navy-1) !important;
+}
+.lab-cta--ghost {
+  border-color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+.lab-cta--ghost:hover {
+  background: transparent;
+  border-color: var(--lab-teal);
+  color: var(--lab-teal) !important;
 }
 
-// Perfect circles: target img directly, override Bootstrap's max-width: 100%
+// ============================================================
+// Recent highlights ribbon (bottom of hero)
+// ============================================================
+.lab-hero-highlights {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 6;
+  background: linear-gradient(180deg, transparent 0%, rgba(2, 6, 18, 0.72) 40%, rgba(2, 6, 18, 0.96) 100%);
+  padding: 28px 48px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  border-top: 1px solid rgba(77, 208, 225, 0.14);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-family: var(--lab-font-body);
+}
+.lab-hero-highlights__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 130px;
+  padding-right: 14px;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+.lab-hero-highlights__label .k {
+  font-family: var(--lab-font-body);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--lab-teal);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.lab-hero-highlights__label .v {
+  font-family: var(--lab-font-display);
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+.lab-hero-highlights__cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.lab-paper {
+  background: rgba(10, 20, 40, 0.65);
+  border: 1px solid rgba(77, 208, 225, 0.18);
+  padding: 13px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-decoration: none !important;
+  color: #fff !important;
+  transition: background-color 0.22s, border-color 0.22s, transform 0.22s;
+  position: relative;
+  overflow: hidden;
+}
+.lab-paper::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--lab-teal);
+  opacity: 0.55;
+}
+.lab-paper:hover {
+  background: rgba(20, 40, 70, 0.85);
+  border-color: rgba(77, 208, 225, 0.55);
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+.lab-paper__journal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.lab-paper__journal .name { color: var(--lab-teal); }
+.lab-paper__journal .year { color: rgba(255, 255, 255, 0.42); font-weight: 500; letter-spacing: 1.5px; }
+.lab-paper__title {
+  font-size: 13px;
+  line-height: 1.38;
+  color: #fff;
+  font-weight: 400;
+}
+.lab-paper__title .authors { font-weight: 600; color: #fff; }
+.lab-paper__title em { font-style: italic; color: #e0e7ef; font-weight: 300; }
+.lab-paper__arrow {
+  font-size: 10.5px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.48);
+  text-transform: uppercase;
+  margin-top: auto;
+  transition: color 0.2s;
+}
+.lab-paper:hover .lab-paper__arrow { color: var(--lab-teal); }
+
+@media screen and (max-width: 900px) {
+  .lab-hero-highlights {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+  }
+  .lab-hero-highlights__label {
+    min-width: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-right: 0;
+    padding-bottom: 8px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
+  }
+  .lab-hero-highlights__cards { grid-template-columns: 1fr; }
+  .lab-hero-inner { padding-top: 12vw; padding-bottom: 260px; }
+}
+@media screen and (max-width: 600px) {
+  .lab-hero-inner { padding-bottom: 460px; }
+  .lab-hero-highlights { padding: 14px; }
+}
+
+// ============================================================
+// People-page hero sizing
+// ============================================================
+.people-page-hero.home-section.wg-hero {
+  min-height: 48.5vw !important;
+}
+@media screen and (max-width: 768px) {
+  .people-page-hero.home-section.wg-hero { min-height: 65vw !important; }
+}
+
+// ============================================================
+// Section headings (non-hero): Space Grotesk + teal underline
+// ============================================================
+.home-section:not(.wg-hero) .section-heading h1,
+.home-section:not(.wg-hero) h1 {
+  font-family: var(--lab-font-display) !important;
+  font-weight: 500 !important;
+  letter-spacing: -1px !important;
+  color: var(--lab-navy-2) !important;
+  position: relative;
+  padding-bottom: 0.35em;
+  display: inline-block;
+}
+.home-section:not(.wg-hero) .section-heading {
+  text-align: center;
+}
+.home-section:not(.wg-hero) .section-heading h1::after {
+  content: '';
+  position: absolute;
+  left: 50%; transform: translateX(-50%);
+  bottom: 0;
+  width: 52px; height: 2px;
+  background: var(--lab-teal-dark);
+}
+
+// ============================================================
+// Body links (non-CTA, non-paper, non-nav)
+// ============================================================
+.home-section a:not(.btn):not(.lab-cta):not(.lab-paper):not(.navbar-brand):not(.nav-link) {
+  color: var(--lab-teal-dark);
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.home-section a:not(.btn):not(.lab-cta):not(.lab-paper):not(.navbar-brand):not(.nav-link):hover {
+  color: var(--lab-navy-2);
+  border-bottom-color: var(--lab-teal-dark);
+}
+
+// ============================================================
+// News markdown — make bold month/author labels pop
+// ============================================================
+.home-section.wg-markdown strong {
+  font-family: var(--lab-font-display);
+  font-weight: 600;
+  color: var(--lab-navy-2);
+  letter-spacing: -0.1px;
+}
+
+// ============================================================
+// Collapsible research topics
+// ============================================================
+details.research-topic {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid var(--lab-rule);
+  padding-bottom: 0.5rem;
+}
+details.research-topic > summary.research-topic-summary {
+  cursor: pointer;
+  font-family: var(--lab-font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: var(--lab-navy-2);
+  padding: 0.4rem 0;
+  list-style: none;
+  user-select: none;
+}
+details.research-topic > summary.research-topic-summary::-webkit-details-marker { display: none; }
+details.research-topic > summary.research-topic-summary::before {
+  content: '▶  ';
+  font-size: 0.62em;
+  color: var(--lab-teal-dark);
+  opacity: 0.8;
+}
+details.research-topic[open] > summary.research-topic-summary::before { content: '▼  '; }
+details.research-topic > .research-topic-content {
+  padding-left: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+// ============================================================
+// Collapsible news year sections
+// ============================================================
+details.news-year { margin-bottom: 1.5rem; }
+details.news-year > summary.news-year-summary {
+  cursor: pointer;
+  font-family: var(--lab-font-display);
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  color: var(--lab-navy-2);
+  padding: 0.4rem 0;
+  list-style: none;
+  user-select: none;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+details.news-year > summary.news-year-summary::-webkit-details-marker { display: none; }
+details.news-year > summary.news-year-summary::before {
+  content: '▶';
+  font-size: 0.55em;
+  color: var(--lab-teal-dark);
+  opacity: 0.8;
+}
+details.news-year[open] > summary.news-year-summary::before { content: '▼'; }
+details.news-year > .news-year-content {
+  padding-left: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+// ============================================================
+// People cards
+// ============================================================
+.wg-people .people-person { margin-bottom: 2rem; }
+
 img.avatar-circle {
   width: 200px !important;
   height: 200px !important;
   max-width: 200px !important;
   object-fit: cover !important;
   border-radius: 50% !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.wg-people .people-person a:hover img.avatar-circle {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(10, 28, 58, 0.12);
 }
 
 .wg-people .portrait-title h2 {
-  font-size: 1.15rem !important;
+  font-family: var(--lab-font-display) !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.2px !important;
+  color: var(--lab-navy-2) !important;
+  margin-top: 0.8rem;
 }
+.wg-people .portrait-title h2 a { color: var(--lab-navy-2) !important; border: 0 !important; }
+.wg-people .portrait-title h2 a:hover { color: var(--lab-teal-dark) !important; }
 
 .wg-people .portrait-title h3 {
-  font-size: 0.95rem !important;
+  font-family: var(--lab-font-body) !important;
+  font-size: 0.88rem !important;
+  font-weight: 400 !important;
+  color: var(--lab-ink-dim) !important;
+  letter-spacing: 0 !important;
 }
 
-// Collapsible research topic sections
-details.research-topic {
-  margin-bottom: 1.2rem;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 0.5rem;
+.wg-people .people-interests {
+  font-family: var(--lab-font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--lab-teal-dark);
+  letter-spacing: 0.2px;
+  line-height: 1.4;
 }
 
-details.research-topic > summary.research-topic-summary {
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 0.4rem 0;
-  list-style: none;
-  user-select: none;
-  color: inherit;
+// ============================================================
+// Publications / citations list
+// ============================================================
+.article-metadata { font-family: var(--lab-font-body); color: var(--lab-ink-dim); }
+.pub-list-item { border-bottom: 1px solid var(--lab-rule); padding: 1rem 0; }
+.pub-list-item h3 {
+  font-family: var(--lab-font-display) !important;
+  font-weight: 500 !important;
+  font-size: 1.15rem !important;
+  letter-spacing: -0.2px !important;
 }
 
-details.research-topic > summary.research-topic-summary::-webkit-details-marker {
-  display: none;
+// ============================================================
+// Footer
+// ============================================================
+footer {
+  font-family: var(--lab-font-body);
+  background: var(--lab-navy-1);
+  color: rgba(255, 255, 255, 0.72);
 }
+footer a, footer .footer-copyright a { color: var(--lab-teal) !important; }
+footer a:hover { color: #fff !important; }
 
-details.research-topic > summary.research-topic-summary::before {
-  content: '▶  ';
-  font-size: 0.7em;
-  opacity: 0.5;
+// ============================================================
+// Legacy hero fallback: if a page still uses the default hero
+// block (no custom fields), its buttons get Build A styling.
+// ============================================================
+.home-section.wg-hero .cta-btns .btn-primary,
+.home-section.wg-hero .cta-btns .btn-light {
+  background: transparent !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.55) !important;
+  color: #fff !important;
+  font-family: var(--lab-font-body) !important;
+  font-size: 12px !important;
+  letter-spacing: 2.8px !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+  padding: 14px 30px !important;
 }
-
-details.research-topic[open] > summary.research-topic-summary::before {
-  content: '▼  ';
-}
-
-details.research-topic > .research-topic-content {
-  padding-left: 0.5rem;
-  margin-top: 0.75rem;
-}
-
-// Collapsible news year sections
-details.news-year {
-  margin-bottom: 1.5rem;
-}
-
-details.news-year > summary.news-year-summary {
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 0.4rem 0;
-  list-style: none;
-  user-select: none;
-  color: inherit;
-}
-
-details.news-year > summary.news-year-summary::-webkit-details-marker {
-  display: none;
-}
-
-details.news-year > summary.news-year-summary::before {
-  content: '▶  ';
-  font-size: 0.7em;
-  opacity: 0.5;
-}
-
-details.news-year[open] > summary.news-year-summary::before {
-  content: '▼  ';
-}
-
-details.news-year > .news-year-content {
-  padding-left: 0.5rem;
-  margin-top: 0.75rem;
+.home-section.wg-hero .cta-btns .btn-primary:hover,
+.home-section.wg-hero .cta-btns .btn-light:hover {
+  background: var(--lab-teal) !important;
+  border-color: var(--lab-teal) !important;
+  color: var(--lab-navy-1) !important;
 }

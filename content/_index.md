@@ -6,20 +6,36 @@ type: landing
 sections:
   - block: hero
     content:
-      title: |
-        The
-        Genome
-        Change and
-        Adaptation
-        Lab
-      text: |
-        {{% cta cta_link="people" cta_text="Meet the Team →" %}}
+      eyebrow: "UC Davis · Genome Center · Plant Sciences"
+      title: "The _Genome Change_<br>and Adaptation Lab"
+      subtitle: "We study the biology of mutation. DNA damage, DNA repair, and the origin of genetic variation in plants and crops, from germline to soma."
+      ctas:
+        - label: "Meet the Team →"
+          url: "/people/"
+          style: "primary"
+        - label: "Read the Research"
+          url: "/research/"
+          style: "ghost"
+      highlights:
+        - journal: "PNAS"
+          year: "2026"
+          authors: "Davis et al."
+          title: "Genome degradation in plant tissue culture"
+          url: "https://doi.org/10.1073/pnas.2530182123"
+        - journal: "eLife"
+          year: "2025"
+          authors: "Monroe et al."
+          title: "Convergent evolution of epigenome-recruited DNA repair across the tree of life"
+          url: "https://doi.org/10.1101/2024.10.15.618488"
+        - journal: "Nature"
+          year: "2022"
+          authors: "Monroe et al."
+          title: "Mutation bias reflects natural selection in *Arabidopsis thaliana*"
+          url: "https://www.nature.com/articles/s41586-021-04269-6"
     design:
       background:
         image:
-          filename: banner-people.png
-          filters:
-            brightness: 0.8
+          filename: hero-pnas-signatures.png
           size: cover
           position: center
         text_color_light: true
