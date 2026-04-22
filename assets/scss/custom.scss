@@ -125,7 +125,7 @@ header#navigation {
 // Hero (Build A — dark navy with PNAS mutation signatures)
 // ============================================================
 .home-section.wg-hero {
-  min-height: 48vw !important;
+  min-height: clamp(600px, 48vw, 760px) !important;
   position: relative;
   overflow: hidden;
   padding: 0 !important;
@@ -158,14 +158,18 @@ header#navigation {
   pointer-events: none; opacity: 0.5;
 }
 
+// Container uses isolation instead of position:relative so that the
+// absolute-positioned highlights ribbon is anchored to the section
+// (full section bottom), not to the container's content height.
 .home-section.wg-hero .container {
-  position: relative;
-  z-index: 5;
+  position: static;
+  isolation: isolate;
   color: #fff;
 }
+.home-section.wg-hero .container > .lab-hero-inner { position: relative; z-index: 5; }
 
 .lab-hero-inner {
-  padding-top: 7vw;
+  padding-top: clamp(40px, 7vw, 100px);
   padding-bottom: 200px;
   max-width: 900px;
   color: #fff;
