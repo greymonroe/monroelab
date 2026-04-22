@@ -26,14 +26,14 @@ organizations:
     url: https://climateadaptation.ucdavis.edu/
 
 # Short bio (displayed in user profile if image)
-bio: Plant genome biologist studying how mutations arise, how DNA repair is recruited by the epigenome, and how plant genomes adapt.
+bio: Plant genome biologist studying mutation, DNA repair, and somatic and germline genome dynamics in plants and crops.
 
 # Interests to show in About widget
 interests:
   - Mutation Biology
+  - Somatic Mutation and Genome Stability
   - Epigenome-Recruited DNA Repair
   - Pan-genomes and Crop Genomics
-  - Plant Climate Adaptation
 
 # Education to show in About widget
 education:
@@ -75,12 +75,14 @@ user_groups:
   - Principal Investigator
 ---
 
-Grey Monroe leads the Genome Change and Adaptation Lab in the Department of Plant Sciences at UC Davis, with affiliations in the Genome Center and the Climate Adaptation Research Center. He earned his PhD in Ecology at Colorado State University with John McKay and completed postdoctoral research with Detlef Weigel at the Max Planck Institute for Developmental Biology.
+Grey Monroe leads the Genome Change and Adaptation Lab in the Department of Plant Sciences at UC Davis, with affiliations in the Genome Center and the Climate Adaptation Research Center. He earned his PhD in Ecology with John McKay at Colorado State University and completed postdoctoral research with Detlef Weigel at the Max Planck Institute for Developmental Biology.
 
-The lab studies how plant genomes change and adapt. A central question is where mutations arise in a genome and why the rates vary so much from one region to another. Work from the lab in *Nature* (2022) showed that mutation in *Arabidopsis* is biased away from essential genes, and follow-up work in *eLife* (2025) found that epigenome-recruited DNA repair has evolved convergently across the tree of life. Current projects dig into the mechanism: how histone marks like H3K4me1 recruit mismatch repair and homology-directed repair proteins through Tudor domain readers, and how this shapes mutation and genome evolution over time.
+The lab studies the biology of mutation: where mutations arise in genomes, how DNA repair is targeted to the most functionally important regions, and how the mutational process plays out across development, generations, and evolutionary time. Work from the lab in *Nature* (2022) established that germline mutation rates in *Arabidopsis* are systematically reduced in essential genes, mediated by epigenomic recruitment of DNA repair. Follow-up work in *The Plant Cell* (2024) identified H3K4me1 as a histone mark that recruits mismatch repair (MSH6) and homology-directed repair (PDS5) through Tudor-domain readers, and *eLife* (2025) showed that this coupling between the epigenome and DNA repair machinery has evolved convergently across the tree of life.
 
-Alongside the basic biology, the lab builds pan-genomes and functional genomic resources for crops, including pistachio, cassava, walnut, alfalfa, einkorn wheat, and poplar. The goal is to connect genetic variation in real populations to the traits that matter for climate adaptation and breeding.
+A growing focus of the lab is somatic mutation. Plants are a uniquely powerful system for quantifying mutation in action: long-lived clonal genotypes, spatially structured meristems, and accessible lineage histories make it possible to measure mutation accumulation through time and space at a resolution that is difficult in most animal systems. The lab combines duplex sequencing, haplotype-resolved long-read genome assembly, and large-scale short-read sequencing of clonal lineages to characterize somatic mutation dynamics in walnut, cassava, poplar, and *Arabidopsis*, including work on tissue-culture-induced genome instability and the partitioning of mutation bias and selection during plant development.
 
-Grey teaches PLS 206 (Applied Multivariate Modeling) and PLS 152 (Plant Genetics), and co-directs the UC Davis chapter of EnvironMentors, a high school STEM mentorship program.
+The lab also builds pan-genomes and functional genomic resources for crop and wild plant species, including pistachio, walnut, cassava, alfalfa, einkorn wheat, celery, and poplar. Current projects connect population-scale genetic variation to the chromatin landscapes, genome architectural features, and repair pathways that shape which variation arises and persists. Tools developed by the lab include the `polymorphology2` R package for genomic analysis, `reCYCLing` for satellite DNA evolution with ABC inference, and `kolibri` for long-read structural variant detection.
+
+Grey teaches PLS 206 (Applied Multivariate Modeling for Agricultural and Environmental Sciences) and PLS 152 (Plant Genetics), and co-directs the UC Davis chapter of EnvironMentors, a high school STEM mentorship program.
 
 **Office:** 262 Robbins Hall, UC Davis
