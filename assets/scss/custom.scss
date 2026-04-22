@@ -130,6 +130,8 @@ header#navigation {
   overflow: hidden;
   padding: 0 !important;
   background: var(--lab-navy-1);
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 992px) {
   .home-section.wg-hero { min-height: 720px !important; }
@@ -158,15 +160,18 @@ header#navigation {
   pointer-events: none; opacity: 0.5;
 }
 
-// Container uses isolation instead of position:relative so that the
-// absolute-positioned highlights ribbon is anchored to the section
-// (full section bottom), not to the container's content height.
+// Container fills the hero section via flex so the absolute-positioned
+// highlights ribbon anchored at the container's bottom = section's bottom.
+// z-index:5 is critical so hero content stacks ABOVE the ::before tint
+// overlay (z:1) and ::after scanlines (z:2).
 .home-section.wg-hero .container {
-  position: static;
-  isolation: isolate;
+  position: relative;
+  z-index: 5;
   color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-.home-section.wg-hero .container > .lab-hero-inner { position: relative; z-index: 5; }
 
 .lab-hero-inner {
   padding-top: clamp(40px, 7vw, 100px);
