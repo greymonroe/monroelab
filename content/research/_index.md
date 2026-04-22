@@ -50,7 +50,7 @@ sections:
 
         Plants harbor extraordinary structural variation — inversions, transposable elements, copy number variants, and pan-genome loci present in some individuals but absent in others. We use long-read sequencing and comparative genomics to characterize this variation and understand how it contributes to phenotypic diversity, reproductive biology, and local adaptation across plant populations and species.
 
-        {{< researchfig src="media/research/davis2025-fig2-genomic-instability.png" alt="Genomic instability in walnut somatic embryo clones" caption="Chromosomal instability in clonal walnut somatic embryos — whole chromosome duplications, partial deletions, somatic recombination events, and their effects on gene expression." ref="Davis et al. 2025 *bioRxiv*" link="https://doi.org/10.1101/2025.07.24.664184" >}}
+        {{< researchfig src="media/research/davis2025-fig2-genomic-instability.png" alt="Genomic instability in walnut somatic embryo clones" caption="Chromosomal instability in clonal walnut somatic embryos — whole chromosome duplications, partial deletions, somatic recombination events, and their effects on gene expression." ref="Davis et al. 2026 *PNAS*" link="https://doi.org/10.1073/pnas.2530182123" >}}
 
         Current projects include:
         - Pistachio pan-genome and multi-genome reference
@@ -65,7 +65,11 @@ sections:
 
         This work builds on our foundational studies of adaptive loss-of-function in plants and extends them into crop systems where understanding which genes matter — and how — has direct practical value.
 
-        {{< researchfig src="media/research/zhao2025-fig1-lof-roc.png" alt="Random forest model predicting gene dispensability from LoF and epigenomic features" caption="Random forest prediction of pan-genome gene dispensability using loss-of-function frequency and epigenomic features (AUC = 0.854), with H3K4me1 and LoF frequency among the top predictors." ref="Zhao et al. 2025 *bioRxiv*" link="https://doi.org/10.1101/2025.04.30.651390" >}}
+        {{< researchfig src="media/research/zhao2026-fig4-lof-burden.png" alt="Loss-of-function burden testing framework" caption="Framework for loss-of-function burden testing: collapsing allelic LoF states across accessions into a per-gene burden matrix, then ranking expression associations against permutation nulls to identify candidate regulators." ref="Zhao et al. 2026 *The Plant Cell*" link="https://doi.org/10.1093/plcell/koag087" >}}
+
+        Applied to *Arabidopsis thaliana*, this framework recapitulates the canonical flowering-time regulatory network as an LoF-expression association graph — centered on FRIGIDA (FRI), FLC, and their interactions with SOC1, SPL15, AGL9, and histone variant H3.1 — demonstrating that LoF burden testing recovers real biology from natural variation alone.
+
+        {{< researchfig src="media/research/zhao2026-fig5a-frigida-network.png" alt="FRIGIDA-centered flowering time gene network from LoF-expression association" caption="Gene network constructed from LoF-expression associations in *Arabidopsis thaliana*, recapitulating the canonical flowering-time regulatory module around FRIGIDA, FLC, and partners." ref="Zhao et al. 2026 *The Plant Cell*" link="https://doi.org/10.1093/plcell/koag087" >}}
 
         Current projects include:
         - Loss-of-function burden testing in cassava (*Manihot esculenta*) landraces
