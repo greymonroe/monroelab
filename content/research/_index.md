@@ -50,7 +50,7 @@ sections:
 
         Plants harbor extraordinary structural variation — inversions, transposable elements, copy number variants, and pan-genome loci present in some individuals but absent in others. We use long-read sequencing and comparative genomics to characterize this variation and understand how it contributes to phenotypic diversity, reproductive biology, and local adaptation across plant populations and species.
 
-        {{< researchfig src="media/research/davis2025-fig2-genomic-instability.png" alt="Genomic instability in walnut somatic embryo clones" caption="Chromosomal instability in clonal walnut somatic embryos — whole chromosome duplications, partial deletions, somatic recombination events, and their effects on gene expression." ref="Davis et al. 2026 *PNAS*" link="https://doi.org/10.1073/pnas.2530182123" >}}
+        {{< researchfig src="media/research/davis2026-fig2-genomic-instability.png" alt="Genomic instability in walnut somatic embryo clones" caption="Chromosomal instability in clonal walnut somatic embryos — whole chromosome duplications, partial deletions, somatic recombination events, and their effects on gene expression." ref="Davis et al. 2026 *PNAS*" link="https://doi.org/10.1073/pnas.2530182123" >}}
 
         Current projects include:
         - Pistachio pan-genome and multi-genome reference

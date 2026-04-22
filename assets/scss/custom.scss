@@ -30,6 +30,11 @@
 html, body {
   background: var(--lab-navy-0) !important;
   color: var(--lab-ink) !important;
+  // Prevent the hero highlights ribbon's `width: 100vw` (used to break out
+  // of the .container and span the full page) from creating a horizontal
+  // scrollbar when the browser scrollbar eats a few px of viewport width.
+  // `overflow-x: clip` suppresses overflow without breaking sticky/fixed.
+  overflow-x: clip;
 }
 body {
   font-family: var(--lab-font-body) !important;
@@ -175,7 +180,10 @@ header#navigation {
 
 .lab-hero-inner {
   padding-top: clamp(40px, 7vw, 100px);
-  padding-bottom: 200px;
+  // Reserve space for the absolute-positioned highlights ribbon at the
+  // section's bottom. Ribbon height scales with viewport (cards reflow at
+  // tablet widths); 240px covers typical 3-col desktop layout.
+  padding-bottom: 240px;
   max-width: 900px;
   color: #fff;
 }
@@ -379,6 +387,26 @@ header#navigation {
 }
 .lab-paper:hover .lab-paper__arrow { color: var(--lab-teal); }
 
+// Tablet / narrow desktop: 3-col cards get cramped; tighten paddings and
+// scale down card text, bump reserved padding so the ribbon doesn't
+// overlap CTAs.
+@media screen and (max-width: 1200px) {
+  .lab-hero-highlights {
+    padding: 26px clamp(20px, 4vw, 40px) 22px;
+    gap: 20px;
+  }
+  .lab-hero-highlights__label {
+    min-width: 110px;
+    padding-right: 14px;
+  }
+  .lab-hero-highlights__label .v { font-size: 17px; }
+  .lab-hero-highlights__cards { gap: 12px; }
+  .lab-paper { padding: 12px 14px 12px; gap: 6px; }
+  .lab-paper__journal { font-size: 10.5px; letter-spacing: 2.2px; }
+  .lab-paper__title { font-size: 13.5px; line-height: 1.36; }
+  .lab-paper__arrow { font-size: 10.5px; }
+  .lab-hero-inner { padding-bottom: 260px; }
+}
 @media screen and (max-width: 900px) {
   .lab-hero-highlights {
     flex-direction: column;
@@ -396,10 +424,10 @@ header#navigation {
     align-items: baseline;
   }
   .lab-hero-highlights__cards { grid-template-columns: 1fr; }
-  .lab-hero-inner { padding-top: 12vw; padding-bottom: 260px; }
+  .lab-hero-inner { padding-top: 12vw; padding-bottom: 300px; }
 }
 @media screen and (max-width: 600px) {
-  .lab-hero-inner { padding-bottom: 460px; }
+  .lab-hero-inner { padding-bottom: 500px; }
   .lab-hero-highlights { padding: 14px; }
 }
 
