@@ -14,7 +14,7 @@ last_name: Monroe
 superuser: true
 
 # Role/position/tagline
-role: Associate Professor
+role: Assistant Professor
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -22,21 +22,23 @@ organizations:
     url: https://www.plantsciences.ucdavis.edu/
   - name: UC Davis Genome Center
     url: https://genomecenter.ucdavis.edu/
+  - name: UC Davis Climate Adaptation Research Center
+    url: https://climateadaptation.ucdavis.edu/
 
 # Short bio (displayed in user profile if image)
-bio: Plant genome biologist studying mutation rate variation, epigenome-recruited DNA repair, and functional genomics.
+bio: Plant genome biologist studying how mutations arise, how DNA repair is recruited by the epigenome, and how plant genomes adapt.
 
 # Interests to show in About widget
 interests:
-  - Mutation Rate Variation
+  - Mutation Biology
   - Epigenome-Recruited DNA Repair
-  - Functional Genomics
-  - Climate Adaptation
+  - Pan-genomes and Crop Genomics
+  - Plant Climate Adaptation
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD
+    - course: PhD, Ecology
       institution: Colorado State University (with John McKay)
     - course: Postdoctoral Research
       institution: Max Planck Institute for Developmental Biology (with Detlef Weigel)
@@ -73,8 +75,12 @@ user_groups:
   - Principal Investigator
 ---
 
-Grey Monroe is an Associate Professor in the Department of Plant Sciences at UC Davis, with affiliations in the Genome Center and Climate Adaptation Research Center. He completed his PhD at Colorado State University with John McKay and postdoctoral research at the Max Planck Institute for Developmental Biology with Detlef Weigel.
+Grey Monroe leads the Genome Change and Adaptation Lab in the Department of Plant Sciences at UC Davis, with affiliations in the Genome Center and the Climate Adaptation Research Center. He earned his PhD in Ecology at Colorado State University with John McKay and completed postdoctoral research with Detlef Weigel at the Max Planck Institute for Developmental Biology.
 
-His lab uses emerging sequencing technologies to study mutation rate variation, epigenome-recruited DNA repair, and climate adaptation in plants. The lab has particular interests in understudied crop breeding, gene loss in plant climate adaptation, and how the epigenome shapes the mutational landscape of plant genomes.
+The lab studies how plant genomes change and adapt. A central question is where mutations arise in a genome and why the rates vary so much from one region to another. Work from the lab in *Nature* (2022) showed that mutation in *Arabidopsis* is biased away from essential genes, and follow-up work in *eLife* (2025) found that epigenome-recruited DNA repair has evolved convergently across the tree of life. Current projects dig into the mechanism: how histone marks like H3K4me1 recruit mismatch repair and homology-directed repair proteins through Tudor domain readers, and how this shapes mutation and genome evolution over time.
+
+Alongside the basic biology, the lab builds pan-genomes and functional genomic resources for crops, including pistachio, cassava, walnut, alfalfa, einkorn wheat, and poplar. The goal is to connect genetic variation in real populations to the traits that matter for climate adaptation and breeding.
+
+Grey teaches PLS 206 (Applied Multivariate Modeling) and PLS 152 (Plant Genetics), and co-directs the UC Davis chapter of EnvironMentors, a high school STEM mentorship program.
 
 **Office:** 262 Robbins Hall, UC Davis
