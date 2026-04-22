@@ -54,7 +54,7 @@ sections:
 
         - The full VCF dataset from [**Zhao et al.**](https://doi.org/10.1111/nph.70918) is now publicly available via [CassavaBase](https://cassavabase.org/ftp/manuscripts/Zhao_et_al_2026/) — 1,152 cassava whole-genome sequences representing the most comprehensive centralized compilation of cassava genomic diversity currently available.
 
-        - Grey Monroe was promoted to Associate Professor.
+        - Grey Monroe was promoted to Associate Professor, effective July 1, 2026.
 
         - Pablo Luna Rodriguez returned to Peru to complete his undergraduate degree and will continue working with the lab as a remote visiting scholar. We're excited to continue collaborating!
 

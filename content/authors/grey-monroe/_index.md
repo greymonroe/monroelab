@@ -14,7 +14,7 @@ last_name: Monroe
 superuser: true
 
 # Role/position/tagline
-role: Assistant Professor
+role: Assistant Professor (Associate effective July 1, 2026)
 
 # Organizations/Affiliations to show in About widget
 organizations:
