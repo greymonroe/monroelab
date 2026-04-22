@@ -661,13 +661,32 @@ img.avatar-circle {
 // ============================================================
 // Tables, code blocks
 // ============================================================
-table { color: var(--lab-ink); }
-table thead th {
-  background: var(--lab-navy-2);
-  color: #fff;
-  border-bottom: 1px solid var(--lab-rule);
+table, .table {
+  --bs-table-color: var(--lab-ink);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--lab-rule-soft);
+  --bs-table-striped-color: var(--lab-ink);
+  --bs-table-striped-bg: rgba(77, 208, 225, 0.04);
+  --bs-table-hover-color: #fff;
+  --bs-table-hover-bg: rgba(77, 208, 225, 0.08);
+  color: var(--lab-ink) !important;
+  background: transparent !important;
 }
-table tbody tr { border-bottom: 1px solid var(--lab-rule-soft); }
+table thead th, .table thead th, table > thead > tr > th {
+  background: var(--lab-navy-2) !important;
+  color: #fff !important;
+  border-bottom: 1px solid var(--lab-rule) !important;
+}
+table tbody tr, .table tbody tr { border-bottom: 1px solid var(--lab-rule-soft); }
+table tbody td, table tbody th,
+.table tbody td, .table tbody th,
+table > tbody > tr > td, table > tbody > tr > th {
+  color: var(--lab-ink) !important;
+  background: transparent !important;
+  border-color: var(--lab-rule-soft) !important;
+}
+table a, .table a { color: var(--lab-teal) !important; }
+table a:hover, .table a:hover { color: var(--lab-teal-bright) !important; }
 
 code, pre {
   background: var(--lab-navy-2) !important;
