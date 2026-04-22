@@ -1,33 +1,38 @@
 // ============================================================
-// Monroe Lab — Build A design system
-// Dark hero with PNAS mutation signatures + navy/teal palette
+// Monroe Lab — Build A design system (FULL DARK MODE)
+// Dark navy site-wide, teal accent, PNAS mutation-signature hero
 // Space Grotesk (display) + Inter (body) throughout
 // ============================================================
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --lab-ink: #1a2030;
-  --lab-ink-soft: #2a3442;
-  --lab-ink-dim: #5d6b7a;
-  --lab-navy-0: #020713;
-  --lab-navy-1: #061124;
-  --lab-navy-2: #0a1c3a;
-  --lab-teal-dark: #0d6b78;
+  --lab-navy-0: #020713;   // deepest — body background
+  --lab-navy-1: #061124;   // default dark surface
+  --lab-navy-2: #0a1c3a;   // elevated surface / cards
+  --lab-navy-3: #112548;   // hover surface
   --lab-teal: #4dd0e1;
+  --lab-teal-bright: #7ee0ec;
+  --lab-teal-dark: #0d6b78;
   --lab-teal-soft: rgba(77, 208, 225, 0.16);
-  --lab-rule: #e5eaf0;
-  --lab-rule-dark: #1b2a42;
+  --lab-ink: #e8edf4;         // primary light text
+  --lab-ink-dim: #9aa8bc;     // secondary text
+  --lab-ink-mute: #6b7890;    // tertiary / captions
+  --lab-rule: #1b2a42;        // dark dividers
+  --lab-rule-soft: #142038;
   --lab-font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --lab-font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 // ============================================================
-// Global typography
+// Global body + typography
 // ============================================================
+html, body {
+  background: var(--lab-navy-0) !important;
+  color: var(--lab-ink) !important;
+}
 body {
   font-family: var(--lab-font-body) !important;
-  color: var(--lab-ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,11 +40,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--lab-font-display) !important;
   letter-spacing: -0.4px;
-  color: var(--lab-navy-2);
+  color: #fff;
+}
+
+p, li, dd, dt { color: var(--lab-ink); }
+
+// ============================================================
+// Navbar — dark, integrated with hero
+// ============================================================
+#navbar-main,
+nav.navbar,
+.navbar-light,
+header#navigation {
+  background: rgba(2, 7, 19, 0.88) !important;
+  border-bottom: 1px solid var(--lab-rule) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-brand,
-.navbar .nav-link {
+.navbar .nav-link,
+.navbar .navbar-nav .nav-link {
   font-family: var(--lab-font-body) !important;
 }
 
@@ -48,25 +69,52 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2.5px !important;
   font-size: 0.92rem !important;
   text-transform: uppercase;
-  color: var(--lab-navy-2) !important;
+  color: #fff !important;
 }
-.navbar .nav-link {
+.navbar-brand:hover { color: var(--lab-teal) !important; }
+
+.navbar .nav-link,
+.navbar-light .navbar-nav .nav-link {
   font-size: 0.85rem !important;
   letter-spacing: 0.4px;
   font-weight: 500 !important;
-  color: var(--lab-ink-soft) !important;
+  color: rgba(255, 255, 255, 0.78) !important;
 }
-.navbar .nav-link:hover {
-  color: var(--lab-teal-dark) !important;
+.navbar .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--lab-teal) !important;
+}
+.navbar .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--lab-teal) !important;
+}
+
+// Day/night toggle + any other navbar icons
+.navbar-light .navbar-toggler,
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+.navbar-light .navbar-toggler-icon {
+  filter: invert(1);
 }
 
 // ============================================================
-// Background handling: non-hero sections keep original zoomed
-// 100% width top-aligned; hero uses cover + custom positioning.
+// Section backgrounds — all dark, alternating depth
 // ============================================================
+.home-section {
+  background: var(--lab-navy-0);
+  color: var(--lab-ink);
+}
+.home-section:nth-of-type(even):not(.wg-hero) {
+  background: var(--lab-navy-1);
+}
+
+// Background handling for sections with bg-image
 .home-section:not(.wg-hero) .home-section-bg.bg-image {
   background-size: 100% auto !important;
   background-position: top center !important;
+  opacity: 0.35;
 }
 .home-section.wg-hero .home-section-bg.bg-image {
   background-size: cover !important;
@@ -81,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   padding: 0 !important;
+  background: var(--lab-navy-1);
 }
 @media screen and (max-width: 992px) {
   .home-section.wg-hero { min-height: 720px !important; }
@@ -117,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .lab-hero-inner {
   padding-top: 7vw;
-  padding-bottom: 180px;
+  padding-bottom: 200px;
   max-width: 900px;
   color: #fff;
 }
@@ -344,14 +393,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // ============================================================
-// Section headings (non-hero): Space Grotesk + teal underline
+// Section headings (non-hero): white on dark, teal underline
 // ============================================================
 .home-section:not(.wg-hero) .section-heading h1,
 .home-section:not(.wg-hero) h1 {
   font-family: var(--lab-font-display) !important;
   font-weight: 500 !important;
   letter-spacing: -1px !important;
-  color: var(--lab-navy-2) !important;
+  color: #fff !important;
   position: relative;
   padding-bottom: 0.35em;
   display: inline-block;
@@ -365,20 +414,43 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%; transform: translateX(-50%);
   bottom: 0;
   width: 52px; height: 2px;
-  background: var(--lab-teal-dark);
+  background: var(--lab-teal);
+}
+
+.home-section:not(.wg-hero) h2,
+.home-section:not(.wg-hero) h3,
+.home-section:not(.wg-hero) h4 {
+  color: #fff !important;
+}
+
+// Body text inside sections
+.home-section:not(.wg-hero),
+.home-section:not(.wg-hero) p,
+.home-section:not(.wg-hero) li {
+  color: var(--lab-ink);
 }
 
 // ============================================================
 // Body links (non-CTA, non-paper, non-nav)
 // ============================================================
 .home-section a:not(.btn):not(.lab-cta):not(.lab-paper):not(.navbar-brand):not(.nav-link) {
-  color: var(--lab-teal-dark);
+  color: var(--lab-teal);
   border-bottom: 1px solid transparent;
   transition: color 0.2s, border-color 0.2s;
 }
 .home-section a:not(.btn):not(.lab-cta):not(.lab-paper):not(.navbar-brand):not(.nav-link):hover {
-  color: var(--lab-navy-2);
-  border-bottom-color: var(--lab-teal-dark);
+  color: var(--lab-teal-bright);
+  border-bottom-color: var(--lab-teal);
+}
+
+// Generic links outside home-sections (author pages, publication detail, etc.)
+article a:not(.btn):not(.navbar-brand):not(.nav-link),
+main a:not(.btn):not(.navbar-brand):not(.nav-link) {
+  color: var(--lab-teal);
+}
+article a:not(.btn):not(.navbar-brand):not(.nav-link):hover,
+main a:not(.btn):not(.navbar-brand):not(.nav-link):hover {
+  color: var(--lab-teal-bright);
 }
 
 // ============================================================
@@ -387,9 +459,11 @@ h1, h2, h3, h4, h5, h6 {
 .home-section.wg-markdown strong {
   font-family: var(--lab-font-display);
   font-weight: 600;
-  color: var(--lab-navy-2);
+  color: #fff;
   letter-spacing: -0.1px;
 }
+
+.home-section.wg-markdown em { color: var(--lab-ink-dim); font-style: italic; }
 
 // ============================================================
 // Collapsible research topics
@@ -405,7 +479,7 @@ details.research-topic > summary.research-topic-summary {
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: -0.3px;
-  color: var(--lab-navy-2);
+  color: #fff;
   padding: 0.4rem 0;
   list-style: none;
   user-select: none;
@@ -414,13 +488,14 @@ details.research-topic > summary.research-topic-summary::-webkit-details-marker 
 details.research-topic > summary.research-topic-summary::before {
   content: '▶  ';
   font-size: 0.62em;
-  color: var(--lab-teal-dark);
+  color: var(--lab-teal);
   opacity: 0.8;
 }
 details.research-topic[open] > summary.research-topic-summary::before { content: '▼  '; }
 details.research-topic > .research-topic-content {
   padding-left: 0.5rem;
   margin-top: 0.75rem;
+  color: var(--lab-ink);
 }
 
 // ============================================================
@@ -433,7 +508,7 @@ details.news-year > summary.news-year-summary {
   font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-  color: var(--lab-navy-2);
+  color: #fff;
   padding: 0.4rem 0;
   list-style: none;
   user-select: none;
@@ -445,17 +520,18 @@ details.news-year > summary.news-year-summary::-webkit-details-marker { display:
 details.news-year > summary.news-year-summary::before {
   content: '▶';
   font-size: 0.55em;
-  color: var(--lab-teal-dark);
+  color: var(--lab-teal);
   opacity: 0.8;
 }
 details.news-year[open] > summary.news-year-summary::before { content: '▼'; }
 details.news-year > .news-year-content {
   padding-left: 0.5rem;
   margin-top: 0.75rem;
+  color: var(--lab-ink);
 }
 
 // ============================================================
-// People cards
+// People cards — dark treatment
 // ============================================================
 .wg-people .people-person { margin-bottom: 2rem; }
 
@@ -466,10 +542,12 @@ img.avatar-circle {
   object-fit: cover !important;
   border-radius: 50% !important;
   transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid rgba(77, 208, 225, 0.18);
 }
 .wg-people .people-person a:hover img.avatar-circle {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(10, 28, 58, 0.12);
+  box-shadow: 0 8px 24px rgba(77, 208, 225, 0.22);
+  border-color: var(--lab-teal);
 }
 
 .wg-people .portrait-title h2 {
@@ -477,11 +555,11 @@ img.avatar-circle {
   font-size: 1.1rem !important;
   font-weight: 600 !important;
   letter-spacing: -0.2px !important;
-  color: var(--lab-navy-2) !important;
+  color: #fff !important;
   margin-top: 0.8rem;
 }
-.wg-people .portrait-title h2 a { color: var(--lab-navy-2) !important; border: 0 !important; }
-.wg-people .portrait-title h2 a:hover { color: var(--lab-teal-dark) !important; }
+.wg-people .portrait-title h2 a { color: #fff !important; border: 0 !important; }
+.wg-people .portrait-title h2 a:hover { color: var(--lab-teal) !important; }
 
 .wg-people .portrait-title h3 {
   font-family: var(--lab-font-body) !important;
@@ -495,33 +573,120 @@ img.avatar-circle {
   font-family: var(--lab-font-body);
   font-size: 0.78rem;
   font-weight: 500;
-  color: var(--lab-teal-dark);
+  color: var(--lab-teal);
   letter-spacing: 0.2px;
   line-height: 1.4;
 }
 
 // ============================================================
-// Publications / citations list
+// Publications / citations list — dark
 // ============================================================
 .article-metadata { font-family: var(--lab-font-body); color: var(--lab-ink-dim); }
+.article-metadata a { color: var(--lab-ink-dim) !important; }
+.article-metadata a:hover { color: var(--lab-teal) !important; }
+
 .pub-list-item { border-bottom: 1px solid var(--lab-rule); padding: 1rem 0; }
 .pub-list-item h3 {
   font-family: var(--lab-font-display) !important;
   font-weight: 500 !important;
   font-size: 1.15rem !important;
   letter-spacing: -0.2px !important;
+  color: #fff !important;
 }
+.pub-list-item h3 a { color: #fff !important; }
+.pub-list-item h3 a:hover { color: var(--lab-teal) !important; }
+
+.publication-year { color: var(--lab-ink-dim) !important; }
+
+// Publication detail pages
+.article-container h1,
+.article-container h2,
+.article-container h3 { color: #fff !important; }
+.article-container,
+.article-container p,
+.article-container li { color: var(--lab-ink); }
+.article-container blockquote {
+  border-left: 3px solid var(--lab-teal);
+  background: var(--lab-navy-2);
+  color: var(--lab-ink);
+  padding: 0.8rem 1.2rem;
+}
+
+// Badges / pills
+.badge,
+.btn-outline-primary {
+  background: var(--lab-navy-2) !important;
+  color: var(--lab-ink) !important;
+  border: 1px solid var(--lab-rule) !important;
+}
+
+// ============================================================
+// Author / profile pages (people detail, PI page)
+// ============================================================
+.universal-wrapper,
+.article-style { color: var(--lab-ink); }
+
+.article-style h1,
+.article-style h2,
+.article-style h3,
+.article-style h4 { color: #fff !important; }
+
+// About widget
+.avatar, img.avatar {
+  border-color: var(--lab-teal) !important;
+}
+
+#profile h1,
+#profile .portrait-title h2,
+.widget-about h2 { color: #fff !important; }
+
+.widget-about h3 { color: var(--lab-ink-dim) !important; }
+
+.widget-about .network-icon ul li a {
+  color: var(--lab-ink) !important;
+}
+.widget-about .network-icon ul li a:hover {
+  color: var(--lab-teal) !important;
+}
+
+// ============================================================
+// Tables, code blocks
+// ============================================================
+table { color: var(--lab-ink); }
+table thead th {
+  background: var(--lab-navy-2);
+  color: #fff;
+  border-bottom: 1px solid var(--lab-rule);
+}
+table tbody tr { border-bottom: 1px solid var(--lab-rule-soft); }
+
+code, pre {
+  background: var(--lab-navy-2) !important;
+  color: var(--lab-teal-bright) !important;
+  border: 1px solid var(--lab-rule);
+}
+
+// ============================================================
+// Form elements (search, contact)
+// ============================================================
+input, textarea, select {
+  background: var(--lab-navy-2) !important;
+  color: var(--lab-ink) !important;
+  border: 1px solid var(--lab-rule) !important;
+}
+input::placeholder, textarea::placeholder { color: var(--lab-ink-mute) !important; }
 
 // ============================================================
 // Footer
 // ============================================================
 footer {
   font-family: var(--lab-font-body);
-  background: var(--lab-navy-1);
-  color: rgba(255, 255, 255, 0.72);
+  background: var(--lab-navy-0);
+  color: var(--lab-ink-dim);
+  border-top: 1px solid var(--lab-rule);
 }
 footer a, footer .footer-copyright a { color: var(--lab-teal) !important; }
-footer a:hover { color: #fff !important; }
+footer a:hover { color: var(--lab-teal-bright) !important; }
 
 // ============================================================
 // Legacy hero fallback: if a page still uses the default hero
@@ -546,3 +711,20 @@ footer a:hover { color: #fff !important; }
   border-color: var(--lab-teal) !important;
   color: var(--lab-navy-1) !important;
 }
+
+// ============================================================
+// Image backgrounds inside content (figures on dark sections)
+// Add subtle frame so white figures read well on dark bg
+// ============================================================
+.article-container img,
+.home-section:not(.wg-hero) img:not(.avatar-circle):not(.avatar) {
+  border-radius: 3px;
+}
+
+// ============================================================
+// Scrollbar (macOS/Chrome subtle dark)
+// ============================================================
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--lab-navy-0); }
+::-webkit-scrollbar-thumb { background: var(--lab-navy-3); border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: var(--lab-teal-dark); }
