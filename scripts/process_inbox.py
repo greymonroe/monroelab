@@ -20,7 +20,7 @@ DONE_DIR = INBOX_DIR / "_done"
 NEEDS_REVIEW_DIR = INBOX_DIR / "_needs_review"
 AUTHORS_DIR = REPO_ROOT / "content" / "authors"
 POSTS_DIR = REPO_ROOT / "content" / "post"
-PUBS_BIB = REPO_ROOT / "data" / "publications.bib"
+PUBS_BIB = REPO_ROOT / "static" / "publications.bib"
 
 TODAY = date.today().isoformat()
 

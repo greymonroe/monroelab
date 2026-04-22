@@ -41,10 +41,14 @@ sections:
         - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration and abstract submissions are now open for the Symposium.
 
         **April**
+        - [**Davis et al.** — Genome degradation in plant tissue culture](https://www.pnas.org/doi/10.1073/pnas.2530182123) · *PNAS* — Walnut embryo cultures maintained for ~30 years accumulated massive SNV loads, chromosome duplications and deletions, transposon reactivation, and elongated telomeres — with somatic embryo lines the worst offenders.
+        - Congratulations to **Matt Davis** for winning **Best Presentation** at [Mutations in Time and Space 2026](https://coursesandconferences.wellcomeconnectingscience.org/event/mutations-in-time-and-space-20260413/), Wellcome Genome Campus, Hinxton, UK!
+        - Four UC Davis EnvironMentors students selected to present at the [EnvironMentors International Science Fair](https://www.gcseglobal.org/environmentors) in Panama City, **June 7–12, 2026**.
         - Grey Monroe is co-organizing [**Mutations in Time and Space**](https://coursesandconferences.wellcomeconnectingscience.org/event/mutations-in-time-and-space-20260413/) at the Wellcome Genome Campus, Cambridge, UK — **13–15 April 2026**. Registration is open!
         - **Matt Davis** presenting on somatic mutation diseases in plants and **Mariele Lensink** presenting on Bayesian methods to infer mutation rate heterogeneity in plant genomes at the conference.
 
         **March**
+        - [**Zhao et al.** — Functional insights into dispensable genes using genome-wide loss-of-function burden tests in Arabidopsis](https://doi.org/10.1093/plcell/koag087) · *The Plant Cell* — Genome-wide loss-of-function burden testing across Arabidopsis accessions reveals that many "dispensable" genes carry signatures of functional importance.
         - Grey is excited to present his research at UC Riverside — thanks to [**Sunil K. Kenchanmane Raju**](https://profiles.ucr.edu/sunilkumar.kenchanmaneraju) for the invitation!
         - Congratulations to **Kaia Broomell** and **Alice Pierce**, who received a 2026 ROOT & SHOOT Travel Award to attend the American Society of Plant Biologists conference in Ottawa, Canada!
 
