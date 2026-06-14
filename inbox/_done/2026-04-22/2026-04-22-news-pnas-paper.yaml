@@ -1,0 +1,22 @@
+type: add-news
+title: "New paper in PNAS: Genome degradation in plant tissue culture"
+date: "2026-04-22"
+summary: "Matt Davis and colleagues show that plant tissue culture dramatically degrades genomes — somatic embryo lines are the worst offenders."
+tags:
+  - publications
+  - pnas
+  - walnut
+  - somatic-mutation
+body: |
+  New paper out today in the *Proceedings of the National Academy of Sciences*: **"Genome degradation in plant tissue culture"**. First author **Matt Davis**, with co-corresponding authors Matt Davis, Patrick Brown, and Grey Monroe (all UC Davis).
+
+  The team sequenced 12 lines of walnut embryo cells that had been maintained in tissue culture at UC Davis for ~30 years. What we found was striking: the cultured cells accumulated massive numbers of new single-nucleotide mutations, entire chromosomes had been duplicated, large chunks of chromosomes had been deleted, transposable elements had reactivated and jumped to new locations, and the protective telomere caps on chromosome ends had grown to roughly three times their normal length. Two large-scale genome rearrangement events were also detected, traceable across the family tree of subculture lines.
+
+  Somatic embryo cultures were the worst offenders. The work has practical implications for tissue culture in agriculture, crop breeding, and genetic engineering — and it offers a unique window into how plant genomes evolve when freed from natural selection.
+
+  The study used a new telomere-to-telomere reference assembly of walnut (*Juglans regia* cv. 'Chandler') built from a clonal cutting of the original 1995 source tree.
+links:
+  - name: "Read the paper (PNAS)"
+    url: "https://www.pnas.org/doi/10.1073/pnas.2530182123"
+  - name: "DOI: 10.1073/pnas.2530182123"
+    url: "https://doi.org/10.1073/pnas.2530182123"

@@ -1,0 +1,18 @@
+type: add-news
+title: "New paper in The Plant Cell: dispensable genes in Arabidopsis"
+date: "2026-03-27"
+summary: "Kehan Zhao leads a paper in The Plant Cell using genome-wide loss-of-function burden tests to reveal functional roles for dispensable genes in Arabidopsis."
+tags:
+  - publications
+  - plant-cell
+  - arabidopsis
+  - population-genetics
+body: |
+  New paper by **Kehan Zhao**, Mariele Lensink, and Grey Monroe: **"Functional insights into dispensable genes using genome-wide loss-of-function burden tests in Arabidopsis"**, published in *The Plant Cell*.
+
+  "Dispensable" genes — those that are absent or broken in some accessions of a species — have been viewed as functionally expendable. Kehan's work uses genome-wide loss-of-function burden testing across Arabidopsis accessions to show that many of these genes nonetheless carry signatures of functional importance. The approach provides a scalable way to discover gene function in plants by leveraging natural variation in gene loss.
+links:
+  - name: "Read the paper (OUP)"
+    url: "https://academic.oup.com/plcell/article/doi/10.1093/plcell/koag087/8552459"
+  - name: "DOI: 10.1093/plcell/koag087"
+    url: "https://doi.org/10.1093/plcell/koag087"
