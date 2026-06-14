@@ -51,6 +51,7 @@ sections:
         {{% newsyear title="2026" open="true" %}}
 
         **June**
+        - **UC Davis EnvironMentors students win at the [GCSE International Science Fair](https://www.gcseglobal.org/environmentors) in Panama!** **AnnaSophia Callens** won first place overall and **Bareera Rehman** won Best Presentation; all four students earned scholarships to attend. [Read the story](https://caes.ucdavis.edu/news/learning-beyond-lab-environmentors).
         - **Mariele Lensink** presenting a poster at the [Population, Evolutionary, and Quantitative Genetics (PEQG)](https://genetics-gsa.org/peqg/) conference.
 
         **May**
