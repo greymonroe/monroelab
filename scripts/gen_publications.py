@@ -1,8 +1,20 @@
 #!/usr/bin/env python3
-"""Generate Hugo publication pages from BibTeX file."""
+"""Generate Hugo publication pages from BibTeX file.
+
+Non-destructive by default: only pages that don't exist yet are created, so
+hand- or import-enriched fields (doi, url_pdf, abstract, tags, featured) on
+existing pages are never clobbered. The generator writes url_pdf/abstract/etc.
+as empty, so regenerating an existing page would wipe those enrichments.
+
+Usage:
+    python3 scripts/gen_publications.py            # create missing pages only
+    python3 scripts/gen_publications.py --force    # regenerate ALL pages (lossy)
+    python3 scripts/gen_publications.py KEY [KEY]  # regenerate only these keys
+"""
 
 import os
 import re
+import sys
 import shutil
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
@@ -125,6 +137,10 @@ def get_raw_entry(bib_content, key):
     return m.group(1).strip() if m else ''
 
 def main():
+    args = sys.argv[1:]
+    force_all = '--force' in args
+    force_keys = {a for a in args if not a.startswith('-')}
+
     with open(BIB_FILE, 'r', encoding='utf-8') as f:
         raw_content = f.read()
 
@@ -139,40 +155,51 @@ def main():
             shutil.rmtree(old_path)
             print(f"Removed template folder: {old}")
 
-    seen_keys = {}
+    # Pass 1 — de-duplicate in memory (keep the entry with the most fields).
+    # No filesystem writes here, so a duplicate key can never trigger a
+    # delete-then-recreate of an already-enriched page.
+    best = {}
     skipped = []
-
     for entry in bib_db.entries:
         key = entry['ID']
+        if key in best and len(entry) <= len(best[key]):
+            skipped.append(key)
+            continue
+        best[key] = entry
 
-        # De-duplicate: keep the entry with more fields (more complete)
-        if key in seen_keys:
-            existing = seen_keys[key]
-            if len(entry) <= len(existing):
-                skipped.append(key)
-                continue
-            else:
-                old_folder = os.path.join(PUB_DIR, key)
-                if os.path.isdir(old_folder):
-                    shutil.rmtree(old_folder)
-
-        seen_keys[key] = entry
-
+    # Pass 2 — write pages. Non-destructive by default: an existing page is
+    # left untouched unless explicitly forced, because the generator emits
+    # url_pdf/abstract/tags empty and can't reproduce a DOI absent from the
+    # .bib, so a blind rewrite would silently strip those enrichments.
+    created = []
+    regenerated = []
+    preserved = []
+    for key, entry in best.items():
         folder = os.path.join(PUB_DIR, key)
-        os.makedirs(folder, exist_ok=True)
+        index_path = os.path.join(folder, 'index.md')
+        exists = os.path.isfile(index_path)
+        forced = force_all or key in force_keys
 
-        with open(os.path.join(folder, 'index.md'), 'w', encoding='utf-8') as f:
+        if exists and not forced:
+            preserved.append(key)
+            continue
+
+        os.makedirs(folder, exist_ok=True)
+        with open(index_path, 'w', encoding='utf-8') as f:
             f.write(make_index_md(entry))
 
         raw = get_raw_entry(raw_content, key)
         with open(os.path.join(folder, 'cite.bib'), 'w', encoding='utf-8') as f:
             f.write(raw + '\n')
 
-        print(f"Created: {key}")
+        (regenerated if exists else created).append(key)
+        print(f"{'Regenerated' if exists else 'Created'}: {key}")
 
     if skipped:
-        print(f"\nSkipped duplicates: {', '.join(skipped)}")
-    print(f"\nTotal created: {len(seen_keys)}")
+        print(f"\nSkipped duplicate keys: {', '.join(sorted(set(skipped)))}")
+    if preserved:
+        print(f"Preserved {len(preserved)} existing page(s) (use --force to regenerate).")
+    print(f"\nCreated: {len(created)}  Regenerated: {len(regenerated)}  Total entries: {len(best)}")
 
 if __name__ == '__main__':
     main()

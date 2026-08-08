@@ -2,17 +2,19 @@
 title: Kehan Zhao
 first_name: Kehan
 last_name: Zhao
-role: PhD Student
+role: Postdoctoral Researcher
 organizations:
-  - name: UC Davis Plant Biology Graduate Group
-    url: https://pbi.ucdavis.edu/
-bio: Plant Biology PhD student studying loss-of-function mutation in plant climate adaptation.
+  - name: UC Davis
+    url: https://www.ucdavis.edu/
+bio: Postdoctoral researcher studying loss-of-function variation and gene dispensability in plants and crops.
 interests:
   - Loss-of-Function Mutations
-  - Climate Adaptation
+  - Gene Dispensability
   - Population Genomics
 education:
   courses:
+    - course: PhD in Plant Biology
+      institution: UC Davis
     - course: BS
       institution: Shanghai Jiao Tong University
 social:
@@ -33,7 +35,7 @@ social:
     link: https://kehanzhao.github.io
 highlight_name: false
 user_groups:
-  - Graduate Students
+  - Postdoctoral Researchers
 ---
 
-Kehan is a Plant Biology PhD student who received his B.S. from Shanghai Jiao Tong University. His research focuses on loss-of-function mutations and their role in plant climate adaptation.
+Kehan is a postdoctoral researcher who earned his Ph.D. in Plant Biology at UC Davis and his B.S. from Shanghai Jiao Tong University. His research focuses on loss-of-function variation and genome-wide burden tests for gene discovery in plants and crops.
