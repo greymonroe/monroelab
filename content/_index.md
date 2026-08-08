@@ -50,9 +50,17 @@ sections:
 
         {{% newsyear title="2026" open="true" %}}
 
+        **August**
+        - **Congratulations to Kehan Zhao on earning his PhD!** Kehan filed his dissertation, approved by his committee, and gives his exit seminar — *"From Model to Crop: Leveraging Natural Loss-of-Function Variation and Genome-Wide Burden Tests to Understand Gene Dispensability and Accelerate Plant Breeding"* — on **August 11**. He continues in the Monroe Lab as a postdoc this fall.
+
+        **July**
+        - Welcome **Zi Ye**, who joined the Monroe Lab as a **Junior Specialist** working on epigenome assays and genome sequencing!
+
         **June**
         - **UC Davis EnvironMentors students win at the [GCSE International Science Fair](https://www.gcseglobal.org/environmentors) in Panama!** **AnnaSophia Callens** won first place overall and **Bareera Rehman** won Best Presentation; all four students earned scholarships to attend. [Read the story](https://caes.ucdavis.edu/news/learning-beyond-lab-environmentors).
+        - **Mariele Lensink** gave her IGG exit seminar, *"Hidden Architectures of Variation in Arabidopsis thaliana: How regulatory genetics, mutation, and selection shape molecular diversity"* — and is headed to the Wellcome Sanger Institute next. Congratulations, Mariele!
         - **Mariele Lensink** presenting a poster at the [Population, Evolutionary, and Quantitative Genetics (PEQG)](https://genetics-gsa.org/peqg/) conference.
+        - [**Klein et al.** — Unraveling plant phenotype-to-genotype associations with daily hyperspectral traits in *Populus trichocarpa*](https://doi.org/10.1016/j.plaphe.2026.100174) · *Plant Phenomics* — Time-resolved daily hyperspectral phenotyping across a *Populus trichocarpa* population links spectral traits to underlying genetic loci.
 
         **May**
         - The [UC Davis Plant Sciences Symposium](https://plantsciencesymposium.ucdavis.edu/) and the [UC Davis EnvironMentors Science Fair](https://environmentors.ucdavis.edu/) are co-hosted on **May 1st, 2026**! Registration and abstract submissions are now open for the Symposium.
