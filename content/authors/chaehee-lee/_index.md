@@ -33,4 +33,4 @@ user_groups:
   - Postdoctoral Researchers
 ---
 
-Chaehee is an evolutionary biologist with expertise in plant systematics and comparative genomics. She completed her PhD in the Bob Jansen lab at the University of Texas at Austin. In the Monroe Lab, she is working on the pistachio pan-genome and multi-genome reference projects.
+Chaehee is an evolutionary biologist with expertise in plant systematics and comparative genomics. He completed his PhD in the Bob Jansen lab at the University of Texas at Austin. In the Monroe Lab, he is working on the pistachio pan-genome and multi-genome reference projects.
