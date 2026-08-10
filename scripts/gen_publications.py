@@ -23,6 +23,26 @@ from bibtexparser.customization import convert_to_unicode
 BIB_FILE = os.path.join(os.path.dirname(__file__), '../static/publications.bib')
 PUB_DIR = os.path.join(os.path.dirname(__file__), '../content/publication')
 
+# Bib entries kept as a record but NOT shown on the Publications page (which
+# lists journal papers). Without this list the generator would recreate a page
+# for each on every run. Edit here if one should start/stop appearing.
+EXCLUDE_KEYS = {
+    # Conference/meeting abstracts (PAG, ASA-CSSA-SSSA, MPMI) — not papers.
+    'davis31twenty', 'king31identifying', 'klein31drought', 'monroe2024mutation',
+    'king2024characterizing', 'yadav2024combining', 'sutherland2024genomic',
+    'tiwari2022einkorn',
+    # Spanish-language congreso/thesis item, no journal or DOI.
+    'martinez2022ensamblaje',
+    # Preprint duplicates of papers already published on the site.
+    'klein2024climate',   # -> klein2025climate (New Phytologist)
+    'monroe2022report',   # -> monroe2023reply (published reply)
+    # Mangled-title duplicate of an existing entry.
+    'lawrence2020js',     # -> lawrence2020open
+    # Off-topic co-authorships (soil radiocarbon / phyllosphere) — excluded per
+    # Grey: the site is plant genomics only.
+    'hoyt2019old', 'hoyt2019timescales', 'trumbore2019israd', 'karasov2021host',
+}
+
 MONROE_PATTERN = re.compile(r'\bMonroe\b', re.IGNORECASE)
 
 TYPE_MAP = {
@@ -160,8 +180,12 @@ def main():
     # delete-then-recreate of an already-enriched page.
     best = {}
     skipped = []
+    excluded = []
     for entry in bib_db.entries:
         key = entry['ID']
+        if key in EXCLUDE_KEYS:
+            excluded.append(key)
+            continue
         if key in best and len(entry) <= len(best[key]):
             skipped.append(key)
             continue
@@ -197,6 +221,9 @@ def main():
 
     if skipped:
         print(f"\nSkipped duplicate keys: {', '.join(sorted(set(skipped)))}")
+    if excluded:
+        print(f"Excluded {len(excluded)} non-paper/off-topic ent"
+              f"{'ry' if len(excluded) == 1 else 'ries'} (see EXCLUDE_KEYS).")
     if preserved:
         print(f"Preserved {len(preserved)} existing page(s) (use --force to regenerate).")
     print(f"\nCreated: {len(created)}  Regenerated: {len(regenerated)}  Total entries: {len(best)}")
