@@ -29,7 +29,7 @@ sections:
         - A description of your prior research experience
         - Whether you are considering applying for fellowships such as the NSF GRFP or other funding programs
 
-        We actively work with students to develop competitive fellowship applications.
+        We actively work with students to develop competitive fellowship applications. See our [Funding Opportunities](/funding/) page for programs to consider.
 
         ---
 
@@ -41,7 +41,7 @@ sections:
         - A description of your research background and experience
         - Whether you are interested in pursuing fellowship funding
 
-        We strongly encourage early fellowship planning. Several postdocs in the lab have successfully secured competitive fellowships.
+        We strongly encourage early fellowship planning. Several postdocs in the lab have successfully secured competitive fellowships. See our [Funding Opportunities](/funding/) page for programs to consider.
 
         ---
 
