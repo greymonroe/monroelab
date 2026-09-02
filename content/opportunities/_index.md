@@ -47,15 +47,11 @@ sections:
 
         ## Undergraduate Researchers
 
-        The Monroe Lab provides research opportunities for undergraduate students interested in gaining hands-on molecular genetics experience. Students typically begin with research-for-credit (199 course) and, following successful participation, may become eligible for paid research positions, including summer internships.
-
-        Students typically begin with an **orientation period** to learn laboratory practices and expectations before taking on independent projects. One unit of research credit (199 course) corresponds to approximately three hours per week in the lab. Students are encouraged to attend lab meetings and participate in lab activities.
+        The Monroe Lab welcomes undergraduates through **internships for course credit** (PLS 199/192 and equivalents). Every new undergraduate spends their first quarter as a for-credit intern; we are not currently able to offer paid undergraduate positions, though students who complete an internship may be considered for paid positions afterward as funding allows.
 
         We value enthusiasm, curiosity, comfort learning new techniques, and genuine interest in molecular laboratory research. No prior research experience is required.
 
-        **Typical timeline:** Students often begin in the fall with orientation, enroll in research credit in winter and spring, and may become eligible for paid summer research positions depending on performance and availability.
-
-        **To apply**, email [gmonroe@ucdavis.edu](mailto:gmonroe@ucdavis.edu) with a resume or CV, a brief description of your interests, and any relevant coursework or lab experience.
+        See our **[Undergraduate Internships page](/undergrads/)** for what students do and learn in the lab, how research credit works at UC Davis, and exactly what to include in your inquiry email.
 
         ---
 
