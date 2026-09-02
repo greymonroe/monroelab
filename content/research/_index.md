@@ -84,7 +84,7 @@ sections:
 
         Species we have worked with include pistachio (*Pistacia vera*), walnut (*Juglans regia*), cassava (*Manihot esculenta*), celery (*Apium graveolens*), diploid wheat (*Triticum monococcum*), rice (*Oryza sativa*), alfalfa (*Medicago sativa*), almonds (*Prunus dulcis*), and black cottonwood (*Populus trichocarpa*). Projects range from understanding mutation histories of clonal cultivars to assembling reference genomes for breeding and fundamental science.
 
-        {{< researchfig src="media/research/adaskaveg2025-fig1-pistachio.png" alt="Pistachio nut development across four stages" caption="Pistachio (*Pistacia vera* cv. 'Kerman') nut and kernel development across four phenological stages, with growth, color, firmness, and fat content measured across growing degree days." ref="Adaskaveg et al. 2025 *New Phytologist*" link="https://doi.org/10.1111/nph.70060" >}}
+        {{< researchfig src="media/research/adaskaveg2025-fig1-pistachio.jpg" alt="Pistachio nut development across four stages" caption="Pistachio (*Pistacia vera* cv. 'Kerman') nut and kernel development across four phenological stages, with growth, color, firmness, and fat content measured across growing degree days." ref="Adaskaveg et al. 2025 *New Phytologist*" link="https://doi.org/10.1111/nph.70060" >}}
 
         Current projects include:
         - Pistachio pan-genome, reference genome, and kernel development
