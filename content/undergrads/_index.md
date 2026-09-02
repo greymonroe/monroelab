@@ -49,7 +49,7 @@ sections:
 
         **One unit corresponds to roughly three hours per week in the lab** over the quarter, so a typical 2-3 unit internship means about 6-9 hours per week. We generally ask for at least 6 hours per week so you can make real progress.
 
-        Registration works through the Plant Sciences department: once we agree you are joining, you submit the department's research credit form naming Grey as your faculty advisor, Grey approves it, and you then register using the CRN the department provides. **This must happen by the department's deadline in the first days of the quarter**, which is one more reason to get in touch early.
+        Registration works through the Plant Sciences department's online [Internship Application Program](https://internships.plantsciences.ucdavis.edu/internships): once we agree you are joining, you submit an application there naming Grey as your faculty advisor. The system emails Grey to approve it electronically, the Advising Office processes it, and you receive a unique CRN by email to register for your units. **Applications are due by the 8th day of instruction each quarter** and the system will not accept late submissions, which is one more reason to get in touch early.
 
         Over one quarter, the goal is for you to become competent and reliable with the core techniques above, keep a complete lab notebook, and present what you did and learned at a lab meeting at the end of the quarter.
 
