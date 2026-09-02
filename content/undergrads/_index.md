@@ -45,17 +45,13 @@ sections:
 
         ## How internships for credit work at UC Davis
 
-        You register for research credit under Grey as the instructor. Which course depends on your standing:
+        You register for research credit under Grey as the instructor. Students in our lab typically enroll in **PLS 199 (Special Study for Advanced Undergraduates, 1-5 units)**. PLS 192 (Internship) is an alternative handled through the same department form, and lower division students can use the equivalent PLS 99/92. All of these are graded Pass/No Pass and require instructor consent.
 
-        - **PLS 199 (Special Study for Advanced Undergraduates)** — upper division students; 1-5 units
-        - **PLS 192 (Internship)** — requires completion of 84 units; 1-12 units
-        - **PLS 99 / PLS 92** — the equivalent options for lower division students
+        **One unit corresponds to roughly three hours per week in the lab** over the quarter, so a typical 2-3 unit internship means about 6-9 hours per week. We generally ask for at least 6 hours per week so you can make real progress.
 
-        All of these are graded Pass/No Pass and require instructor consent. **One unit corresponds to roughly three hours per week in the lab** over the quarter, so a typical 2-3 unit internship means about 6-9 hours per week. We generally ask for at least 6 hours per week so you can make real progress.
+        Registration works through the Plant Sciences department: once we agree you are joining, you submit the department's research credit form naming Grey as your faculty advisor, Grey approves it, and you then register using the CRN the department provides. **This must happen by the department's deadline in the first days of the quarter**, which is one more reason to get in touch early.
 
         Over one quarter, the goal is for you to become competent and reliable with the core techniques above, keep a complete lab notebook, and present what you did and learned at a lab meeting at the end of the quarter.
-
-        Once we agree you are joining, we will coordinate the registration together with the department before the quarter's add deadline.
 
         ---
 
