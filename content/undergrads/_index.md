@@ -47,7 +47,16 @@ sections:
 
         You register for research credit under Grey as the instructor. Students in our lab typically enroll in **PLS 199 (Special Study for Advanced Undergraduates, 1-5 units)**. PLS 192 (Internship) is an alternative handled through the same department form, and lower division students can use the equivalent PLS 99/92. All of these are graded Pass/No Pass and require instructor consent.
 
-        **One unit corresponds to roughly three hours per week in the lab** over the quarter, so a typical 2-3 unit internship means about 6-9 hours per week. We generally ask for at least 6 hours per week so you can make real progress.
+        Each unit corresponds to 30 hours of lab work over the quarter. The department's [official guide](https://www.plantsciences.ucdavis.edu/academics/undergraduate/internships) maps weekly hours to units:
+
+        | Hours per week | Units |
+        |---|---|
+        | 3-5 | 1 |
+        | 6-8 | 2 |
+        | 9-11 | 3 |
+        | 12-14 | 4 |
+
+        A typical internship in our lab is 2-3 units. We generally ask for at least 6 hours per week so you can make real progress.
 
         Registration works through the Plant Sciences department's online [Internship Application Program](https://internships.plantsciences.ucdavis.edu/internships): once we agree you are joining, you submit an application there naming Grey as your faculty advisor. The system emails Grey to approve it electronically, the Advising Office processes it, and you receive a unique CRN by email to register for your units. **Applications are due by the 8th day of instruction each quarter** and the system will not accept late submissions, which is one more reason to get in touch early.
 
